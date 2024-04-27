@@ -1,0 +1,37 @@
+.header-container {
+    background-color: #333;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.logo-container {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navlink-container {
+    display: flex;
+    margin-right: 20px;
+}
+
+.navlink-container a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: 0.5s ease;
+    padding: 10px;
+}
+
+.navlink-container a:hover {
+    background-color: black;
+}
+  
