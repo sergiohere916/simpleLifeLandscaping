@@ -1,0 +1,178 @@
+#contact-header {
+    height: 4vh;
+    /* background-color: rgb(0, 0, 0); */
+}
+
+#hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+
+    height: 80vh;
+    width: 100%;
+    background-image: url("../images/simple_life_04.jpg");
+    background-size: cover;
+    background-position-y: 20%;
+    background-attachment: fixed;
+
+    
+
+    text-align: center;
+    font-size: 3em;
+    color: white;
+    
+}
+
+#hero-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#homePage-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    margin-top: 5%;
+    width: 90%;
+    /* background-color: rebeccapurple; */
+    /* background-color: rgba(102, 51, 153, 0.055); */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+#homePage-intro div {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#homePage-intro p {
+    font-style: italic;
+}
+
+#homePage-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+
+    margin-top: 5%;
+    margin-top: 2%;
+    width: 90%;
+    /* width: 100%; */
+    /* background-color: white; */
+}
+
+#home-content-container1 {
+    display: flex;
+    justify-content: center;
+
+    gap: 1%;
+    margin-top: 4%;
+    height: 100vh;
+    width: 100%;
+    /* background-color: aquamarine; */
+}
+
+#content1-description {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: end; */
+    align-items: center;
+    text-align: center;
+   
+    /* height: 30%; */
+    width: 25%;
+    /* font-size: 2rem; */
+    
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#content1-description1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 30%;
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#content1-description p {
+    font-style: italic;
+}
+
+#content1-desc-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-top: 10%;
+    height: 5%;
+    width: 45%;
+    background-color: rgb(241, 134, 62);
+    color: white;
+}
+
+#content1-desc-contact:hover {
+    cursor: pointer;
+    background-color: rgb(247, 160, 102);
+}
+
+#content1-image {
+    width: 75%;
+    height: 90%;
+}
+
+#content1-image img {
+    height: 100%;
+    width: 100%;
+}
+
+#footer {
+    height: 15vh;
+    width: 100%;
+    background-color: rgb(3, 3, 3);
+}
+
+
+
+@media (max-width: 600px) {
+    #hero-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    
+    
+        height: 80vh;
+        width: 100%;
+        background-image: url("../images/simple_life_04.jpg");
+        background-size: cover;
+        /* background-position-y: 20%; */
+        background-position: center;
+        background-attachment: fixed;
+    
+        
+    
+        
+        font-size: 3em;
+
+        color: white;
+        
+    }
+    
+    #hero-image img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+}

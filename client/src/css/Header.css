@@ -1,13 +1,14 @@
 .header-container {
     background-color: #333;
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 98%;
-    position: fixed;
+    width: 100%;
+    /* position: fixed;
     top: 0;
-    left: 0;
+    left: 0; */
     z-index: 1000;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -34,4 +35,196 @@
 .navlink-container a:hover {
     background-color: black;
 }
-  
+
+
+
+
+#nav2 {
+    height: 25vh;
+    width: 100%;
+    padding: 1%;
+    
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #333;
+    background-color: rgb(53, 116, 77); */
+    background-color: rgb(103, 139, 92);
+    /* background-color: rgb(156, 189, 103); */
+    /* background-color: rgb(172, 172, 172); */
+    /* border-bottom: 1vh solid black; */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.logo-container2 {
+    position: relative;
+    margin-left: 2%;
+    height: 100%;
+    width: 40%;
+    display: flex;
+    
+    gap: 3%;
+
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+#main-logo {
+    height: 100%;
+    width: 25%;
+    background-color: rgb(0, 0, 0);
+    border: .1em solid black;
+}
+
+#main-logo img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+#company-title {
+    /* color: black; */
+    display: flex;
+    align-items: center;
+}
+
+.navlink-container2 {
+    display: flex;
+    /* margin-right: 20px; */
+}
+
+.navlink-container2 a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    
+    /* margin-left: 1rem; */
+    padding: 10px;
+    transition: 0.5s ease;
+}
+
+.navlink-container2 a:hover {
+    background-color: black;
+    /* background-color: rgb(136, 110, 61); */
+}
+
+
+.navlink-container-mobile {
+    display: none;
+}
+
+#tester {
+    height: 10vh;
+    width: 100%;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#box {
+    height: 100%;
+    width: 20%;
+    background-color: white;
+}
+
+#footer {
+    height: 10vh;
+    background-color: rgb(0, 0, 0);
+}
+
+
+@media (max-width: 600px) {
+
+    #nav2 {
+        height: 25vh;
+        padding: 2%;
+        /* padding-top: 15%; */
+    }
+
+    .logo-container2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15pt;
+    }
+
+    .logo-container2 {
+        
+        margin-left: 2%;
+        height: 100%;
+        width: 60%;
+        display: flex;
+        
+        gap: 3%;
+    
+        
+        font-weight: bold;
+        color: #fff;
+    }
+    
+    #main-logo {
+        height: 50%;
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+        border: .1em solid black;
+    }
+    
+    #main-logo img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        
+    }
+    
+    #company-title {
+        /* color: black; */
+        width: 65%;
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        font-size: 12pt;
+    }
+
+
+
+
+
+
+
+
+
+    .navlink-container2 {
+        display: none;
+    }
+
+    .navlink-container-mobile {
+        display: block;
+        display: flex;
+        height: 100%;
+        width: 15%;
+    }
+
+    #mobile-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10%;
+        width: 100%;
+        
+    }
+
+    .buns {
+        height: 1%;
+        width: 50%;
+        background-color: white;
+        
+    }
+}
+
+
+
