@@ -1,0 +1,53 @@
+
+#service-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(216, 255, 215);
+    padding: 3%;
+}
+
+#intro-title {
+    font-size: 2.5rem;
+}
+
+#intro-details {
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+#services-provided {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#service1 {
+    
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#services-title {
+    font-size: 2rem;
+    font-style: italic;
+    color: orange;
+}
+
+#service-list {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   font-size: 1.5rem;
+   justify-content: flex-start;
+   padding-left: 10%;
+    
+}
+
+#orderedList {
+    
+    font-weight: bold;
+}
