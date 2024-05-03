@@ -206,6 +206,63 @@
     fill: #FDFDD5;
 }
 
+/* SERVICES SECTION */
+#services-section {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #FDFDD5;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#services-container {
+    background-color: rgb(230, 233, 160);
+    height: 70%;
+    width: 80%;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#services-image {
+    height: 100%;
+    width: 50%;
+    background-image: url("../images/simple_life_01.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#services-desc {
+    height: 100%;
+    width: 50%;
+}
+
+.custom-curve-2 {
+    position: absolute;
+    top: -12.8%;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-curve-2 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 79px;
+    transform: rotateY(180deg);
+}
+
+.custom-curve-2 .shape-fill {
+    fill: #FDFDD5;
+}
 
 #footer {
     height: 15vh;
