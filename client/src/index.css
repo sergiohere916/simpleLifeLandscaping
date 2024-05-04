@@ -43,6 +43,17 @@ body {
   border: 5px solid black;
 }
 
+#servicesPage {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
 
+  min-height: 100vh;
+  width: 100%;
+  /* background-color: red; */
+  /* background-color: rgb(253, 253, 213); */
+  border: 5px solid rgb(255, 10, 10);
+}
 
 
