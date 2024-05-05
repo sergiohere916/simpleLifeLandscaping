@@ -219,27 +219,65 @@
 }
 
 #services-container {
-    background-color: rgb(230, 233, 160);
+    background-color: rgb(140, 190, 120);
     height: 70%;
     width: 80%;
-    border-radius: 20px;
-    box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     justify-content: space-evenly;
+    color: white;
 }
 
 #services-image {
     height: 100%;
-    width: 50%;
+    width: 80%;
     background-image: url("../images/simple_life_01.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: drop-shadow(20px);
+}
+
+#services-desc {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+#services-desc h3 {
+    font-size: 1.5em;
+    text-align: center;
+    width: 100%;
+}
+
+#plant-image {
+    background-image: url("../images/plant_logo.png");
+    width: 15%;
+    height: 15%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-#services-desc {
-    height: 100%;
-    width: 50%;
+
+#services-desc button {
+    background: none;
+    outline: 0;
+    border: 1px solid white;
+    padding: 10px;
+    transition: .4s;
+    width: 40%;
+    color: white;
+}
+
+#services-desc button:hover {
+    background-color: white;
+    color: rgb(140, 190, 120);
 }
 
 .custom-curve-2 {

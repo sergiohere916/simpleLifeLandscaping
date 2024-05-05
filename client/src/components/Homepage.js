@@ -61,14 +61,21 @@ function Homepage() {
         <div id="services-section">
             
             <div id="services-container">
-                <div id="services-image"></div>
+                <div id="services-image">
+
+                </div>
                 <div id="services-desc">
-                    <h3>OUR SERVICES</h3>
-                    <span>BRUHHHHHHHHHH</span>
+                    <h3>WE OFFER A VARIETY OF SERVICES TO CLIENTS</h3>
+                    <div id="plant-image"></div>
+                    <button>SERVICES</button>
                 </div>
             </div>
         </div>
      
+        <div id="projects-section">
+
+        </div>
+
         <div id="footer">
 
         </div>
