@@ -19,10 +19,20 @@
     height: 80vh;
     width: 100%;
     background-image: url("../images/simple_life_04.jpg");
+
+    /* background: 
+    
+    linear-gradient(
+      rgba(34, 34, 34, 0.45), 
+      rgba(34, 34, 34, 0.45)
+    ),
+    
+    url("../images/simple_life_04.jpg"); */
+    
     background-size: cover;
     background-position-y: 20%;
     background-attachment: fixed;
-
+    
     
 
     text-align: center;
@@ -304,5 +314,41 @@
         object-fit: cover;
     }
 
+    #home-content-container1 {
+        margin-top: 15%;
+        position: relative;
+        /* background-color: blue; */
+        display: flex;
+        flex-direction: column;
+    }
+
+    #content1-description {
+        margin-top: -5%;
+
+        position: absolute;
+        top: 61%;
+        height: 39%;
+        width: 100%;
+        font-size: 10pt;
+    }
+
+    #content1-description1 {
+        display: flex;
+        text-align: left;
+        font-size: 13pt;
+    }
+
+    #content1-image {
+        position: absolute;
+        top: 0;
+        height: 60%;
+        width: 100%;
+    }
+
+    #content1-desc-contact {
+        height: 25%;
+        font-size: 14pt;
+
+    }
 }
 

@@ -31,10 +31,12 @@ function Header() {
                 <NavLink to="/contact">Contact</NavLink>
             </div>
             <div className="navlink-container-mobile">
-                <NavLink id="mobile-nav" to="contact">
+                {/* <NavLink id="mobile-nav" to="contact"> */}
+                <div id="mobile-nav">
                     <div className="buns"></div>
                     <div className="buns"></div>
-                </NavLink>
+                </div>
+                {/* </NavLink> */}
             </div>
         </div>
     )

@@ -54,6 +54,11 @@
     /* background-color: rgb(156, 189, 103); */
     /* background-color: rgb(172, 172, 172); */
     /* border-bottom: 1vh solid black; */
+    /* background: linear-gradient(180deg, rgb(103, 139, 92), rgb(72, 100, 64), rgb(38, 58, 33)); */
+    
+    /* background-color: rgb(32, 66, 37); */
+    
+
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -67,8 +72,10 @@
     gap: 3%;
 
     font-size: 1.5rem;
-    font-weight: bold;
+
+    /* font-weight: bold; */
     color: #fff;
+    
 }
 
 #main-logo {
@@ -89,15 +96,18 @@
     /* color: black; */
     display: flex;
     align-items: center;
+    
 }
 
 .navlink-container2 {
     display: flex;
+    font-size: 10pt;
     /* margin-right: 20px; */
 }
 
 .navlink-container2 a {
     color: #fff;
+    
     text-decoration: none;
     margin-left: 20px;
     
@@ -140,17 +150,12 @@
 @media (max-width: 600px) {
 
     #nav2 {
-        height: 25vh;
+        height: 23vh;
         padding: 2%;
+        
         /* padding-top: 15%; */
     }
 
-    .logo-container2 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 15pt;
-    }
 
     .logo-container2 {
         
@@ -158,12 +163,15 @@
         height: 100%;
         width: 60%;
         display: flex;
+        justify-content: center;
+        align-items: end;
         
         gap: 3%;
     
         
         font-weight: bold;
         color: #fff;
+        padding-bottom: 3%;
     }
     
     #main-logo {
@@ -176,17 +184,19 @@
     #main-logo img {
         height: 100%;
         width: 100%;
-        object-fit: cover;
+        /* object-fit: cover; */
+        
         
     }
     
     #company-title {
         /* color: black; */
+        color: rgb(37, 37, 37);
         width: 65%;
         display: flex;
         align-items: center;
         white-space: nowrap;
-        font-size: 12pt;
+        font-size: 10pt;
     }
 
 
@@ -204,23 +214,30 @@
     .navlink-container-mobile {
         display: block;
         display: flex;
+        /* flex-direction: column;
+        justify-content: center; */
+        align-items: end;
+        
         height: 100%;
         width: 15%;
+        
     }
 
     #mobile-nav {
+        /* background-color: yellow; */
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 10%;
+        gap: 20%;
+        height: 30%;
         width: 100%;
         
     }
 
     .buns {
-        height: 1%;
-        width: 50%;
+        height: 4%;
+        width: 80%;
         background-color: white;
         
     }
