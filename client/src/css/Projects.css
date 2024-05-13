@@ -24,10 +24,22 @@
 }
 
 #center-project {
+    position: relative;
     height: 90%;
     width: 70%;
     box-shadow: 0 0 10px 3px black;
     /* background-color: white; */
+}
+
+#center-image-filter {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#center-image-filter:hover {
+    background-color: rgba(0, 0, 0, 0.253);
 }
 
 #center-project img {
@@ -67,11 +79,14 @@
 .projectCards {
     height: 100%;
     width: 40%;
+    
 }
 
 .projectCards img {
     height: 100%;
     width: 100%;
+    /* filter: brightness(.5) invert(.25); */
+    cursor: pointer;
 }
 
 #right-scroller {
