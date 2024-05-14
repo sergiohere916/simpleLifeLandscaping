@@ -106,13 +106,13 @@ function Homepage() {
             <div id="form-section">
                 <span>Get In Touch</span>
                 <form ref={form} onSubmit={(e) => handleSubmit(e)} id="form-container"> 
-                    <div>
+                    <div className='first-last'>
                         <input type="text" name="first-name" placeholder="First Name" required></input>
                         <input type="text" name="last-name" placeholder="Last Name" required></input>
                     </div>
                     <input type="email" name="user_email" placeholder="Email" required></input>
                     <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" autoComplete="off" required></textarea>
-                    <button type="submit">Send</button>
+                    <button type="submit">submit</button>
                 </form>
             </div>
             
