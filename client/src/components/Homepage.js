@@ -107,12 +107,26 @@ function Homepage() {
                 <span>Get In Touch</span>
                 <form ref={form} onSubmit={(e) => handleSubmit(e)} id="form-container"> 
                     <div className='first-last'>
-                        <input type="text" name="first-name" placeholder="First Name" required></input>
-                        <input type="text" name="last-name" placeholder="Last Name" required></input>
+                        
+                        <div className="input-container">
+                            <label>First Name</label>
+                            <input type="text" name="first-name" placeholder="John" required></input>
+                        </div>
+                        <div className="input-container">
+                            <lable>Last Name</lable>
+                            <input type="text" name="last-name" placeholder="Doe" required></input>
+                        </div>
                     </div>
-                    <input type="email" name="user_email" placeholder="Email" required></input>
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" autoComplete="off" required></textarea>
-                    <button type="submit">submit</button>
+                    <div className="input-container">
+                        <label>Email</label>
+                        <input type="email" name="user_email" placeholder="JohnDoe@gmail.com" required></input>
+                    </div>
+                    <div className="input-container">
+                        <label>Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" autoComplete="off" required></textarea>
+                    </div>
+                    
+                    <button type="submit">send</button>
                 </form>
             </div>
             
