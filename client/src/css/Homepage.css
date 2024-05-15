@@ -432,7 +432,12 @@
 
 .first-last {
     display: flex;
-    gap: 20px;
+    gap: 10px;
+    width: 100%;
+}
+
+.first-last div {
+    width: 50%;
 }
 
 #footer {
