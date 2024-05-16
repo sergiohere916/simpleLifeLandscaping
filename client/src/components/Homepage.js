@@ -1,11 +1,34 @@
-import React from "react"
+import React, { useRef } from 'react';
 import Header from "./Header"
 import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 import homeFrontView from "../images/simple_life_04.jpg"
 import heroImage from "../images/simple_life_hero.jpg"
-
+import emailjs from '@emailjs/browser';
 
 function Homepage() {
+    const form = useRef();
+
+    const sendEmail = () => {
+    
+        emailjs
+          .sendForm('service_hwv5dtc', 'template_vrb8i3r', form.current, {
+            publicKey: 'AjBG6cgx8EMDYspUg',
+          })
+          .then(
+            () => {
+              console.log('SUCCESS!');
+            },
+            (error) => {
+              console.log('FAILED...', error.text);
+            },
+          );
+      };
+
+    function handleSubmit(e) {
+        e.preventDefault()
+        sendEmail()
+    }
+
     return <div id="homePage">
         {/* <div id="contact-header"></div> */}
         <Header></Header>
@@ -35,9 +58,9 @@ function Homepage() {
         </div>
 
         <div id="reason-content">
-            <div class="custom-curve-1">
+            <div className="custom-curve-1">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className="shape-fill"></path>
                 </svg>
             </div>
     
@@ -51,9 +74,9 @@ function Homepage() {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </span>
             </div>
-            <div class="custom-curve-2">
+            <div className="custom-curve-2">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className="shape-fill"></path>
                 </svg>
             </div>
         </div>
@@ -61,16 +84,70 @@ function Homepage() {
         <div id="services-section">
             
             <div id="services-container">
-                <div id="services-image"></div>
+                <div id="services-image">
+
+                </div>
                 <div id="services-desc">
-                    <h3>OUR SERVICES</h3>
-                    <span>BRUHHHHHHHHHH</span>
+                    <span>WE OFFER A VARIETY OF SERVICES </span>
+                    <div id="plant-image"></div>
+                    <button>SERVICES</button>
                 </div>
             </div>
         </div>
      
-        <div id="footer">
+        <div id="projects-section">
+            <div id="projects-content">
+                <span>Visit Our Gallery of Completed Landscapes</span>
+                <button>PROJECTS</button>
+            </div>
+        </div>
 
+        <div id="contact-section">
+            <div id="form-section">
+                <span>Get In Touch</span>
+                <form ref={form} onSubmit={(e) => handleSubmit(e)} id="form-container"> 
+                    <div className='first-last'>
+                        
+                        <div className="input-container">
+                            <label>First Name</label>
+                            <input type="text" name="first-name" placeholder="John" required></input>
+                        </div>
+                        <div className="input-container">
+                            <lable>Last Name</lable>
+                            <input type="text" name="last-name" placeholder="Doe" required></input>
+                        </div>
+                    </div>
+                    <div className="input-container">
+                        <label>Email</label>
+                        <input type="email" name="user_email" placeholder="JohnDoe@gmail.com" required></input>
+                    </div>
+                    <div className="input-container">
+                        <label>Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" autoComplete="off" required></textarea>
+                    </div>
+                    
+                    <button type="submit">send</button>
+                </form>
+            </div>
+            
+        </div>
+
+        <div id="footer">
+            <div className="footer-sections">
+                <a>Instagram</a>
+                <a>LinkedIn</a>
+                <a>Facebook</a>
+            </div>
+            <div className="footer-sections">
+                <a>About</a>
+                <a>Services</a>
+                <a>Projects</a>
+                <a>Contact</a>
+            </div>
+            <div className="footer-sections">
+                <span>testing123@gmail.com</span>
+                <span>123-456-7890</span>
+            </div>
         </div>
     </div>
 }
