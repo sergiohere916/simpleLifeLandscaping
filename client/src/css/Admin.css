@@ -1,0 +1,86 @@
+#logged-out-container {
+    background-color: grey;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#admin-form-container {
+    background: white;
+    width: 40%;
+    height: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+#admin-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#admin-form input {
+    padding: 10px;
+    font-size: 2em;
+    width: 80%;
+}
+
+#admin-form label {
+    font-size: 2.5em;
+
+}
+
+#admin-form button {
+    width: 30%;
+    font-size: 1.5em;
+    padding: 5px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* LOGGED IN */
+
+#logged-in-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#create-project-container {
+    background-color: white;
+    width: 100%;
+    height: 10%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+#create-project-container button {
+    margin-right: auto;
+    margin-left: 20px;
+    padding: 10px;
+    border: none;
+    background-color: rgb(120, 120, 250);
+    color: white;
+    transition: .2s;
+}
+
+#create-project-container button:hover {
+    background-color: rgb(150, 150, 250);
+}
+
+#create-project-container button:active {
+    transform: scale(0.95); /* Example scale, you can adjust as needed */
+}

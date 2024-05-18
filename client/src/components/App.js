@@ -5,8 +5,28 @@ import About from "./About"
 import Services from "./Services";
 import Projects from "./Projects";
 import Contact from "./Contact";
+import Admin from "./Admin"
 
 function App() {
+  const [pictures, setPictures] = useState([])
+
+  useEffect(() => {
+    fetch("/images")
+    .then(response => response.json())
+    .then(data => {
+      console.log(data)
+      setPictures(data) 
+    })
+  }, [])
+
+  function handleDeleteProject(name) {
+    const newPictures = pictures.filter(picture => {
+      return picture.name !== name;
+    })
+
+    setPictures(newPictures)
+  }
+
   return <div id="app">
     <Switch>
       <Route exact path="/">
@@ -23,6 +43,9 @@ function App() {
       </Route>
       <Route exact path="/contact">
         <Contact></Contact>
+      </Route>
+      <Route exact path="/admin">
+        <Admin pictures={pictures} handleDeleteProject={handleDeleteProject}></Admin>
       </Route>
     </Switch>
   </div>

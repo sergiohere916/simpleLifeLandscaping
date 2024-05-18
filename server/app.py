@@ -56,7 +56,6 @@ class Image(Resource):
         doc_ref = db.collection('images').document()
         doc_ref.set(data)
 
-        # Retrieve the data from Firestore and return it
         retrieved_doc = doc_ref.get()
         retrieved_data = retrieved_doc.to_dict()
 
@@ -65,10 +64,46 @@ class Image(Resource):
 api.add_resource(Image, '/images')
 
 class ImageDelete(Resource):
-    def delete(self, document_name):
-        db.collection("images").document(document_name).delete()
+    def delete(self):
+        image_name = request.args.get("name")
+        print(image_name)
 
-api.add_resource(ImageDelete, "/image/<string:document_name>")
+        if not image_name:
+            return jsonify({"error" : "No image name provided"})
+        
+
+        # images_ref = db.collection('images')
+        # query = images_ref.where("name", "==", image_name).stream()
+        # print(query)
+
+        # for doc in query:
+        #     doc.reference.delete()
+        
+        # print("Complete")
+
+        try:
+            images_ref = db.collection("images")
+
+            query = images_ref.where("name" == image_name).stream()
+
+            found = False
+
+            for doc in query:
+                doc.reference.delete()
+                found = True
+
+            if found:
+                return make_response({"success" : True, "message" : "successfully "}, 200)
+            else:
+                return make_response({"error": "Project not found"}, 404)
+
+        except Exception as e:
+            return make_response({"error": str(e)}, 500)
+        
+        
+api.add_resource(ImageDelete, "/delete_project")
+
+
 
 if __name__ == '__main__':
     app.run(port=5555, debug=True)

@@ -113,7 +113,7 @@ function Homepage() {
                             <input type="text" name="first-name" placeholder="John" required></input>
                         </div>
                         <div className="input-container">
-                            <lable>Last Name</lable>
+                            <label>Last Name</label>
                             <input type="text" name="last-name" placeholder="Doe" required></input>
                         </div>
                     </div>
