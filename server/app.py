@@ -50,6 +50,7 @@ class Image(Resource):
     def post(self):
         data = request.get_json()
         image_url = data["image_url"]
+        name = data["name"]
         # doc_ref = db.collection("images").add({"image_url" : image_url, "name" : name})
         # image_data = db.collection("images").document(doc_ref.id).get().to_dict()
 
@@ -58,6 +59,7 @@ class Image(Resource):
 
         retrieved_doc = doc_ref.get()
         retrieved_data = retrieved_doc.to_dict()
+        retrieved_data['id'] = doc_ref.id
 
         return make_response(jsonify(retrieved_data), 201)
     
@@ -72,33 +74,33 @@ class ImageDelete(Resource):
             return jsonify({"error" : "No image name provided"})
         
 
-        # images_ref = db.collection('images')
-        # query = images_ref.where("name", "==", image_name).stream()
-        # print(query)
+        images_ref = db.collection('images')
+        query = images_ref.where("name", "==", image_name).stream()
+        print(query)
 
-        # for doc in query:
-        #     doc.reference.delete()
+        for doc in query:
+            doc.reference.delete()
         
-        # print("Complete")
+        return make_response({"message" : "success"}, 200)
 
-        try:
-            images_ref = db.collection("images")
+        # try:
+        #     images_ref = db.collection("images")
 
-            query = images_ref.where("name" == image_name).stream()
+        #     query = images_ref.where("name" == image_name).stream()
 
-            found = False
+        #     found = False
 
-            for doc in query:
-                doc.reference.delete()
-                found = True
+        #     for doc in query:
+        #         doc.reference.delete()
+        #         found = True
 
-            if found:
-                return make_response({"success" : True, "message" : "successfully "}, 200)
-            else:
-                return make_response({"error": "Project not found"}, 404)
+        #     if found:
+        #         return make_response({"success" : True, "message" : "successfully "}, 200)
+        #     else:
+        #         return make_response({"error": "Project not found"}, 404)
 
-        except Exception as e:
-            return make_response({"error": str(e)}, 500)
+        # except Exception as e:
+        #     return make_response({"error": str(e)}, 500)
         
         
 api.add_resource(ImageDelete, "/delete_project")

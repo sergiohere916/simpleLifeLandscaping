@@ -27,6 +27,10 @@ function App() {
     setPictures(newPictures)
   }
 
+  function addNewProject(project) {
+    setPictures([project, ...pictures])
+  }
+
   return <div id="app">
     <Switch>
       <Route exact path="/">
@@ -45,7 +49,7 @@ function App() {
         <Contact></Contact>
       </Route>
       <Route exact path="/admin">
-        <Admin pictures={pictures} handleDeleteProject={handleDeleteProject}></Admin>
+        <Admin pictures={pictures} addNewProject={addNewProject} handleDeleteProject={handleDeleteProject}></Admin>
       </Route>
     </Switch>
   </div>

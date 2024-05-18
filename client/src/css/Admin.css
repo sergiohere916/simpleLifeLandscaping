@@ -84,3 +84,39 @@
 #create-project-container button:active {
     transform: scale(0.95); /* Example scale, you can adjust as needed */
 }
+
+#new-project-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 10%;
+
+    align-items: center;
+}
+
+#new-project-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+}
+
+#new-project-form input, button, label {
+    font-size: 1.1em;
+    padding: 5px;
+    outline: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#new-project-form button {
+    color: white;
+    background-color: rgb(150, 150, 250);
+    border: none;
+    outline: none;
+    
+}
+
+
+
+

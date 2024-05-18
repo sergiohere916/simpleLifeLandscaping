@@ -16,7 +16,7 @@ function ProjectCard({ image, name, handleDeleteProject }) {
     return (
         <div>
             <button onClick={handleDelete}>Delete</button>
-            <img src={image} alt="Project" />
+            <img style={{width: "300px", height : "300px"}} src={image} alt="Project" />
         </div>
     )
 }
