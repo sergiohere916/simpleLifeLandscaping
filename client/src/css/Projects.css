@@ -1,4 +1,5 @@
 #projects-title {
+    text-align: center;
     margin-top: 3%;
     font-size: 2rem;
 }
@@ -108,7 +109,56 @@
 
 
 
-
+@media (max-width: 600px) {
+    #projects-container {
+        display: flex;
+        padding: 8%;
+        /*Used for version 1*/
+        /* justify-content: space-evenly;
+        flex-wrap: wrap; */
+        /**/
+    
+    
+        /*Used for version 2 of site*/
+        justify-content: center;
+        align-items: center;
+        
+        
+        margin-top: 5%;
+        margin-bottom: 5%;
+        height: 55vh;
+        width: 100%;
+        /* background-color: rgb(206, 105, 105); */
+    }
+    
+    #center-project {
+        position: relative;
+        height: 100%;
+        
+        width: 100%;
+        /* box-shadow: 0 0 5px 2px black; */
+        box-shadow: none;
+        /* background-color: white; */
+    }
+    
+    #center-image-filter {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+    }
+    
+    #center-image-filter:hover {
+        background-color: rgba(0, 0, 0, 0.253);
+    }
+    
+    #center-project img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+    
+}
 
 
 

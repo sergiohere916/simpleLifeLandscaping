@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import Header from "./Header"
 import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 import homeFrontView from "../images/simple_life_04.jpg"
@@ -6,6 +6,9 @@ import heroImage from "../images/simple_life_hero.jpg"
 import emailjs from '@emailjs/browser';
 
 function Homepage() {
+
+    const [displayMobileNav, setDisplayMobileNav] = useState(false);
+
     const form = useRef();
 
     const sendEmail = () => {
@@ -29,16 +32,29 @@ function Homepage() {
         sendEmail()
     }
 
-    return <div id="homePage">
-        {/* <div id="contact-header"></div> */}
-        <Header></Header>
+    function showHiddenNav() {
+        setDisplayMobileNav(!displayMobileNav);
+    }
+
+    return (
+    <div id="homePage">
+        <Header showHiddenNav={showHiddenNav}></Header>
+        {displayMobileNav?
+        (<div id='hiddenMobileNav'>
+            <div className="mobileNavLink-Container">
+                <NavLink to="/">Home</NavLink>
+                <NavLink to="about">About</NavLink>
+                <NavLink to="/services">Services</NavLink>
+                <NavLink to="projects">Projects</NavLink>
+                <NavLink to="/contact">Contact</NavLink>
+            </div>
+        </div>):
+        (<></>) }
         <div id="hero-image">
             Here To Help Create Beautiful Scenery in Ohio
-            {/* <img src={homeFrontView}/> */}
         </div>
         
         <div id="homePage-intro">
-            {/* This is simple life we are about helping you */}
             <div><b style={{fontStyle: "italic"}}>Simple Life</b> is a small business based in Columbus, Ohio. We provide landscaping installation, maintenance, trimming, and snow-removal services for our residential, commercial, retail, and hospitality clients.</div>
             <p>We provide quality work to help with your landscaping needs</p>
             
@@ -57,7 +73,7 @@ function Homepage() {
             </div>
         </div>
 
-        <div id="reason-content">
+        {/* <div id="reason-content">
             <div className="custom-curve-1">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                     <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className="shape-fill"></path>
@@ -79,7 +95,7 @@ function Homepage() {
                     <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className="shape-fill"></path>
                 </svg>
             </div>
-        </div>
+        </div> */}
 
         <div id="services-section">
             
@@ -149,7 +165,7 @@ function Homepage() {
                 <span>123-456-7890</span>
             </div>
         </div>
-    </div>
+    </div>)
 }
 
 export default Homepage

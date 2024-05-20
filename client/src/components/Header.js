@@ -2,7 +2,9 @@ import React from "react"
 import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 import "../css/Header.css"
 
-function Header() {
+function Header({showHiddenNav}) {
+
+
     return (
     // <div className="header-container">
     //     <div className="logo-container">
@@ -32,13 +34,13 @@ function Header() {
             </div>
             <div className="navlink-container-mobile">
                 {/* <NavLink id="mobile-nav" to="contact"> */}
-                <div id="mobile-nav">
+                <div id="mobile-nav" onClick={(e) => {showHiddenNav()}}>
                     <div className="buns"></div>
                     <div className="buns"></div>
                 </div>
                 {/* </NavLink> */}
             </div>
-        </div>
+    </div>
     )
 }
 

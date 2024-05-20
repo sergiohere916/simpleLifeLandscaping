@@ -34,13 +34,13 @@ function Services() {
             <div id="intro-quote">"We provide our clients with quality work taking each project into careful consideration producing a unique style that will bring out the best of the particular landscape"</div> 
         </div>
         <div id="services-provided">
-            <div id="service1-content">
-                <div id="service1-img">
+            <div className="service1-content">
+                <div className="service1-img">
                     <img src={serviceImg1} alt="service1img"/>
                 </div>
-                <div id="service1">
-                    <div id="services-title">Professional Services Provided:</div>
-                    <ul id="service-list">
+                <div className="service1">
+                    <div className="services-title">Professional Services Provided:</div>
+                    <ul className="service-list">
                         <li>Lawn Mowing</li>
                         <li>Edging</li>
                         <li>Trimming</li>
@@ -56,13 +56,13 @@ function Services() {
                     <button>Contact Us</button>
                 </div>   
             </div>
-            <div id="service1-content">
-                <div id="service1-img">
+            <div className="service1-content">
+                <div className="service1-img">
                     <img src={serviceImg2} alt="service1img"/>
                 </div>
-                <div id="service1">
-                    <div id="services-title">Professional Services Provided:</div>
-                    <ul id="service-list">
+                <div className="service1">
+                    <div className="services-title">Professional Services Provided:</div>
+                    <ul className="service-list">
                         <li>Lawn Mowing</li>
                         <li>Edging</li>
                         <li>Trimming</li>
@@ -79,13 +79,13 @@ function Services() {
                 </div>
                 
             </div>
-            <div id="service1-content">
-                <div id="service1-img">
+            <div className="service1-content">
+                <div className="service1-img">
                     <img src={serviceImg3} alt="service1img"/>
                 </div>
-                <div id="service1">
-                    <div id="services-title">Professional Services Provided:</div>
-                    <ul id="service-list">
+                <div className="service1">
+                    <div className="services-title">Professional Services Provided:</div>
+                    <ul className="service-list">
                         <li>Lawn Mowing</li>
                         <li>Edging</li>
                         <li>Trimming</li>

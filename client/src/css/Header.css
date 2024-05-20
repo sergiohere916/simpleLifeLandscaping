@@ -51,6 +51,7 @@
     /* background-color: #333;
     background-color: rgb(53, 116, 77); */
     background-color: rgb(103, 139, 92);
+    background-color: rgb(109, 136, 97);
     /* background-color: rgb(156, 189, 103); */
     /* background-color: rgb(172, 172, 172); */
     /* border-bottom: 1vh solid black; */
@@ -150,6 +151,7 @@
 @media (max-width: 600px) {
 
     #nav2 {
+        position: relative;
         height: 23vh;
         padding: 2%;
         
@@ -241,6 +243,8 @@
         background-color: white;
         
     }
+
+
 }
 
 
