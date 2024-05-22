@@ -7,11 +7,16 @@ import plantImg from "../images/licensed_plant.jpeg";
 import serviceImg1 from "../images/simple_life_06.jpg";
 import serviceImg2 from "../images/simple_life_02.jpg";
 import serviceImg3 from "../images/simple_life_04.jpg";
+import sodding from "../images/licensed_sodding.jpeg";
+import leafBlowing from "../images/licensed_leafblowing.jpeg";
+import snowShoveling from "../images/licensed_shoveling.jpeg";
 
 function Services() {
     return <div id="servicesPage">
         <Header></Header>
         <div id="service-intro">
+            <div id="intro-title">Simple Life Landscaping Services</div>
+            <div id="intro-details">In Columbus Ohio and surrounding regions</div>
             <div id="service-images">
                 <div className="service-img">
                     <img src={mowerImg}/>
@@ -26,12 +31,17 @@ function Services() {
                     <img src={plantImg}/>
                 </div>
             </div>
-            <div id="intro-title">Simple Life Landscaping Services</div>
-            <div id="intro-details">Professional Services for you in Columbus Ohio region</div>
+            <div id="servicePageBreak"></div>
+            {/* <div id="servicePageBreak2"></div> */}
+            
+            {/* <div id="intro-title">Simple Life Landscaping Services</div> */}
+            {/* <div id="intro-details">In Columbus Ohio and surrounding regions</div> */}
             {/* <div id="main-service-img">
                 <img src={plantImg} />
             </div> */}
-            <div id="intro-quote">"We provide our clients with quality work taking each project into careful consideration producing a unique style that will bring out the best of the particular landscape"</div> 
+            {/* <div id="intro-quote">"We provide our clients with quality work taking each project into careful consideration producing a unique style that will bring out the best of the particular landscape"</div>
+              */}
+              <div id="intro-quote">"Trust us with your Landscaping Needs"</div>
         </div>
         <div id="services-provided">
             <div className="service1-content">
@@ -54,11 +64,12 @@ function Services() {
                         <li>Sodding</li>
                     </ul>
                     <button>Contact Us</button>
+                    <div className="service-contact">Contact Us</div>
                 </div>   
             </div>
             <div className="service1-content">
                 <div className="service1-img">
-                    <img src={serviceImg2} alt="service1img"/>
+                    <img src={sodding} alt="service1img"/>
                 </div>
                 <div className="service1">
                     <div className="services-title">Professional Services Provided:</div>
@@ -76,12 +87,13 @@ function Services() {
                         <li>Sodding</li>
                     </ul>
                     <button>Contact Us</button>
+                    <div className="service-contact">Contact Us</div>
                 </div>
                 
             </div>
             <div className="service1-content">
                 <div className="service1-img">
-                    <img src={serviceImg3} alt="service1img"/>
+                    <img src={leafBlowing} alt="service1img"/>
                 </div>
                 <div className="service1">
                     <div className="services-title">Professional Services Provided:</div>
@@ -99,6 +111,31 @@ function Services() {
                         <li>Sodding</li>
                     </ul>
                     <button>Contact Us</button>
+                    <div className="service-contact">Contact Us</div>
+                </div>
+                
+            </div>
+            <div className="service1-content">
+                <div className="service1-img">
+                    <img src={snowShoveling} alt="service1img"/>
+                </div>
+                <div className="service1">
+                    <div className="services-title">Professional Services Provided:</div>
+                    <ul className="service-list">
+                        <li>Lawn Mowing</li>
+                        <li>Edging</li>
+                        <li>Trimming</li>
+                        <li>Mulching</li>
+                        <li>Landscape re-design</li>
+                        <li>Plant Installation</li>
+                        <li>Transplants</li>
+                        <li>Snow removal</li>
+                        <li>Leaf blwoing</li>
+                        <li>Seeding</li>
+                        <li>Sodding</li>
+                    </ul>
+                    <button>Contact Us</button>
+                    <div className="service-contact">Contact Us</div>
                 </div>
                 
             </div>

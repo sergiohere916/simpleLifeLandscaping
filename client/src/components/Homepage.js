@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 import homeFrontView from "../images/simple_life_04.jpg"
 import heroImage from "../images/simple_life_hero.jpg"
 import emailjs from '@emailjs/browser';
+import littleMower from "../images/orange_mower2.png";
 
 function Homepage() {
 
@@ -51,7 +52,7 @@ function Homepage() {
         </div>):
         (<></>) }
         <div id="hero-image">
-            Here To Help Create Beautiful Scenery in Ohio
+            <span>Here To Help Create Beautiful Scenery in Ohio</span>
         </div>
         
         <div id="homePage-intro">
@@ -100,13 +101,26 @@ function Homepage() {
         <div id="services-section">
             
             <div id="services-container">
-                <div id="services-image">
+                {/* <div id="services-image">
 
+                </div> */}
+                <div id="services-desc">
+                    <span>WE OFFER A VARIETY OF SERVICES </span>
+                    <span className='serviceMotto'>For a Simple Life</span>
+                    <div id="plant-image"></div>
+                    <button>SERVICES</button>
+                    <div className='littleMower'>
+                        <img src={littleMower}/>
+                    </div>
                 </div>
                 <div id="services-desc">
                     <span>WE OFFER A VARIETY OF SERVICES </span>
+                    <span className='serviceMotto'>For a Simple Life</span>
                     <div id="plant-image"></div>
                     <button>SERVICES</button>
+                    <div className='littleMower'>
+                        <img src={littleMower}/>
+                    </div>
                 </div>
             </div>
         </div>

@@ -86,6 +86,7 @@ function Projects() {
     return <div id="projectsPage">
         <Header></Header>
         <div id="projects-title">Our Projects</div>
+        <div id="projectsLine"><div id="projectsLine2"></div></div>
         <div id="projects-container">
             <div id="center-project">
                 <img src={mainImage}/>
