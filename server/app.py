@@ -43,8 +43,8 @@ def hello_world():
 
 class Image(Resource):
     def get(self):
-        images_ref = db.collection('images')
-        images = [doc.to_dict() for doc in images_ref.stream()]
+        images_ref = db.collection('images').order_by("createdAt", direction=firestore.Query.DESCENDING).stream()
+        images = [doc.to_dict() for doc in images_ref]
         return make_response(jsonify(images), 200)
 
     def post(self):
@@ -55,7 +55,7 @@ class Image(Resource):
         # image_data = db.collection("images").document(doc_ref.id).get().to_dict()
 
         doc_ref = db.collection('images').document()
-        doc_ref.set(data)
+        doc_ref.set({"image_url" : image_url, "name" : name, "createdAt" : firestore.SERVER_TIMESTAMP})
 
         retrieved_doc = doc_ref.get()
         retrieved_data = retrieved_doc.to_dict()
