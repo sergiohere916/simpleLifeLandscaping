@@ -8,6 +8,7 @@ import littleMower from "../images/orange_mower2.png";
 
 function Homepage() {
 
+    const [homePageSetup, setHomePageSetup] = useState("homePage");
     const [displayMobileNav, setDisplayMobileNav] = useState(false);
 
     const form = useRef();
@@ -43,14 +44,16 @@ function Homepage() {
         {displayMobileNav?
         (<div id='hiddenMobileNav'>
             <div className="mobileNavLink-Container">
-                <NavLink to="/">Home</NavLink>
-                <NavLink to="about">About</NavLink>
-                <NavLink to="/services">Services</NavLink>
-                <NavLink to="projects">Projects</NavLink>
-                <NavLink to="/contact">Contact</NavLink>
+                <NavLink className="mobileLinks" to="/" onClick={(e) => {setDisplayMobileNav(!displayMobileNav)}}>Home</NavLink>
+                <NavLink className="mobileLinks" to="about" onClick={(e) => {setDisplayMobileNav(!displayMobileNav)}}>About</NavLink>
+                <NavLink className="mobileLinks" to="/services" onClick={(e) => {setDisplayMobileNav(!displayMobileNav)}}>Services</NavLink>
+                <NavLink className="mobileLinks" to="projects" onClick={(e) => {setDisplayMobileNav(!displayMobileNav)}}>Projects</NavLink>
+                <NavLink className="mobileLinks" to="/contact" onClick={(e) => {setDisplayMobileNav(!displayMobileNav)}}>Contact</NavLink>
+                
             </div>
         </div>):
         (<></>) }
+        
         <div id="hero-image">
             <span>Here To Help Create Beautiful Scenery in Ohio</span>
         </div>
@@ -180,6 +183,7 @@ function Homepage() {
             </div>
         </div>
     </div>)
+    
 }
 
 export default Homepage

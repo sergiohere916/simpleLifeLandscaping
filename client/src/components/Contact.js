@@ -37,7 +37,7 @@ function Contact() {
 
         <div id="contacts-section">
             <div id="contact-information">
-                <span id="contact-info-header">Contact us</span>
+                <span id="contact-info-header">Contact Us</span>
                 <span>Need to get in touch with us? Fill out this form and we'll be sure to get back to you very soon! </span>
             </div>
             <div id="contact-form-container">
@@ -65,6 +65,7 @@ function Contact() {
                 </form>
             </div>
         </div>
+        
     </div>
 }
 

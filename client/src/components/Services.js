@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./Header";
+import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 import mowerImg from "../images/licensed_mower.jpeg";
 import shovelImg from "../images/licensed_snowshovel.jpeg";
 import grassImg from "../images/licensed_grass.jpeg";
@@ -10,28 +11,82 @@ import serviceImg3 from "../images/simple_life_04.jpg";
 import sodding from "../images/licensed_sodding.jpeg";
 import leafBlowing from "../images/licensed_leafblowing.jpeg";
 import snowShoveling from "../images/licensed_shoveling.jpeg";
+import orangeSnowShovel from "../images/orange_snow_shovel-2.png";
+import movingMower from "../images/orange_mower2.png";
 
 function Services() {
+
+    const [displayMobileNav, setDisplayMobileNav] = useState(false);
+    const [pageBreakStyle, setPageBreakStyle] = useState("servicePageBreak");
+    const [pageBreakStyle2, setPageBreakStyle2] = useState("servicePageBreak2");
+    const [snowShovel, setSnowShovel] = useState("noSnowShovel")
+    const [serviceGif, setServiceGif] = useState("");
+
+
+    function showHiddenNav() {
+        setDisplayMobileNav(!displayMobileNav);
+    }
+
+    function addSnow() {
+        setPageBreakStyle("servicePageBreakSnow");
+        setPageBreakStyle2("servicePageBreakSnow2")
+        setSnowShovel("snowShovel");
+        // setServiceGif(orangeSnowShovel);
+    }
+
+    function runMower() {
+        setPageBreakStyle("servicePageBreak");
+        setPageBreakStyle2("servicePageBreak2");
+        setSnowShovel("littleMower");
+        // setServiceGif(movingMower);
+    }
+
+    function placeTurf() {
+        setSnowShovel("placingTurf")
+    }
+
+    function growTree() {
+        setSnowShovel("growingTree");
+    }
+
     return <div id="servicesPage">
-        <Header></Header>
+        <Header showHiddenNav={showHiddenNav}></Header>
+        {displayMobileNav?
+        (<div id='hiddenMobileNav'>
+            <div className="mobileNavLink-Container">
+                <NavLink className="mobileLinks" to="/" onClick={(e) => {setDisplayMobileNav(!displayMobileNav)}}>Home</NavLink>
+                <NavLink className="mobileLinks" to="about" onClick={(e) => {setDisplayMobileNav(!displayMobileNav)}}>About</NavLink>
+                <NavLink className="mobileLinks" to="/services" onClick={(e) => {setDisplayMobileNav(!displayMobileNav)}}>Services</NavLink>
+                <NavLink className="mobileLinks" to="projects" onClick={(e) => {setDisplayMobileNav(!displayMobileNav)}}>Projects</NavLink>
+                <NavLink className="mobileLinks" to="/contact" onClick={(e) => {setDisplayMobileNav(!displayMobileNav)}}>Contact</NavLink>
+                
+            </div>
+        </div>):
+        (<></>) }
         <div id="service-intro">
             <div id="intro-title">Simple Life Landscaping Services</div>
             <div id="intro-details">In Columbus Ohio and surrounding regions</div>
             <div id="service-images">
                 <div className="service-img">
-                    <img src={mowerImg}/>
+                    <img src={mowerImg} onClick={runMower}/>
                 </div>
                 <div className="service-img">
-                    <img src={shovelImg}/>
+                    <img src={shovelImg} onClick={addSnow}/>
                 </div>
                 <div className="service-img">
-                    <img src={grassImg}/>
+                    <img src={grassImg} onClick={placeTurf}/>
                 </div>
                 <div className="service-img">
-                    <img src={plantImg}/>
+                    <img src={plantImg} onClick={growTree}/>
                 </div>
             </div>
-            <div id="servicePageBreak"></div>
+            <div id={pageBreakStyle}>
+                <div id={snowShovel}>
+                    {/* <img src="https://media.istockphoto.com/id/1366423549/vector/illustration-of-garden-lawn-roll-overgrown-lawn-lawn-for-decoration.jpg?s=612x612&w=0&k=20&c=TeyFyV7gM8y1nIuTMgmu4wMcWqc9k1onnq7IsoSTbGs="/> */}
+                </div>
+            </div>
+            <div id={pageBreakStyle2}></div>
+            
             {/* <div id="servicePageBreak2"></div> */}
             
             {/* <div id="intro-title">Simple Life Landscaping Services</div> */}
@@ -64,7 +119,6 @@ function Services() {
                         <li>Sodding</li>
                     </ul>
                     <button>Contact Us</button>
-                    <div className="service-contact">Contact Us</div>
                 </div>   
             </div>
             <div className="service1-content">
@@ -87,7 +141,6 @@ function Services() {
                         <li>Sodding</li>
                     </ul>
                     <button>Contact Us</button>
-                    <div className="service-contact">Contact Us</div>
                 </div>
                 
             </div>
@@ -111,7 +164,6 @@ function Services() {
                         <li>Sodding</li>
                     </ul>
                     <button>Contact Us</button>
-                    <div className="service-contact">Contact Us</div>
                 </div>
                 
             </div>
@@ -135,9 +187,25 @@ function Services() {
                         <li>Sodding</li>
                     </ul>
                     <button>Contact Us</button>
-                    <div className="service-contact">Contact Us</div>
                 </div>
                 
+            </div>
+        </div>
+        <div id="footer">
+            <div className="footer-sections">
+                <a>Instagram</a>
+                <a>LinkedIn</a>
+                <a>Facebook</a>
+            </div>
+            <div className="footer-sections">
+                <a>About</a>
+                <a>Services</a>
+                <a>Projects</a>
+                <a>Contact</a>
+            </div>
+            <div className="footer-sections">
+                <span>testing123@gmail.com</span>
+                <span>123-456-7890</span>
             </div>
         </div>
     </div>

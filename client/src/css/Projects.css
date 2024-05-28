@@ -10,7 +10,7 @@
     height: 1px;
     width: 70%;
     color: black;
-    background-color: black;
+    background-color: rgb(202, 202, 202);
 }
 
 #projects-container {
@@ -36,8 +36,10 @@
 #center-project {
     position: relative;
     height: 90%;
-    width: 70%;
-    box-shadow: 0 0 10px 3px black;
+    width: 100%;
+    /* height: 100%;
+    width: 90%; */
+    /* box-shadow: 0 0 10px 3px black; */
     /* background-color: white; */
 }
 
@@ -48,23 +50,30 @@
     width: 100%;
 }
 
-#center-image-filter:hover {
+/* #center-image-filter:hover {
     background-color: rgba(0, 0, 0, 0.253);
-}
+} */
 
 #center-project img {
+    
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    /* object-fit: cover; */
+    object-fit: contain;
+    z-index: 0;
+    
 }
 
+
 #projects-scroller-container {
+    margin-top: 2%;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 20vh;
     width: 100%;
     /* background-color: rgb(51, 197, 197); */
+    margin-bottom: 10%;
 }
 
 #projects-scroller {
@@ -102,17 +111,33 @@
 #right-scroller {
     position: absolute;
     right: -3%;
+    right: -11%;
     height: 100%;
     width: 2%;
-    background-color: black;
+    width: 10%;
+    background-color: rgba(0, 0, 0, 0.123);
+}
+
+#right-scroller img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    cursor: pointer;
 }
 
 #left-scroller {
     position: absolute;
-    left: -3%;
+    left: -11%;
     height: 100%;
-    width: 2%;
-    background-color: black;
+    width: 10%;
+    background-color: rgba(0, 0, 0, 0.123);
+}
+
+#left-scroller img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    cursor: pointer;
 }
 
 

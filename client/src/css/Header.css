@@ -41,7 +41,7 @@
 
 #nav2 {
     height: 25vh;
-
+    
     height: 15vh;
     width: 100%;
     padding: 1%;
@@ -67,6 +67,7 @@
     
 
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    z-index: 2;
 }
 
 .logo-container2 {
@@ -208,7 +209,8 @@
         display: flex;
         align-items: center;
         white-space: nowrap;
-        font-size: 10pt;
+        font-size: 9pt;
+        letter-spacing: 2px;
     }
 
 
