@@ -4,6 +4,7 @@ import "./index.css";
 import "./css/Services.css"
 import "./css/Homepage.css"
 import "./css/Projects.css"
+import "./css/About.css"
 import { createRoot } from "react-dom/client";
 import { BrowserRouter } from "react-router-dom/cjs/react-router-dom.min";
 
