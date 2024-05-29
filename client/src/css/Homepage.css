@@ -7,6 +7,7 @@
     z-index: 0;
 } */
 
+
 #contact-header {
     height: 4vh;
     /* background-color: rgb(0, 0, 0); */
@@ -813,3 +814,6 @@
     }
 }
 
+@media (min-width: 1200px) {
+    
+}

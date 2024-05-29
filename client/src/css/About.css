@@ -1,0 +1,166 @@
+#aboutPage-Title {
+    /* margin-top: 2%; */
+    padding: 2%;
+    font-size: 25pt;
+    letter-spacing: 3px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    text-align: center;
+    /* background-color: antiquewhite; */
+    background-color: rgb(253, 253, 213);
+}
+
+#aboutPage-Body {
+    display: flex;
+    align-items: center;
+    height: 90vh;
+    width: 100%;
+    /* background-color: rgb(47, 155, 155); */
+}
+
+#aboutPage-Content1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    width: 45%;
+    /* background-color: blue; */
+}
+#aboutPage-Img-Container {
+    margin-left: 5%;
+    height: 85%;
+    width: 70%;
+}
+
+#aboutPage-Body img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#aboutPage-Content2 {
+    display: flex;
+    flex-direction: column;
+    
+    /* gap: 5%; */
+    
+    height: 80%;
+    width: 50%;
+
+    /* background-color: rgb(233, 140, 140); */
+}
+
+#about-Work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5%;
+    height: 50%;
+}
+
+#aboutWork-Text-1 {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25pt;
+}
+
+#aboutWork-Text-2 {
+    width: 100%;
+    text-align: center;
+    font-size: 13pt;
+}
+
+#about-Goal {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+    gap: 5%;
+}
+#aboutPage-Text-1 {
+    width: 45%;
+    width: 100%;
+    
+    text-align: center;
+    font-weight: bold;
+    font-size: 25pt;
+
+}
+
+#aboutPage-Text-2 {
+    text-align: center;
+    width: 45%;
+    width: 100%;
+    /* background-color: aqua; */
+    font-size: 13pt;
+
+}
+
+#aboutPage-Text-3 {
+    text-align: center;
+    width: 45%;
+    width: 100%;
+    font-size: 13pt;
+    /* background-color: aqua; */
+    
+
+}
+
+#aboutPage-Text-4 {
+    text-align: center;
+    width: 45%;
+    width: 100%;
+    font-size: 13pt;
+    /* background-color: aqua; */
+    
+
+}
+
+#aboutPage-Text-5 {
+    text-align: center;
+    width: 45%;
+    width: 100%;
+    font-size: 16pt;
+    font-weight: bold;
+    color: rgb(131, 168, 131);
+    /* background-color: aqua; */
+    
+
+}
+
+
+@media (max-width: 600px) {
+
+    #aboutPage-Title {
+        /* margin-top: 2%; */
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    
+    }
+
+    #aboutPage-Body {
+        display: flex;
+        flex-direction: column;
+        height: 150vh;
+    }
+
+    #aboutPage-Content1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        /* background-color: blue; */
+    }
+    #aboutPage-Img-Container {
+        margin-left: 0%;
+        height: 80%;
+        width: 95%;
+    }
+    
+
+}
