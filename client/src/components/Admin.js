@@ -32,6 +32,7 @@ function Admin({pictures, handleDeleteProject, addNewProject}) {
                 image={picture.image_url}
                 name={picture.name}
                 handleDeleteProject={handleDeleteProject}
+                createdAt={picture.createdAt}
                 />
     })
 
@@ -89,6 +90,13 @@ function Admin({pictures, handleDeleteProject, addNewProject}) {
                     <button type="submit">Create</button>
                 </form>
             </div> : ""}
+            <div id="search-container">
+                <div id="search">
+                    <span class="material-symbols-outlined">search</span>
+                    <input type="search" placeholder="Search"></input>
+                </div>
+            </div>
+            
             <div id="pictures-projects-container">
                 {displayPictures}
             </div>
