@@ -78,7 +78,9 @@
     
     text-align: center;
     margin-top: 2%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
     font-size: 2.2rem;
 }
 
@@ -88,6 +90,7 @@
     font-size: 1.5rem;
 
     margin-top: 2%;
+    
 }
 
 #servicePageBreak {
@@ -101,26 +104,15 @@
     height: 0.2%;
     background-color: black;
     background-color: rgb(43, 104, 28);
-
+    /* background-image: url("https://www.publicdomainpictures.net/pictures/410000/nahled/grass-background-clipart.png"); */
+    background-image: url(../images/background_grass.png);
+    
+    background-size: contain;
     height: 3%;
 
 
 }
 
-#littleMower {
-    /* position: absolute;
-    top: -500%;
-    left: 0%;
-    height: 600%;
-    width: 7%;
-    background-color: rgba(0, 0, 0, 0);
-    background-image: url("../images/orange_mower2.png");
-    
-    animation-duration: 60s;
-    animation-iteration-count: calc(10);
-    animation-name: mow-lawn; */
-
-}
 
 #littleMower {
     position: absolute;
@@ -133,6 +125,7 @@
     background-size: cover;
     
     animation-duration: 60s;
+    /* animation-duration: 10s; */
     animation-iteration-count: calc(10);
     animation-name: mow-lawn;
 
@@ -149,14 +142,56 @@
         
     }
 
-    99.9% {
-        /* transform: rotateY(180deg); */
+    /* 99.9% {
+        
         
  
+    } */
+
+    /* 10% {
+        left: 10%;
     }
 
+    20% {
+        left: 20%;
+    }
+
+    30% {
+        left: 30%;
+    }
+
+    40% {
+        left: 40%;
+    }
+
+    50% {
+        left: 50%;
+    }
+
+    60% {
+        left: 60%;
+    }
+
+    70% {
+        left: 70%;
+    }
+
+    80% {
+        left: 80%;
+    }
+
+    90% {
+        left: 90%;
+    }
+
+    100% {
+        left: 100%;
+    } */
+
     to {
+        /* transform: rotateY(180deg); */
         left: 0%;
+        transform: rotateY(180deg)
     }
 }
 
@@ -167,7 +202,9 @@
     height: 100%;
     width: 100%;
     background-color: rgb(155, 204, 80);
-
+    /* background-image: url("https://media.istockphoto.com/id/1158274915/vector/grass-seamless-realistic-texture-green-lawn-field-or-meadow-vector-background-summer-or.jpg?s=612x612&w=0&k=20&c=7AAqciofj43K5kmQxxOBCO1Rj0YUuFZdcTuO9XwZOsc="); */
+    background-image: url("../images/background_turf.jpg");
+    background-size: contain;
     animation-duration: 10s;
     /* animation-iteration-count: calc(5); */
     animation-name: place-new-lawn;
@@ -198,13 +235,17 @@
     background-color: rgb(43, 104, 28); */
     position: relative;
     margin-top: 2%;
+    margin-top: 4.5%;
     width: 80%;
     height: 0.2%;
     background-color: black;
     background-color: rgb(255, 255, 255);
-    border: 3px solid rgb(173, 173, 229);
-    border-radius: 5px;
-    height: 3%;
+    
+    /* border: 3px solid rgb(173, 173, 229); */
+
+ 
+    border-radius: 15px;
+    height: 2%;
 
 
 }
@@ -235,7 +276,7 @@
     background-color: rgba(0, 0, 0, 0);
     
     background-image: url("../images/orange_snow_shovel-2.png");
-    background-size: cover;
+    background-size: contain;
     animation-duration: 2s;
     animation-iteration-count: calc(10);
     animation-name: shovel;
@@ -253,23 +294,23 @@
     }
 
     10% {
-        /* left: 47.3; */
+        
         left: 47.8%;
     }
 
     20% {
-        /* left: 47.1; */
+        
         left: 48%;
     }
 
     30% {
-        /* left: 47.3; */
+        
     }
 
     40% {
         left: 47.3;
         top: -480%;
-        /* left: 46.6; */
+        
     }
 
     50% {
@@ -290,7 +331,7 @@
     }
     100% {
         left: 46.3%;
-        /* transform: rotateY(-40deg); */
+        
     }
     
 
@@ -392,6 +433,9 @@
     background-color: black;
     background-color: rgb(104, 80, 28);
     background-color: rgb(156, 97, 54);
+    /* background-image: url("https://img.freepik.com/free-vector/brown-soil-texture-background_1308-20483.jpg"); */
+    background-image: url(../images/background_dirt.avif);
+    background-size: contain;
 }
 
 #servicePageBreakSnow2 {
@@ -402,12 +446,18 @@
     background-color: rgb(104, 80, 28);
     background-color: rgb(156, 97, 54);
     background-color: rgb(173, 173, 229);
+    /* background-image: url("https://previews.123rf.com/images/scaliger/scaliger1912/scaliger191200083/136806983-background-of-snow-texture-plain-snowy-pure-landscape-scene-of-white-surface-in-winter-bright-fresh.jpg"); */
+    background-image: url("../images/background_snow.jpg");
+    background-size: contain;
 }
 
 #intro-quote {
     text-align: center;
     margin-top: 4%;
     font-size: 1.6rem;
+    /* font-style: italic; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
 }
 
 #main-service-img {
@@ -491,7 +541,8 @@
 
 .services-title {
     font-size: 2rem;
-    font-style: italic;
+    /* font-style: italic; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     /* color: orange; */
 }
 
@@ -544,11 +595,19 @@
         justify-content: space-evenly;
         /* gap: 1%; */
         height: 30%;
+        height: 20%;
         width: 100%;
         /* border: 1px solid black; */
+
         padding-top: 1%;
         padding-left: 1%;
         padding-right: 1%;
+
+        padding-top: 0%;
+        padding-left: 0%;
+        padding-right: 0%;
+
+        margin-bottom: 10%;
     }
     
     .service-img {
@@ -559,10 +618,22 @@
         align-items: center; */
         height: 50%;
         width: 20%;
+
+        width: 15%;
+        border: 5px solid rgb(228, 195, 171);
+        
         /* background-color: yellow;
         background-color: rgb(255, 255, 255);
         border-radius: 50%;
         box-shadow: 0px 0px 10px 0px black; */
+    }
+
+    .service-img img {
+        border-radius: 0%;
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        
     }
     
 
@@ -582,7 +653,7 @@
         /* margin-left: 0%; */
         display: flex;
         flex-direction: column;
-        
+        margin-bottom: 3%;
         
         
         /* background-color: yellow; */
@@ -606,7 +677,176 @@
         /* align-items: center; */
         margin-left: 2%;
     }
+
+    #littleMower {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        position: absolute;
+        top: -275%;
+        left: 0%;
+        height: 300%;
+        width: 50%;
+        background-color: rgba(0, 0, 0, 0);
+        background-image: url("../images/orange_mower2.png");
+        background-size: cover;
+        animation-duration: 15s;
+        
+    }
+
+    @keyframes mow-lawn {
+        from {
+            left: -10%;
+        }
     
+        50% {
+            left: 68%;
+            
+            
+        }
+        to {
+            /* transform: rotateY(180deg); */
+            left: -15%;
+            transform: rotateY(180deg)
+        }
+    }
+    
+
+    #snowShovel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: absolute;
+        top: -400%;
+        left: 47.5%;
+        height: 500%;
+        width: 20%;
+        background-color: rgba(0, 0, 0, 0);
+        
+        background-image: url("../images/orange_snow_shovel-2.png");
+        background-size: cover;
+        animation-duration: 2s;
+        animation-iteration-count: calc(10);
+        animation-name: shovel;
+    }
+    
+    @keyframes shovel {
+        from {
+            top: -400%;
+            
+        }
+        10% {
+            
+            left: 47.8%;
+        }
+        20% {
+            
+            left: 48%;
+        }
+        30% {   
+        }
+        40% {
+            left: 47.3;
+            top: -200%;   
+        }
+        50% {
+            left: 46.3%;
+        }
+        60% {
+            left: 46.3%;
+        }
+        70% {
+            left: 46.3%;
+        }
+        80% {
+            left: 46.3%;
+        }
+        90% {
+            left: 46.3%;
+        }
+        100% {
+            left: 46.3%;  
+        }
+        to {
+            top: -100%;
+            left: 46.3%;
+        }
+    
+    }
+    
+
+    #growingTree {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: absolute;
+        top: -740%;
+        left: .5%;
+        height: 800%;
+        width: 100%;
+        background-color: rgba(255, 0, 0, 0);
+        background-image: url("../images/growing_tree_4.5.png");
+        background-image: url("../images/growing_tree_1.5.png");
+        background-size: contain;
+        /* background-repeat: no-repeat;
+        background-position: center; */
+    
+        animation-duration: 10s;
+        /* animation-iteration-count: calc(10); */
+        animation-name: growTree;
+    }
+    
+    @keyframes growTree {
+    
+        10% {
+            background-image: url("../images/growing_tree_1.5.png");
+    
+        }
+    
+        20% {
+            background-image: url("../images/growing_tree_1.5.png");
+        }
+    
+        25% {
+            background-image: url("../images/growing_tree_1.5.png");
+        }
+    
+        30% {
+            background-image: url("../images/growing_tree_2.5.png")
+        }
+    
+        50% {
+            background-image: url("../images/growing_tree_2.5.png")
+        }
+    
+        60% {
+            background-image: url("../images/growing_tree_3.5.png")
+        }
+    
+        75% {
+            background-image: url("../images/growing_tree_3.5.png")
+        }
+    
+        80% {
+            background-image: url("../images/growing_tree_3.5.png")
+        }
+    
+        85% {
+            background-image: url("../images/growing_tree_4.5.png");
+        }
+    
+        90% {
+            background-image: url("../images/growing_tree_4.5.png");
+        }
+    
+        100% {
+            background-image: url("../images/growing_tree_4.5.png");
+        }
+    }
 
     
 }

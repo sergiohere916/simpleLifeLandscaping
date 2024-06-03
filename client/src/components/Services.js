@@ -42,10 +42,14 @@ function Services() {
     }
 
     function placeTurf() {
+        setPageBreakStyle("servicePageBreak");
+        setPageBreakStyle2("servicePageBreak2");
         setSnowShovel("placingTurf")
     }
 
     function growTree() {
+        setPageBreakStyle("servicePageBreak");
+        setPageBreakStyle2("servicePageBreak2");
         setSnowShovel("growingTree");
     }
 

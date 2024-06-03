@@ -26,8 +26,9 @@ from firebase_admin import firestore
 # Add your model imports
 
 # Initialize Firebase app
-cred = credentials.Certificate("../simpleLifeLandscaping/server/simplelifedb-7678d-firebase-adminsdk-s4s61-530f7b6f63.json")
-
+cred = credentials.Certificate("../server/simplelifedb-7678d-firebase-adminsdk-s4s61-530f7b6f63.json")
+# "../simpleLifeLandscaping/server/simplelifedb-7678d-firebase-adminsdk-s4s61-530f7b6f63.json"
+# "../server/simplelifedb-7678d-firebase-adminsdk-s4s61-530f7b6f63.json"
 firebase_admin.initialize_app(cred)
 
 # Initialize Firestore client after Firebase app initialization

@@ -444,6 +444,8 @@
     color: transparent; /* Transparent text */
     border-radius: 50px;
     color: white;
+
+    font-size: 16pt;
 }
 
 #projects-section button:hover {

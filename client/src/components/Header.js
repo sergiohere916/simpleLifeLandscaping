@@ -2,6 +2,8 @@ import React from "react"
 import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 import "../css/Header.css"
 
+import simpleLifeLogo from "../images/sl_Logo.png";
+
 function Header({showHiddenNav}) {
 
 
@@ -21,7 +23,7 @@ function Header({showHiddenNav}) {
     <div id="nav2">
             <div className="logo-container2">
                 <div id="main-logo">
-                    <img src ="https://cdn.discordapp.com/attachments/1181410295135092746/1235025677091344464/IMG_1526.jpg?ex=6633878b&is=6632360b&hm=719940ab95b02fa076c88faa41bce3b1e3b6231ffa9e5572a725d6c341b54221&"alt="simple-life-logo"/>    
+                    <img src ={simpleLifeLogo} alt="simple-life-logo"/>    
                 </div>    
                 <div id="company-title">Simple Life Landscaping</div>
             </div>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Header from "./Header";
 import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 
@@ -24,15 +24,31 @@ import rightArrow from "../images/right_arrow.png";
 
 function Projects() {
 
+   
+    useEffect(() => {
+      fetch("/images")
+      .then(response => response.json())
+      .then(data => {
+        console.log("grabbing images...")
+        // console.log(data);
+        setAllProjects([...allProjects, ...data]);
+      })
+    }, [])
+
+
+    console.log("in projects...")
+    
     const [displayMobileNav, setDisplayMobileNav] = useState(false);
-    const [allProjects, setAllProjects] = useState([project0Image, project1Image, project2Image, project3Image, project4Image, project5Image, project6Image, "https://i.kym-cdn.com/entries/icons/facebook/000/045/146/son-goku-thumb-up.jpg"])
+    const [allProjects, setAllProjects] = useState([{createdAt: "", name:"", image_url: project0Image}, {createdAt: "", name:"", image_url: project1Image}, {createdAt: "", name:"", image_url: project2Image}, {createdAt: "", name:"", image_url: project3Image},
+         {createdAt: "", name:"", image_url: project4Image}, {createdAt: "", name:"", image_url: project5Image},
+         {createdAt: "", name:"", image_url: project6Image}, {createdAt: "", name:"", image_url: "https://i.kym-cdn.com/entries/icons/facebook/000/045/146/son-goku-thumb-up.jpg"}])
     const [projectIndexes, setProjectIndexes] = useState([0, 1, 2, 3]);
-    const [mainImage, setMainImage] = useState([allProjects[0]])
+    const [mainImage, setMainImage] = useState([allProjects[0].image_url])
     const [selectorImageHighlight, setSelectorImageHighlight] = useState(false);
 
     const visibleProjects = [allProjects[projectIndexes[0]], allProjects[projectIndexes[1]], allProjects[projectIndexes[2]], allProjects[projectIndexes[3]]];
 
-
+    
     const [card3, setCard3] = useState([serviceImg3, serviceImg4]);
 
 
@@ -47,14 +63,18 @@ function Projects() {
     }
     
     function scrollLeft() {
-        if (projectIndexes[0] > (0) && projectIndexes[3] !== (0)) {
+        if (projectIndexes[0] > (0) ) {
             setProjectIndexes([projectIndexes[0] - 1, projectIndexes[0], projectIndexes[1], projectIndexes[2]])
+            // && projectIndexes[3] !== (0)
+
+        // } else if (projectIndexes[0] > (0) && projectIndexes[3] === (0)) {
             
-        } else if (projectIndexes[0] > (0) && projectIndexes[3] === (0)) {
-            setProjectIndexes([0, 1, 2, 3]);
+
+        //     setProjectIndexes([0, 1, 2, 3]);
             
         } else if (projectIndexes[0] === 0) {
-            setProjectIndexes( [5, projectIndexes[0], projectIndexes[1], projectIndexes[2]])
+            // setProjectIndexes( [(allProjects.length - 1), projectIndexes[0], projectIndexes[1], projectIndexes[2]])
+            setProjectIndexes( [(allProjects.length - 1), projectIndexes[0], projectIndexes[1], projectIndexes[2]]);
             
         }
     }
@@ -82,11 +102,11 @@ function Projects() {
     const displayAllProjects = visibleProjects.map((project) => {
         return (
             <div className="projectCards" onClick={() => {
-                swapMainImage(project);
+                swapMainImage(project.image_url);
                 
             }} 
             >
-                <img src={project}/>
+                <img src={project.image_url}/>
             </div>
         )
     })
