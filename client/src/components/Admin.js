@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import "../css/Admin.css"
 import ProjectCard from "./ProjectCard"
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min"
 
 function Admin({pictures, handleDeleteProject, addNewProject}) {
     const password = "123"
@@ -9,6 +10,7 @@ function Admin({pictures, handleDeleteProject, addNewProject}) {
     const [selectedFile, setSelectedFile] = useState(null);
     const [previewUrl, setPreviewUrl] = useState('');
     const [nameHolder, setName] = useState("")
+    const history = useHistory()
 
     function handleSubmit(e) {
         e.preventDefault()
@@ -24,6 +26,10 @@ function Admin({pictures, handleDeleteProject, addNewProject}) {
 
     function handleCancelCreate() {
         setCreating(false)
+    }
+
+    function handleHomeIcon() {
+        history.push("/")
     }
 
     const displayPictures = pictures.map(picture => {
@@ -79,6 +85,7 @@ function Admin({pictures, handleDeleteProject, addNewProject}) {
         {logged ? <div id="logged-in-container">
             <div id="create-project-container">
                 <button onClick={handleClick}>Create Project</button>
+                <span onClick={handleHomeIcon} class="material-symbols-outlined">home</span>
             </div>
             {creating ? <div id="new-project-container">
                 
