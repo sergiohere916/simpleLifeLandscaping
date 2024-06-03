@@ -51,7 +51,7 @@ function App() {
         <Contact></Contact>
       </Route>
       <Route exact path="/admin">
-        <Admin pictures={pictures} addNewProject={addNewProject} handleDeleteProject={handleDeleteProject}></Admin>
+      <Admin pictures={pictures} addNewProject={addNewProject} handleDeleteProject={handleDeleteProject}></Admin>
       </Route>
     </Switch>
   </div>
