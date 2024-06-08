@@ -44,7 +44,7 @@ def hello_world():
 
 class Image(Resource):
     def get(self):
-        images_ref = db.collection('images').order_by("createdAt", direction=firestore.Query.DESCENDING).stream()
+        images_ref = db.collection('images').order_by("createdAt", direction=firestore.Query.ASCENDING).stream()
         images = [doc.to_dict() for doc in images_ref]
         return make_response(jsonify(images), 200)
 
