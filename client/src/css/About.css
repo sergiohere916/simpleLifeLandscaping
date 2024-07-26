@@ -2,7 +2,7 @@
     /* margin-top: 2%; */
     padding: 2%;
     font-size: 25pt;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     width: 100%;
     text-align: center;
@@ -15,6 +15,8 @@
     align-items: center;
     height: 90vh;
     width: 100%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 3px;
     /* background-color: rgb(47, 155, 155); */
 }
 
@@ -62,13 +64,15 @@
     width: 100%;
     text-align: center;
     font-weight: bold;
-    font-size: 25pt;
+    font-size: 22pt;
 }
 
 #aboutWork-Text-2 {
     width: 100%;
     text-align: center;
     font-size: 13pt;
+
+    letter-spacing: 1.5px;
 }
 
 #about-Goal {
@@ -84,8 +88,10 @@
     
     text-align: center;
     font-weight: bold;
-    font-size: 25pt;
+    /* font-size: 25pt; */
+    font-size: 22pt;
 
+    letter-spacing: 1.5px;
 }
 
 #aboutPage-Text-2 {
@@ -95,6 +101,8 @@
     /* background-color: aqua; */
     font-size: 13pt;
 
+    letter-spacing: 1.5px;
+
 }
 
 #aboutPage-Text-3 {
@@ -103,6 +111,8 @@
     width: 100%;
     font-size: 13pt;
     /* background-color: aqua; */
+
+    letter-spacing: 1.5px;
     
 
 }
@@ -114,7 +124,7 @@
     font-size: 13pt;
     /* background-color: aqua; */
     
-
+    letter-spacing: 1.5px;
 }
 
 #aboutPage-Text-5 {
@@ -126,7 +136,7 @@
     color: rgb(131, 168, 131);
     /* background-color: aqua; */
     
-
+    letter-spacing: 1.5px;
 }
 
 
@@ -152,10 +162,24 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100%;
+        height: 40%;
         width: 100%;
         /* background-color: blue; */
     }
+
+    #aboutPage-Content2 {
+        display: flex;
+        flex-direction: column;
+        
+        gap: 5%;
+        height: 60%;
+        width: 80%;
+    
+        /* background-color: rgb(233, 140, 140); */
+        
+        margin-bottom: 35%;
+    }
+    
     #aboutPage-Img-Container {
         margin-left: 0%;
         height: 80%;

@@ -111,6 +111,8 @@
     transition: .2s;
     letter-spacing: 2px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    font-size: 16px;
 }
 
 #contact-form-container button:hover {

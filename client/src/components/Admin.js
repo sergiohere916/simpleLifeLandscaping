@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import "../css/Admin.css"
 import ProjectCard from "./ProjectCard"
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min"
 
 function Admin({pictures, handleDeleteProject, addNewProject}) {
     const password = "123"
@@ -9,6 +10,8 @@ function Admin({pictures, handleDeleteProject, addNewProject}) {
     const [selectedFile, setSelectedFile] = useState(null);
     const [previewUrl, setPreviewUrl] = useState('');
     const [nameHolder, setName] = useState("")
+    const [searchValue, setSearchValue] = useState("")
+    const history = useHistory()
 
     function handleSubmit(e) {
         e.preventDefault()
@@ -26,13 +29,20 @@ function Admin({pictures, handleDeleteProject, addNewProject}) {
         setCreating(false)
     }
 
+    function handleHomeIcon() {
+        history.push("/")
+    }
+
     const displayPictures = pictures.map(picture => {
-        return <ProjectCard
+        if (picture.name.toLowerCase().includes(searchValue)) {
+            return <ProjectCard
                 key={picture.name}
                 image={picture.image_url}
                 name={picture.name}
                 handleDeleteProject={handleDeleteProject}
+                createdAt={picture.createdAt}
                 />
+        }
     })
 
     function handleCreateSubmit(e) {
@@ -63,7 +73,10 @@ function Admin({pictures, handleDeleteProject, addNewProject}) {
             console.error('No file selected');
         }
     }
-    
+
+    function handleSearchChange(e) {
+        setSearchValue(e.target.value)
+    }
 
     function handleFileChange(e) {
         setSelectedFile(e.target.files[0]);
@@ -78,6 +91,7 @@ function Admin({pictures, handleDeleteProject, addNewProject}) {
         {logged ? <div id="logged-in-container">
             <div id="create-project-container">
                 <button onClick={handleClick}>Create Project</button>
+                <span onClick={handleHomeIcon} className="material-symbols-outlined">home</span>
             </div>
             {creating ? <div id="new-project-container">
                 
@@ -89,6 +103,13 @@ function Admin({pictures, handleDeleteProject, addNewProject}) {
                     <button type="submit">Create</button>
                 </form>
             </div> : ""}
+            <div id="search-container">
+                <div id="search">
+                    {/* <span className="material-symbols-outlined">search</span> */}
+                    <input type="search" placeholder="Search" value={searchValue} onChange={handleSearchChange}></input>
+                </div>
+            </div>
+            
             <div id="pictures-projects-container">
                 {displayPictures}
             </div>

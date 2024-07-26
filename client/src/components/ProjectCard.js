@@ -1,6 +1,6 @@
 import React from "react"
 
-function ProjectCard({ image, name, handleDeleteProject }) {
+function ProjectCard({ createdAt, image, name, handleDeleteProject }) {
 
     function handleDelete() {
         fetch(`/delete_project?name=${name}`, {
@@ -14,9 +14,12 @@ function ProjectCard({ image, name, handleDeleteProject }) {
     }
 
     return (
-        <div>
-            <button onClick={handleDelete}>Delete</button>
+        <div className="project-picture-container">
+            <button onClick={handleDelete}>REMOVE</button>
             <img style={{width: "300px", height : "300px"}} src={image} alt="Project" />
+            <span>{name}</span>
+            <span>{createdAt}</span>
+
         </div>
     )
 }

@@ -27,24 +27,22 @@
     justify-content: center;
     align-items: center;
     
-    font-family: "Sorts Mill Goudy", serif;
 
     /* height: 80vh; */
 
     height: 90vh;
+    
     width: 100%;
     background-image: url("../images/simple_life_04.jpg");
+    background-image: url("../images/simple_life_11.jpg"), url("../images/simple_life_06.jpg");
 
-    /* background: 
     
-    linear-gradient(
-      rgba(34, 34, 34, 0.61), 
-      rgba(34, 34, 34, 0.685)
-    ),
+    background-size: 70%, 40%;
+    background-repeat: no-repeat, repeat;
     
-    url("../images/simple_life_04.jpg"); */
+
     
-    background-size: cover;
+    background-position-x: center;
     background-position-y: 20%;
     background-attachment: fixed;
     
@@ -93,18 +91,30 @@
     width: 90%;
     /* background-color: rebeccapurple; */
     /* background-color: rgba(102, 51, 153, 0.055); */
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
     
 }
 
 #homePage-intro div {
     text-align: center;
-    font-size: 1.5em;
+    letter-spacing: 1px;
+    font-size: 1.3em;
 }
 
 #homePage-intro p {
-    padding: 3%;
-    font-style: italic;
+    font-size: 28pt;
+    color: rgb(230, 128, 34);
+    letter-spacing: 2px;
+    
+
+    margin-top: -2%;
+    text-align: center;
+    padding: 1%;
+    /* font-style: italic; */
+    margin-bottom: 2%;
 }
 
 #homePage-content {
@@ -143,32 +153,55 @@
     width: 25%;
     /* font-size: 2rem; */
 
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+    
+
+
+    /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
 }
 
 #content1-description1 {
     display: flex;
     flex-direction: column;
+    
     justify-content: end;
+    
     height: 30%;
     width: 100%;
-    font-size: 2rem;
+    font-size: 2.2rem;
     text-align: center;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+    /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
+    
 }
 
 #content1-description p {
-    font-style: italic;
+    font-size: 1.2em;
+    margin-top: 5%;
+    text-align: left;
+    /* font-size: 20px; */
+    /* font-style: italic; */
+    letter-spacing: 1px;
 }
 
+#desc-contact-container {
+    width: 100%;
+    height: 8%;
+}
 #content1-desc-contact {
     display: flex;
     justify-content: center;
     align-items: center;
     
+    font-size: 1.1em;
     margin-top: 10%;
+    
     height: 5%;
+    height: 100%;
     width: 45%;
+    /* width: 100%; */
     background-color: rgb(241, 134, 62);
     color: white;
 }
@@ -312,8 +345,12 @@
     font-weight: 20;
 }
 
+#services-desc button {
+    cursor: pointer;
+}
+
 .serviceMotto {
-    font-family: "Pacifico", cursive;
+    /* font-family: "Pacifico", cursive; */
     letter-spacing: 1px;
 }
 
@@ -428,10 +465,13 @@
     font-size: 3em;
     color: white;
     font-family: "Sorts Mill Goudy", serif;
+    
     font-weight: 200;
 }
 
 #projects-section button {
+    
+    letter-spacing: 2px;
     background: none;
     outline: 0;
     border: 1px solid white;
@@ -468,6 +508,7 @@
 }
 
 #form-section {
+    
     background-color: white;
     height: 80%;
     width: 45%;
@@ -497,6 +538,7 @@
 }
 
 #form-container button {
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -510,6 +552,8 @@
     border: none;
     transition: .2s;
     letter-spacing: 2px;
+
+    
     
 }
 
@@ -658,19 +702,22 @@
 
         position: absolute;
         top: 61%;
-        height: 39%;
+        height: 40%;
         width: 100%;
         font-size: 10pt;
     }
 
     #content1-description1 {
         display: flex;
-        text-align: left;
+        /* text-align: left; */
+        text-align: center;
         font-size: 13pt;
     }
 
     #content1-description p {
-        text-align: left;
+        /* text-align: left; */
+        margin-top: 2%;
+        text-align: center;
     }
 
     #content1-image {
@@ -680,8 +727,17 @@
         width: 100%;
     }
 
+
+    #desc-contact-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 20%;
+    }
+
     #content1-desc-contact {
-        height: 25%;
+        /* height: 25%; */
+        height: 100%;
         font-size: 14pt;
 
     }

@@ -59,17 +59,21 @@ function Homepage() {
         </div>
         
         <div id="homePage-intro">
-            <div><b style={{fontStyle: "italic"}}>Simple Life</b> is a small business based in Columbus, Ohio. We provide landscaping installation, maintenance, trimming, and snow-removal services for our residential, commercial, retail, and hospitality clients.</div>
-            <p>We provide quality work to help with your landscaping needs</p>
+            <p>We'll provide quality work to meet your landscaping needs</p>
+            <div><b style={{}}>Simple Life</b> is a small business based in Columbus, Ohio. We provide landscaping installation, maintenance, trimming, and snow-removal services for our residential, commercial, retail, and hospitality clients.</div>
+            
             
         </div>
         
         <div id="homePage-content">
             <div id="home-content-container1">
                 <div id="content1-description">
-                    <div id="content1-description1">Landscape redesign, installations, and mainenance</div>
+                    <div id="content1-description1">Supplying all your landscaping needs.</div>
                     <p>Simple life provides services to the greater Ohio region</p>
-                    <div id="content1-desc-contact">Contact Us</div>
+                    <div id='desc-contact-container'>
+
+                        <div id="content1-desc-contact">Contact Us</div>
+                    </div>
                 </div>
                 <div id="content1-image">
                     <img src = {heroImage} alt="home-frontview"/>
@@ -109,18 +113,18 @@ function Homepage() {
                 </div> */}
                 <div id="services-desc">
                     <span>WE OFFER A VARIETY OF SERVICES </span>
-                    <span className='serviceMotto'>For a Simple Life</span>
+                    <span className='serviceMotto'>We're For a Simple Life</span>
                     <div id="plant-image"></div>
-                    <button>SERVICES</button>
+                    <button>VIEW SERVICES</button>
                     <div className='littleMower'>
                         <img src={littleMower}/>
                     </div>
                 </div>
                 <div id="services-desc">
-                    <span>WE OFFER A VARIETY OF SERVICES </span>
-                    <span className='serviceMotto'>For a Simple Life</span>
+                    <span>LEARN MORE ABOUT US </span>
+                    <span className='serviceMotto'>We're For a Simple Life</span>
                     <div id="plant-image"></div>
-                    <button>SERVICES</button>
+                    <button>ABOUT US</button>
                     <div className='littleMower'>
                         <img src={littleMower}/>
                     </div>
@@ -159,7 +163,7 @@ function Homepage() {
                         <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" autoComplete="off" required></textarea>
                     </div>
                     
-                    <button type="submit">send</button>
+                    <button type="submit">Send</button>
                 </form>
             </div>
             
