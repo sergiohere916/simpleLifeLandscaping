@@ -5,6 +5,7 @@ import homeFrontView from "../images/simple_life_04.jpg"
 import heroImage from "../images/simple_life_hero.jpg"
 import emailjs from '@emailjs/browser';
 import littleMower from "../images/orange_mower2.png";
+import homeFrontView2 from "../images/simple_life_08.jpg";
 
 function Homepage() {
 
@@ -77,6 +78,23 @@ function Homepage() {
                 </div>
                 <div id="content1-image">
                     <img src = {heroImage} alt="home-frontview"/>
+                </div>
+            </div>
+        </div>
+
+        <div id="homePage-content-2">
+            <div id="home-content-container2">
+                
+                <div id="content2-image">
+                    <img src = {homeFrontView2} alt="home-frontview2"/>
+                </div>
+                <div id="content2-description">
+                    <div id="content2-description2">Supplying all your landscaping needs.</div>
+                    <p>Simple life provides services to the greater Ohio region</p>
+                    <div id='desc-contact-container2'>
+
+                        <div id="content2-desc-contact">Contact Us</div>
+                    </div>
                 </div>
             </div>
         </div>

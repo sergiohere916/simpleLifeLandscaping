@@ -40,7 +40,8 @@
     background-size: 70%, 40%;
     background-repeat: no-repeat, repeat;
     
-
+    filter: blur(0px), blur(5px);
+    
     
     background-position-x: center;
     background-position-y: 20%;
@@ -84,21 +85,37 @@
 #homePage-intro {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
 
     margin-top: 5%;
-    width: 90%;
-    /* background-color: rebeccapurple; */
-    /* background-color: rgba(102, 51, 153, 0.055); */
+    
+    width: 100%;
 
-    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    /* width previously 80% */
+
+    /* remove the below if no background color all padding */
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 3%;
+    
+    background-color: rgb(255, 243, 229);
+    background-color: rgb(227, 238, 209);
+    background-color: rgb(103, 139, 92);
+
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     
     
 }
 
 #homePage-intro div {
+
+    /* remove padding if unapproved */
+    padding-left: 10%;
+    padding-right: 10%;
+    color: white;
+
+
     text-align: center;
     letter-spacing: 1px;
     font-size: 1.3em;
@@ -107,10 +124,11 @@
 #homePage-intro p {
     font-size: 28pt;
     color: rgb(230, 128, 34);
+    color: white;
     letter-spacing: 2px;
     
 
-    margin-top: -2%;
+    margin-top: 1%;
     text-align: center;
     padding: 1%;
     /* font-style: italic; */
@@ -122,6 +140,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* align-items: center; */
     /* height: 100vh; */
 
     margin-top: 5%;
@@ -135,10 +154,13 @@
     display: flex;
     justify-content: center;
 
-    gap: 1%;
+    gap: 0%;
     margin-top: 4%;
     height: 100vh;
     width: 100%;
+
+   
+    
     /* background-color: aquamarine; */
 }
 
@@ -150,9 +172,13 @@
     text-align: center;
    
     /* height: 30%; */
+    
     width: 25%;
     /* font-size: 2rem; */
 
+    /* remove if unapproved */
+    height: 90%;
+    background-color: rgb(203, 223, 197);
     
     
 
@@ -220,6 +246,158 @@
     height: 100%;
     width: 100%;
 }
+
+
+
+
+/* Added new pic --- */
+
+#homePage-content-2 {
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    /* align-items: center; */
+    
+
+    margin-top: 5%;
+    margin-top: 2%;
+    width: 90%;
+    
+    /* width: 75%; */
+}
+
+#home-content-container2 {
+    display: flex;
+    justify-content: center;
+
+    gap: 0%;
+    margin-top: 4%;
+    height: 100vh;
+    width: 100%;
+
+    /* width: 85%; */
+
+    /* background-color: aquamarine; */
+}
+
+#content2-description {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: end; */
+    
+    align-items: center;
+    text-align: center;
+   
+    /* height: 30%; */
+    
+    padding-left: 6%;
+    padding-right: 6%;
+    width: 65%;
+
+
+    /* previous width prior to 65 was 35 */
+    /* width: 35%; */
+    
+
+    /* remove if unapproved */
+    height: 90%;
+    background-color: rgb(203, 223, 197);
+    
+    
+
+
+    /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
+}
+
+#content2-description2 {
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: end;
+    
+    height: 30%;
+    width: 100%;
+    font-size: 2.2rem;
+    text-align: center;
+    /* text-align: left; */
+    /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
+    
+}
+
+#content2-description p {
+    font-size: 1.2em;
+    margin-top: 5%;
+    text-align: center;
+    /* text-align: left; */
+    letter-spacing: 1px;
+}
+
+#desc-contact-container2 {
+    width: 100%;
+    height: 8%;
+    display: flex;
+    justify-content: center;
+}
+#content2-desc-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 1.1em;
+    margin-top: 10%;
+    
+    height: 5%;
+    height: 100%;
+    width: 45%;
+    /* width: 100%; */
+    background-color: rgb(241, 134, 62);
+    color: white;
+}
+
+#content2-desc-contact:hover {
+    cursor: pointer;
+    background-color: rgb(247, 160, 102);
+}
+
+#content2-image {
+    width: 75%;
+    height: 90%;
+}
+
+#content2-image img {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* WHY CHOOSE US CSS */
 
