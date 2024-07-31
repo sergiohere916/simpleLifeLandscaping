@@ -108,7 +108,7 @@ function Services() {
                     <img src={serviceImg1} alt="service1img"/>
                 </div>
                 <div className="service1">
-                    <div className="services-title">Professional Services Provided:</div>
+                    <div className="services-title">Landscape Redesign:</div>
                     <ul className="service-list">
                         <li>Lawn Mowing</li>
                         <li>Edging</li>
@@ -130,10 +130,9 @@ function Services() {
                     <img src={sodding} alt="service1img"/>
                 </div>
                 <div className="service1">
-                    <div className="services-title">Professional Services Provided:</div>
+                    <div className="services-title">Lawncare and Maintenance</div>
                     <ul className="service-list">
-                        <li>Lawn Mowing</li>
-                        <li>Edging</li>
+                        <li>Weekly grass cutting</li>
                         <li>Trimming</li>
                         <li>Mulching</li>
                         <li>Landscape re-design</li>
