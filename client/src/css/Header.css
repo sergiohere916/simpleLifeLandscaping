@@ -1,8 +1,8 @@
 #nav2 {
     position: relative;
     height: 23vh;
-    width: 100vw;
-    padding: 2%;
+    width: 100%;
+    /* padding: 2%; */
     
     
     display: flex;
@@ -23,9 +23,9 @@
     position: relative;
     margin-left: 2%;
     height: 100%;
-    width: 60%;
+    width: 65%;
     padding-bottom: 3%;
-    gap: 3%;
+    gap: 1%;
 
     font-family: "Pacifico", cursive;
     font-weight: bold;
@@ -52,6 +52,8 @@
     width: 65%;
     font-size: 9pt;
     letter-spacing: 2px;
+
+    padding: 2%;
     
 }
 
@@ -253,7 +255,7 @@
 #main-logo img {
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    /* object-fit: cover; */
     
 }
 

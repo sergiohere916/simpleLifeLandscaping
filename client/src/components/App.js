@@ -32,7 +32,7 @@ function App() {
     setPictures([project, ...pictures])
   }
 
-  return <div id="app">
+  return <div id="simple-life-app">
     {/* <Header></Header> */}
     <Switch>
       <Route exact path="/">

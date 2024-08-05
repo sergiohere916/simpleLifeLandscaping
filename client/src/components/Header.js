@@ -22,12 +22,12 @@ function Header({showHiddenNav}) {
                 <NavLink to="/contact">Contact</NavLink>
             </div>
             <div className="navlink-container-mobile">
-                {/* <NavLink id="mobile-nav" to="contact"> */}
+            
                 <div id="mobile-nav" onClick={(e) => {showHiddenNav()}}>
                     <div className="buns"></div>
                     <div className="buns"></div>
                 </div>
-                {/* </NavLink> */}
+                
             </div>
     </div>
     )
