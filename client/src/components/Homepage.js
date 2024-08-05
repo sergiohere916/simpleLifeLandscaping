@@ -55,7 +55,7 @@ function Homepage() {
         </div>):
         (<></>) }
         
-        {/* <div id="hero-image">
+        <div id="hero-image">
             <span>Here To Help Create Beautiful Scenery in Ohio</span>
         </div>
         
@@ -66,7 +66,7 @@ function Homepage() {
             
         </div>
         
-        <div id="homePage-content">
+        {/* <div id="homePage-content">
             <div id="home-content-container1">
                 <div id="content1-description">
                     <div id="content1-description1">Supplying all your landscaping needs.</div>
