@@ -1,16 +1,20 @@
 import React, { useState } from "react";
 import Header from "./Header";
 import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
-import mowerImg from "../images/licensed_mower.jpeg";
-import shovelImg from "../images/licensed_snowshovel.jpeg";
-import grassImg from "../images/licensed_grass.jpeg";
-import plantImg from "../images/licensed_plant.jpeg";
+// import mowerImg from "../images/licensed_mower.jpeg";
+import mowerImg from "../images/licensed_mower_processed2.png";
+// import shovelImg from "../images/licensed_snowshovel.jpeg";
+import shovelImg from "../images/licensed_snowshovel_processed.png";
+// import grassImg from "../images/licensed_grass.jpeg";
+import grassImg from "../images/licensed_grass_processed.png";
+import plantImg from "../images/licensed_plant_processed.jpeg";
 import serviceImg1 from "../images/simple_life_06.jpg";
 import serviceImg2 from "../images/simple_life_02.jpg";
 import serviceImg3 from "../images/simple_life_04.jpg";
 import sodding from "../images/licensed_sodding.jpeg";
 import leafBlowing from "../images/licensed_leafblowing.jpeg";
 import snowShoveling from "../images/licensed_shoveling.jpeg";
+
 import orangeSnowShovel from "../images/orange_snow_shovel-2.png";
 import movingMower from "../images/orange_mower2.png";
 
@@ -84,44 +88,39 @@ function Services() {
                     <img src={plantImg} onClick={growTree}/>
                 </div>
             </div>
+            
             <div id={pageBreakStyle}>
+                <div id="fence-container">
+                
+                </div>
+                <div id="fence-container-rightside">
+
+                </div>
                 <div id={snowShovel}>
                     {/* <img src="https://media.istockphoto.com/id/1366423549/vector/illustration-of-garden-lawn-roll-overgrown-lawn-lawn-for-decoration.jpg?s=612x612&w=0&k=20&c=TeyFyV7gM8y1nIuTMgmu4wMcWqc9k1onnq7IsoSTbGs="/> */}
                 </div>
             </div>
             <div id={pageBreakStyle2}></div>
             
-            {/* <div id="servicePageBreak2"></div> */}
-            
-            {/* <div id="intro-title">Simple Life Landscaping Services</div> */}
-            {/* <div id="intro-details">In Columbus Ohio and surrounding regions</div> */}
-            {/* <div id="main-service-img">
-                <img src={plantImg} />
-            </div> */}
-            {/* <div id="intro-quote">"We provide our clients with quality work taking each project into careful consideration producing a unique style that will bring out the best of the particular landscape"</div>
-              */}
-              <div id="intro-quote">"Trust us with your Landscaping Needs"</div>
+              {/* <div id="intro-quote">"Trust us with your Landscaping Needs"</div> */}
         </div>
+        <div id="services-provided-title"> Trust Us With Your Landscaping Needs</div>
         <div id="services-provided">
             <div className="service1-content">
                 <div className="service1-img">
                     <img src={serviceImg1} alt="service1img"/>
                 </div>
                 <div className="service1">
-                    <div className="services-title">Landscape Redesign:</div>
+                    <div className="services-title">Professional Landscaping:</div>
                     <ul className="service-list">
-                        <li>Lawn Mowing</li>
-                        <li>Edging</li>
-                        <li>Trimming</li>
                         <li>Mulching</li>
-                        <li>Landscape re-design</li>
+                        <li>Landscape Redesign</li>
+                        <li>Garden Bed Preparation</li>
+                        <li>Demolition/ Restoration</li>
                         <li>Plant Installation</li>
                         <li>Transplants</li>
-                        <li>Snow removal</li>
-                        <li>Leaf blwoing</li>
-                        <li>Seeding</li>
-                        <li>Sodding</li>
                     </ul>
+                    <p className="service-descriptions">These services keep your lawn and landscape healthy and attractive. We'll do pest management, weed control, fertilization, and debris removal. Edging and trimming create clean lines and reach hard-to-access areas for a polished look. Sodding provides an instant, green lawn by laying down pre-grown grass.</p>
                     <button>Contact Us</button>
                 </div>   
             </div>
@@ -132,17 +131,14 @@ function Services() {
                 <div className="service1">
                     <div className="services-title">Lawncare and Maintenance</div>
                     <ul className="service-list">
-                        <li>Weekly grass cutting</li>
+                        <li>Weekly Grass Cutting</li>
+                        <li>General Maintenance</li>
+                        <li>Edging</li>
                         <li>Trimming</li>
-                        <li>Mulching</li>
-                        <li>Landscape re-design</li>
-                        <li>Plant Installation</li>
-                        <li>Transplants</li>
-                        <li>Snow removal</li>
-                        <li>Leaf blwoing</li>
                         <li>Seeding</li>
                         <li>Sodding</li>
                     </ul>
+                    <p className="service-descriptions">These services keep your lawn and landscape healthy and attractive. We'll do pest management, weed control, fertilization, and debris removal. Edging and trimming create clean lines and reach hard-to-access areas for a polished look. Sodding provides an instant, green lawn by laying down pre-grown grass.</p>
                     <button>Contact Us</button>
                 </div>
                 
@@ -152,20 +148,11 @@ function Services() {
                     <img src={leafBlowing} alt="service1img"/>
                 </div>
                 <div className="service1">
-                    <div className="services-title">Professional Services Provided:</div>
+                    <div className="services-title">Seasonal Services Provided:</div>
                     <ul className="service-list">
-                        <li>Lawn Mowing</li>
-                        <li>Edging</li>
-                        <li>Trimming</li>
-                        <li>Mulching</li>
-                        <li>Landscape re-design</li>
-                        <li>Plant Installation</li>
-                        <li>Transplants</li>
-                        <li>Snow removal</li>
-                        <li>Leaf blwoing</li>
-                        <li>Seeding</li>
-                        <li>Sodding</li>
+                        <li>Fall Cleanup</li>
                     </ul>
+                    <p className="service-descriptions">Seasonal landscaping services adapt throughout the year to maintain outdoor spaces. Spring focuses on rejuvenation and growth, summer on regular upkeep and pest control, fall on preparation for winter, and winter on protection and maintenance during cold weather. Each season's tasks ensure the landscape remains healthy and attractive year-round.</p>
                     <button>Contact Us</button>
                 </div>
                 
@@ -175,7 +162,7 @@ function Services() {
                     <img src={snowShoveling} alt="service1img"/>
                 </div>
                 <div className="service1">
-                    <div className="services-title">Professional Services Provided:</div>
+                    <div className="services-title">Extra Services Provided:</div>
                     <ul className="service-list">
                         <li>Lawn Mowing</li>
                         <li>Edging</li>
