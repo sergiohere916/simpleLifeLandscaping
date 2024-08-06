@@ -101,15 +101,14 @@
     justify-content: center; 
     align-items: center;
 
-    margin-top: 2%;
+    margin-top: 5%;
     
     width: 100%;
 
     /* width previously 80% */
 
     /* remove the below if no background color all padding */
-    padding-left: 5%;
-    padding-right: 5%;
+    
     padding-bottom: 3%;
     
     background-color: rgb(255, 243, 229);
@@ -122,20 +121,21 @@
 }
 
 #homePage-intro div {
-
-    /* remove padding if unapproved */
-    padding-left: 10%;
-    padding-right: 10%;
+    margin-top: 5%;
     color: white;
 
 
     text-align: center;
     letter-spacing: 1px;
     font-size: 1.3em;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 #homePage-intro p {
     font-size: 28pt;
+    font-size: 22pt;
+    font-size: 2.0em;
     color: rgb(230, 128, 34);
     color: white;
     letter-spacing: 2px;
@@ -144,6 +144,7 @@
     margin-top: 1%;
     text-align: center;
     padding: 1%;
+    
     /* font-style: italic; */
     margin-bottom: 2%;
 }
@@ -164,42 +165,44 @@
 }
 
 #home-content-container1 {
+    position: relative;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 
     gap: 0%;
-    margin-top: 4%;
+    /* margin-top: 4%; */
     height: 100vh;
     width: 100%;
 
+    margin-top: 15%;
    
-    
-    /* background-color: aquamarine; */
 }
 
 #content1-description {
     display: flex;
     flex-direction: column;
-    /* justify-content: end; */
     align-items: center;
     text-align: center;
    
-    /* height: 30%; */
     
     width: 25%;
-    /* font-size: 2rem; */
 
     /* remove if unapproved */
     height: 90%;
-    background-color: rgb(203, 223, 197);
     background-color: rgb(209, 240, 180);
-    
-    
-
-
-    /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     letter-spacing: 2px;
+
+
+
+    margin-top: 0%;
+    position: absolute;
+    top: 60%;
+    height: 40%;
+    width: 100%;
+    font-size: 1.3em;
+    /* font-size: 10pt; */
 }
 
 #content1-description1 {
@@ -210,21 +213,18 @@
     
     height: 30%;
     width: 100%;
-    font-size: 2.2rem;
+    /* font-size: 2.2rem; */
+    font-size: 1.4em;
+    
     text-align: center;
-    /* text-align: left; */
-
-    /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
     
 }
 
 #content1-description p {
-    font-size: 1.2em;
+    font-size: 1.0em;
     margin-top: 5%;
-    /* text-align: left; */
-    /* font-size: 20px; */
-    /* font-style: italic; */
-
+    padding-left: 2%;
+    padding-right: 2%;
     text-align: center;
     letter-spacing: 1px;
 }
@@ -232,11 +232,10 @@
 #desc-contact-container {
     display: flex;
     justify-content: center;
-
-
     width: 100%;
-    height: 8%;
+    height: 20%;
 }
+
 #content1-desc-contact {
     display: flex;
     justify-content: center;
@@ -261,6 +260,11 @@
 #content1-image {
     width: 75%;
     height: 90%;
+
+    position: absolute;
+    top: 0;
+    height: 60%;
+    width: 100%;
 }
 
 #content1-image img {
@@ -276,14 +280,14 @@
 #homePage-content-2 {
     display: flex;
     flex-direction: column;
-    
     justify-content: center;
     /* align-items: center; */
     
 
-    margin-top: 5%;
+    /* margin-top: 5%; */
     margin-top: 2%;
     width: 90%;
+    
     
     /* width: 75%; */
 }
@@ -296,49 +300,34 @@
     margin-top: 4%;
     height: 100vh;
     width: 100%;
-
-    /* width: 85%; */
-
-    /* background-color: aquamarine; */
     
     position: relative;
-    /* border: 1px solid blue; */
-    
 }
 
 #content2-description {
     display: flex;
     flex-direction: column;
-    /* justify-content: end; */
-    
+    justify-content: flex-start;
     align-items: center;
     text-align: center;
-   
-    /* height: 30%; */
-    
     padding-left: 6%;
     padding-right: 6%;
-    width: 65%;
     
-
-
-    /* previous width prior to 65 was 35 */
-    /* width: 35%; */
     
-
-    /* remove if unapproved */
-    height: 90%;
-    background-color: rgb(203, 223, 197);
+    
     background-color: rgb(209, 240, 180);
-    /* background-color: rgb(236, 248, 131); */
+    /* height: 75%; */
+    /* width: 35%; */
+    height: 54%;
+    width: 90%;
     
-    
-    height: 75%;
-    width: 35%;
     position: absolute;
-    top: 7%;
-    left: 45%;
-    left: 54%;
+    /* top: 7%; */
+    
+    top: 45%;
+    /* left: 45%;
+    left: 54%; */
+    left: 12%;
     
 
 
@@ -355,7 +344,7 @@
     
     height: 30%;
     width: 100%;
-    font-size: 2.2rem;
+    font-size: 1.5em;
     text-align: center;
     /* text-align: left; */
     /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
@@ -363,7 +352,8 @@
 }
 
 #content2-description p {
-    font-size: 1.2em;
+    /* font-size: 1.2em; */
+    font-size: 1.3em;
     margin-top: 5%;
     text-align: center;
     /* text-align: left; */
@@ -398,14 +388,14 @@
 }
 
 #content2-image {
-    width: 75%;
-    height: 90%;
+    height: 55%;
 
     /* NEW */
     width: 55%;
+    width: 90%;
     position: absolute;
     left: 0%;
-    left: 8%;
+    /* left: 8%; */
 }
 
 #content2-image img {
@@ -416,95 +406,9 @@
 
 
 
+/* Work on 8/5 */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* WHY CHOOSE US CSS */
-
-#reason-content {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    padding: 10%;
-    justify-content: space-between;
-    background-image: url("../images/simple_life_02.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#reason-content::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
-    z-index: 0; /* Ensure the dimming effect is below other content */
-}
-
-.reason-descs {
-    color: white;
-    width: 40%;
-    height: 100%;
-    flex-direction: column;
-    font-size: 1.2em;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    position: relative; /* Add position relative to allow z-index to work */
-    z-index: 1; /* Ensure the text is above the dimming effect */
-}
-
-.reason-descs h3 {
-    padding-bottom: 15%;
-    font-size: 1.5em;
-}
-
-.custom-curve-1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-curve-1 svg {
-    position: relative;
-    display: block;
-    width: calc(145% + 1.3px);
-    height: 89px;
-}
-
-.custom-curve-1 .shape-fill {
-    fill: #FDFDD5;
-}
-
-/* SERVICES SECTION */
 #services-section {
     background-color: black;
     width: 100%;
@@ -517,27 +421,20 @@
 }
 
 #services-container {
-    /* background-color: rgb(140, 190, 120); */
-    height: 70%;
+    height: 90%;
     width: 100%;
-    font-family: "Sorts Mill Goudy", serif;
+
     display: flex;
-    /* justify-content: space-evenly; */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10%;
     color: white;
-    /* background-color: black; */
+    font-family: "Sorts Mill Goudy", serif;
+    
 }
 
-#services-image {
-    height: 100%;
-    width: 80%;
-    background-image: url("../images/simple_life_01.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
+
 
 #services-desc {
     position: relative;
@@ -554,18 +451,41 @@
     border-bottom: 25px solid green;
     border-bottom: 25px solid rgb(103, 139, 92);
     border-radius: 25px;
+
+
+
+    
+    height: 50%;
+    width: 80%;
+   
+    
+    
 }
 
 #services-desc span {
     
-    font-size: 1.5em;
+    font-size: 1.3em;
     text-align: center;
     width: 100%;
     font-weight: 20;
 }
 
 #services-desc button {
-    cursor: pointer;
+    background: none;
+    text-wrap: nowrap;
+    outline: 0;
+    border: 1px solid white;
+    padding: 10px;
+    transition: .4s;
+    width: fit-content;
+    color: white;
+    
+    border-radius: 50px;
+}
+
+#services-desc button:hover {
+    background-color: white;
+    color: rgb(140, 190, 120);
 }
 
 .serviceMotto {
@@ -577,17 +497,19 @@
     display: flex;
     justify-content: center;
     
-    height: 20%;
+    
+    height: 40%;
     width: 40%;
     position: absolute;
     left: 0;
-    bottom: -10%;
+    bottom: -20%;
 }
 
 .littleMower img {
     height: 100%;
     width: 100%;
     object-fit: none;
+    object-fit: cover;
 }
 
 #plant-image {
@@ -600,231 +522,28 @@
 }
 
 
-#services-desc button {
-    background: none;
-    outline: 0;
-    border: 1px solid white;
-    padding: 10px;
-    transition: .4s;
-    width: 40%;
-    color: white;
-    
-    border-radius: 50px;
-}
-
-#services-desc button:hover {
-    background-color: white;
-    color: rgb(140, 190, 120);
-}
-
-.custom-curve-2 {
-    position: absolute;
-    /* top: -12.8%; */
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.custom-curve-2 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 79px;
-    transform: rotateY(180deg);
-}
-
-.custom-curve-2 .shape-fill {
-    fill: #FDFDD5;
-}
-
-/* PROJECTS SECTION */
-
-#projects-section {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    width: 100%;
-    height: 80vh;
-}
-
-#projects-content {
-    position: relative;
-    width: 100%;
-    height: 80vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 10%;
-    gap: 58%;
-    text-align: center;
-    /* justify-content: space-between; */
-    justify-content: center;
-    background-image: url("../images/simple_life_06.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: 0;
-}
-
-#projects-content::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
-    z-index: -1; /* Ensure the dimming effect is below other content */
-}
-
-#projects-section {
-    font-size: 3em;
-    color: white;
-    font-family: "Sorts Mill Goudy", serif;
-    
-    font-weight: 200;
-}
-
-#projects-section button {
-    
-    letter-spacing: 2px;
-    background: none;
-    outline: 0;
-    border: 1px solid white;
-    /* padding: 12px; */
-    /* padding: 1%; */
-    padding: 12px;
-    transition: .4s;
-    width: 15%;
-    width: 175px;
-    color: transparent; /* Transparent text */
-    border-radius: 50px;
-    color: white;
-
-    font-size: 16pt;
-}
-
-#projects-section button:hover {
-    background-color: white;
-    color: black;
-}
-
-#projects-section button:active {
-    margin: 10px;
-}
-
-/* CONTACT SECTION */
-
-#contact-section {
-    width: 100%;
-    height: 130vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#form-section {
-    
-    background-color: white;
-    height: 80%;
-    width: 45%;
-    margin-top: 5%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.2);
-}
-
-#form-section span {
-    font-size: 2.5rem;
-    /* padding-bottom: 40px; */
-    padding-bottom: 12%;
-    font-family:'Times New Roman', Times, serif;
-    color: black;
-}
 
 
-#form-container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    width: 80%;
-}
 
-#form-container button {
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    
-    width: 20%;
-    align-items: center;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 1.1em;
-    border: none;
-    transition: .2s;
-    letter-spacing: 2px;
 
-    
-    
-}
 
-#form-container button:hover {
-    background-color: rgb(200, 200, 200);
-}
 
-#form-container input, textarea {
-    font-size: 18px;
-    padding: 10px;
-    display: block;
-    outline: none;
-    transition: .2s;
-    width: 100%;
-    border-radius: 5px;
-    border: 1px solid black;
-}
 
-.first-last {
-    display: flex;
-    gap: 10px;
-    width: 100%;
-}
 
-.first-last div {
-    width: 50%;
-}
 
-#footer {
-    height: 30vh;
-    width: 100%;
-    background-color: white;
-    display: flex;
-    justify-content: space-evenly;
-    /* justify-content: center; */
-    align-items: center;
-    background-color: rgb(103, 139, 92);
-}
 
-.footer-sections {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 70%;
-    
-    align-items: center;
-}
 
-.footer-sections span, a {
-    display:block;
-    font-size: 1.1em;
-}
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (min-width: 1600px) {
@@ -898,12 +617,6 @@
         
     }
     
-    #hero-image img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-    }
-
     #hero-image span {
         font-size: 2.5em;
     }
@@ -1124,7 +837,6 @@
     height: 90vh;
     width: 100%;
     
-    background-image: url("../images/simple_life_04.jpg");
     background-image: url("../images/simple_life_11.jpg"), url("../images/simple_life_06.jpg");
 
     
@@ -1161,16 +873,15 @@
 }
 
 #hero-image span {
+    display: flex;
+    justify-content: center;
+
+    width: 70%;
+    padding: 2%;
     text-align: center;
     font-size: 3em;
     color: white;
     z-index: 0;
-}
-
-#hero-image img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
 }
 
 #homePage-intro {
@@ -1186,8 +897,8 @@
     /* width previously 80% */
 
     /* remove the below if no background color all padding */
-    padding-left: 5%;
-    padding-right: 5%;
+    /* padding-left: 5%;
+    padding-right: 5%; */
     padding-bottom: 3%;
     
     background-color: rgb(255, 243, 229);
@@ -1202,11 +913,13 @@
 #homePage-intro div {
 
     /* remove padding if unapproved */
+    margin-top: 0%;
     padding-left: 10%;
     padding-right: 10%;
     color: white;
 
-
+    /* padding-left: 5%;
+    padding-right: 5%; */
     text-align: center;
     letter-spacing: 1px;
     font-size: 1.3em;
@@ -1222,7 +935,6 @@
     margin-top: 1%;
     text-align: center;
     padding: 1%;
-    /* font-style: italic; */
     margin-bottom: 2%;
 }
 
@@ -1244,6 +956,7 @@
 #home-content-container1 {
     display: flex;
     justify-content: center;
+    flex-direction: row;
 
     gap: 0%;
     margin-top: 4%;
@@ -1258,26 +971,22 @@
 #content1-description {
     display: flex;
     flex-direction: column;
-    /* justify-content: end; */
     align-items: center;
     text-align: center;
-   
-    /* height: 30%; */
     
-    width: 25%;
-    /* font-size: 2rem; */
-
-    /* remove if unapproved */
     height: 90%;
-    background-color: rgb(203, 223, 197);
+    width: 25%;
     background-color: rgb(209, 240, 180);
-    
-    
-
-
-    /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     letter-spacing: 2px;
+
+
+    /* This fixes the baseline mobile css*/
+    position: relative;
+    margin-top: 0%;
+    top: 0%;
+    font-size: 1em;
+    /**/
 }
 
 #content1-description1 {
@@ -1290,6 +999,7 @@
     width: 100%;
     font-size: 2.2rem;
     text-align: center;
+
     /* text-align: left; */
 
     /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
@@ -1302,7 +1012,7 @@
     /* text-align: left; */
     /* font-size: 20px; */
     /* font-style: italic; */
-
+    
     text-align: center;
     letter-spacing: 1px;
 }
@@ -1337,6 +1047,7 @@
 }
 
 #content1-image {
+    position: relative;
     width: 75%;
     height: 90%;
 }
@@ -1387,10 +1098,11 @@
 #content2-description {
     display: flex;
     flex-direction: column;
-    /* justify-content: end; */
+    justify-content: flex-start;
     
     align-items: center;
     text-align: center;
+    
    
     /* height: 30%; */
     
@@ -1600,6 +1312,7 @@
     width: 100%;
     font-family: "Sorts Mill Goudy", serif;
     display: flex;
+    flex-direction: row;
     /* justify-content: space-evenly; */
     justify-content: center;
     align-items: center;

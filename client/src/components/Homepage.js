@@ -66,7 +66,7 @@ function Homepage() {
             
         </div>
         
-        {/* <div id="homePage-content">
+        <div id="homePage-content">
             <div id="home-content-container1">
                 <div id="content1-description">
                     <div id="content1-description1">Supplying all your landscaping needs.</div>
@@ -130,7 +130,7 @@ function Homepage() {
             </div>
         </div>
 
-        <div id="contact-section">
+        {/* <div id="contact-section">
             <div id="form-section">
                 <span>Get In Touch</span>
                 <form ref={form} onSubmit={(e) => handleSubmit(e)} id="form-container"> 
