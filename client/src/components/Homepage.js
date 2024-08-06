@@ -130,8 +130,9 @@ function Homepage() {
             </div>
         </div>
 
-        {/* <div id="contact-section">
+        <div id="contact-section">
             <div id="form-section">
+                
                 <span>Get In Touch</span>
                 <form ref={form} onSubmit={(e) => handleSubmit(e)} id="form-container"> 
                     <div className='first-last'>
@@ -156,6 +157,7 @@ function Homepage() {
                     
                     <button type="submit">Send</button>
                 </form>
+                
             </div>
             
         </div>
@@ -176,7 +178,7 @@ function Homepage() {
                 <span>testing123@gmail.com</span>
                 <span>123-456-7890</span>
             </div>
-        </div> */}
+        </div>
     </div>)
     
 }

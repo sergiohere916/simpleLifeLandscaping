@@ -58,6 +58,7 @@
     
 
     height: 80vh;
+    height: 534px;
     width: 100%;
     background-image: url("../images/simple_life_11.jpg"), url("../images/simple_life_06.jpg");
     background-size: 100%, 0%;
@@ -173,6 +174,7 @@
     gap: 0%;
     /* margin-top: 4%; */
     height: 100vh;
+    height: 667.2px;
     width: 100%;
 
     margin-top: 15%;
@@ -300,6 +302,8 @@
     margin-top: 4%;
     height: 100vh;
     width: 100%;
+
+    height: 667.2px;
     
     position: relative;
 }
@@ -412,7 +416,8 @@
 #services-section {
     background-color: black;
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
+    height: 896px;
     position: relative;
     background-color: #FDFDD5;
     display: flex;
@@ -522,12 +527,197 @@
 }
 
 
+#projects-section {
+    width: 100%;
+    /* height: 80vh; */
+    height: 716.8px;
+    /* height: 534px; */
+    font-size: 2em;
+    color: white;
+    font-family: "Sorts Mill Goudy", serif;
+    font-weight: 200;
+}
+
+#projects-content {
+    position: relative;
+    width: 100%;
+    /* height: 80vh; */
+    height: 716.8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 10%;
+    gap: 5%;
+    text-align: center;
+    
+    
+    background-image: url("../images/simple_life_06.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 0;
+}
+
+#projects-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+    z-index: -1; /* Ensure the dimming effect is below other content */
+}
+
+#projects-section button {
+    
+    letter-spacing: 2px;
+    background: none;
+    outline: 0;
+    border: 1px solid white;
+    /* padding: 12px; */
+    /* padding: 1%; */
+    padding: 12px;
+    transition: .4s;
+    width: 15%;
+    width: 175px;
+    color: transparent; /* Transparent text */
+    border-radius: 50px;
+    color: white;
+
+    font-size: 16pt;
+}
+
+#projects-section button:hover {
+    background-color: white;
+    color: black;
+}
+
+#projects-section button:active {
+    margin: 10px;
+}
 
 
+#contact-section {
+    width: 100%;
+    /* height: 130vh; */
+    height: 1164.8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form-section {
+    
+    background-color: white;
+    height: 80%;
+    width: 45%;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    /* box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.2);
+    background-color: red; */
+    width: 95%;
+}
 
 
+#form-section span {
+    font-size: 2.5rem;
+    /* padding-bottom: 40px; */
+    padding-bottom: 12%;
+    /* padding-bottom: 0%; */
+    font-family:'Times New Roman', Times, serif;
+    color: black;
+}
 
 
+#form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    width: 80%;
+}
+
+#form-container button {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    
+    width: 20%;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    border: none;
+    transition: .2s;
+    letter-spacing: 2px;
+
+    
+    
+}
+
+#form-container button:hover {
+    background-color: rgb(200, 200, 200);
+}
+
+#form-container input, textarea {
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+    outline: none;
+    transition: .2s;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.first-last {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.first-last div {
+    width: 50%;
+}
+
+
+#footer {
+    /* height: 50vh; */
+    height: 448px;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(103, 139, 92);
+
+    
+    
+}
+
+.footer-sections {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 70%;
+    
+    align-items: center;
+}
+
+.footer-sections span, a {
+    display:block;
+    font-size: 1.1em;
+}
 
 
 
@@ -1518,22 +1708,27 @@
 }
 
 #form-section {
-    
-    background-color: white;
-    height: 80%;
-    width: 45%;
-    margin-top: 5%;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+
+    /* padding-top: 5%; */
+    background-color: white;
+    
+    height: 80%;
+    width: 45%;
+    margin-top: 5%;
+    
     box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 15px 15px 20px 15px rgba(0, 0, 0, 0.2);
+
+    box-shadow: 10px 10px 40px 10px rgba(0, 0, 0, 0.2);
 }
 
 #form-section span {
     font-size: 2.5rem;
-    /* padding-bottom: 40px; */
-    padding-bottom: 12%;
+    padding-bottom: 5%;
     font-family:'Times New Roman', Times, serif;
     color: black;
 }
@@ -1597,6 +1792,7 @@
     width: 100%;
     background-color: white;
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     /* justify-content: center; */
     align-items: center;
