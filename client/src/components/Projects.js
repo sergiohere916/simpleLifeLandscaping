@@ -36,7 +36,7 @@ function Projects() {
     }, [])
 
 
-    console.log("in projects...")
+    // console.log("in projects...")
     
     const [displayMobileNav, setDisplayMobileNav] = useState(false);
     const [allProjects, setAllProjects] = useState([{createdAt: "", name:"", image_url: project0Image}, {createdAt: "", name:"", image_url: project1Image}, {createdAt: "", name:"", image_url: project2Image}, {createdAt: "", name:"", image_url: project3Image},
@@ -169,22 +169,3 @@ function Projects() {
 
 export default Projects
 
-//v1 insert after projects-title div
-        // <div id="projects-container">
-        //     <div className="project-cards">
-        //         <img src={serviceImg1}/>
-        //     </div>
-        //     <div className="project-cards">
-        //         <img src={serviceImg2}/>
-        //     </div>
-        //     <div className="double-project-cards" onClick={handleCardClick}>
-        //         <img src={card3[0]}/>
-        //         <div id="card-selector">
-        //             <div className="selector-dot-1"></div>
-        //             <div className="selector-dot-2"></div>
-        //         </div>
-        //     </div>
-        //     <div className="project-cards">
-        //         <img src={serviceImg7}/>
-        //     </div>
-        // </div>
