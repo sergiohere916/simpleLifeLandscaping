@@ -96,13 +96,6 @@
 
 
 
-
-
-
-
-
-
-
 #intro-title {
     
     text-align: center;
@@ -579,7 +572,7 @@
     height: 300vh;
     height: 350vh;
 
-    
+
     height: 100%;
     /*Can remove the height for it just to fit content but gap wont work as a result so will need margin tops*/
     width: 100%;
@@ -621,6 +614,8 @@
     display: flex;
 }
 
+
+
 .service1-img {
     margin-left: 5%;
     height: 100%;
@@ -632,6 +627,11 @@
     width: 100%;
     
 }
+
+#service4-img {
+    height: 100%;
+}
+
 
 .service1 {
     /* border: 3px solid blue; */
@@ -1095,7 +1095,7 @@
         
         display: flex;
         
-        height: 1200px;
+        height: 800px;
     }
 
 
@@ -1112,13 +1112,59 @@
     #service-space-2 {
         
         display: flex;
-        height: 1200px;
+        height: 800px;
     }
 
     #service-space-3 {
         
         display: flex;
-        height: 1200px;
+        height: 800px;
+    }
+
+    #service-space-4 {
+        
+        display: flex;
+        height: 700px;
+    }
+
+    #service4-img {
+        height: 80%;
+    }
+
+    #littleMower {
+        position: absolute;
+        top: -340%;
+        left: 0%;
+        height: 600%;
+        width: 10%;
+
+        width: 50%;
+        background-color: rgba(0, 0, 0, 0);
+        background-image: url("../images/orange_mower2.png");
+        background-size: cover;
+        
+        animation-duration: 30s;
+        /* animation-duration: 10s; */
+        animation-iteration-count: calc(10);
+        animation-name: mow-lawn;
+    
+    }
+    
+    @keyframes mow-lawn {
+        from {
+            left: -10%;
+        }
+    
+        50% {
+            left: 68%;
+            
+            
+        }
+
+        to {
+            left: 0%;
+            transform: rotateY(180deg)
+        }
     }
 }
 
@@ -1340,6 +1386,10 @@
         background-image: url("../images/background_snow.jpg");
         background-size: contain;
     }
+
+    #service4-img {
+        height: 80%;
+    }
 }
 
 @media (min-width: 992px) {
@@ -1351,9 +1401,12 @@
         flex-direction: column;
         align-items: center;
         background-color: rgb(253, 253, 213);
+        background-color: blueviolet;
             
     
     }
+
+    
 }
 
 @media (min-width: 1200px) {
@@ -2064,6 +2117,10 @@
     #orderedList {
         
         font-weight: bold;
+    }
+
+    #service4-img {
+        height: 100%;
     }
     
 }

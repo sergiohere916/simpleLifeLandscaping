@@ -157,8 +157,8 @@ function Services() {
                 </div>
                 
             </div>
-            <div className="service1-content">
-                <div className="service1-img">
+            <div id = "service-space-4" className="service1-content">
+                <div id ="service4-img" className="service1-img">
                     <img src={snowShoveling} alt="service1img"/>
                 </div>
                 <div className="service1">
