@@ -106,8 +106,8 @@ function Services() {
         </div>
         <div id="services-provided-title"> Trust Us With Your Landscaping Needs</div>
         <div id="services-provided">
-            <div className="service1-content">
-                <div className="service1-img">
+            <div id = "service-space-1" className="service1-content">
+                <div id="service-space-1-img" className="service1-img">
                     <img src={serviceImg1} alt="service1img"/>
                 </div>
                 <div className="service1">
@@ -124,7 +124,7 @@ function Services() {
                     <button>Contact Us</button>
                 </div>   
             </div>
-            <div className="service1-content">
+            <div id = "service-space-2" className="service1-content">
                 <div className="service1-img">
                     <img src={sodding} alt="service1img"/>
                 </div>
@@ -143,7 +143,7 @@ function Services() {
                 </div>
                 
             </div>
-            <div className="service1-content">
+            <div id = "service-space-3" className="service1-content">
                 <div className="service1-img">
                     <img src={leafBlowing} alt="service1img"/>
                 </div>

@@ -578,7 +578,9 @@
 #services-provided {
     height: 300vh;
     height: 350vh;
+
     
+    height: 100%;
     /*Can remove the height for it just to fit content but gap wont work as a result so will need margin tops*/
     width: 100%;
 
@@ -1087,6 +1089,36 @@
         background-color: rgb(211, 211, 16);
         
     
+    }
+
+    #service-space-1 {
+        
+        display: flex;
+        
+        height: 1200px;
+    }
+
+
+    .service1-img {
+        height: 80%;
+        width: 58%;
+    }
+
+    .service1 {
+        margin-right: 2%;
+        width: 40%;
+    }
+
+    #service-space-2 {
+        
+        display: flex;
+        height: 1200px;
+    }
+
+    #service-space-3 {
+        
+        display: flex;
+        height: 1200px;
     }
 }
 
