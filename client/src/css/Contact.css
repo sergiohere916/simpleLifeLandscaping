@@ -265,6 +265,54 @@
 }
 
 
-@media (min-width: 1200px) {
+@media (min-width: 1500px) {
+    
+    #image-section {
+        height: 60vh;
+        height: 85vh;
+        height: 620px;
+        width: 100%;
+        background-image: url("../images/simple_life_03.jpg");
+        background-size: none;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+        z-index: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 3px solid rgb(0, 0, 0);
+    }
+
+    #contacts-section {
+        height: 850px;
+       
+    }
+    
+}
+
+@media (min-width: 1800px) {
+    
+    #image-section {
+        /* height: 60vh;
+        height: 85vh; */
+        height: 835px;
+        width: 100%;
+        background-image: url("../images/simple_life_03.jpg");
+        background-size: none;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+        z-index: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 3px solid rgb(0, 0, 0);
+    }
+
+    #contacts-section {
+        height: 850px;
+       
+    }
     
 }

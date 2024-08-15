@@ -1,8 +1,10 @@
 import React, {useRef, useState} from "react";
 import "../css/Contact.css"
 import emailjs from "@emailjs/browser"
+import Header from "./Header";
 
 function Contact() {
+    const [displayMobileNav, setDisplayMobileNav] = useState(false);
     const [condition, setCondition] = useState(true)
     const form = useRef()
     const sendEmail = () => {
@@ -30,7 +32,12 @@ function Contact() {
         }, 2000);
     }
 
+    function showHiddenNav() {
+        setDisplayMobileNav(!displayMobileNav);
+    }
+
     return <div id="contact-container">
+        <Header showHiddenNav={showHiddenNav}></Header>
         <div id="image-section">
             <span>CONTACT US</span>
         </div>
