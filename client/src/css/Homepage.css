@@ -93,6 +93,7 @@
     font-size: 3em;
     color: white;
     z-index: 0;
+    /* font-size: 2em; */
 }
 
 
@@ -994,6 +995,224 @@
     }
 }
 
+@media (min-width: 768px) {
+
+    #hero-image span {
+        text-align: center;
+        font-size: 2.5em;
+        padding-left: 1.5%;
+        padding-right: 1.5%;
+        color: white;
+        z-index: 0;
+        /* font-size: 2em; */
+    }
+
+    #homePage-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    
+        margin-top: 5%;
+        margin-top: 2%;
+        width: 75%;
+        /* width: 100%; */
+        /* background-color: white; */
+    }
+
+    #content1-desc-contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        font-size: 0.9em;
+        margin-top: 4%;
+        
+        
+        height: 80%;
+        width: 30%;
+        background-color: rgb(241, 134, 62);
+        color: white;
+    }
+
+    #homePage-content-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 5%;
+        width: 75%;
+    }
+
+    #content2-image {
+        height: 70%;
+    }
+
+    #content2-description {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+        padding-left: 6%;
+        padding-right: 6%;
+        
+        
+        
+        background-color: rgb(209, 240, 180);
+        height: 54%;
+        width: 75%;
+        
+        position: absolute;
+        /* top: 45%; */
+        top: 55%;
+        left: 20%;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        letter-spacing: 2px;
+    }
+
+    #desc-contact-container2 {
+        width: 100%;
+        height: 12%;
+        display: flex;
+        justify-content: center;
+    }
+    #content2-desc-contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        font-size: 1.1em;
+        margin-top: 10%;
+        
+        height: 5%;
+        height: 100%;
+        width: 45%;
+        /* width: 100%; */
+        background-color: rgb(241, 134, 62);
+        color: white;
+    }
+
+
+}
+
+
+@media (min-width: 992px) {
+
+    .mobileNavLink-Container {
+        height: 50%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5%;
+        margin-top: 30%;
+        justify-content: top;
+        /* justify-content: space-evenly; */
+        align-items: center;
+        font-size: 18pt;
+        font-size: 25pt;
+        
+    }
+
+    #hero-image span {
+        text-align: center;
+        font-size: 2.5em;
+        padding-left: 1.5%;
+        padding-right: 1.5%;
+        color: white;
+        z-index: 0;
+        /* font-size: 2em; */
+    }
+
+    #homePage-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    
+        margin-top: 5%;
+        margin-top: 2%;
+        width: 65%;
+        /* width: 100%; */
+        /* background-color: white; */
+    }
+
+    #content1-desc-contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        font-size: 0.9em;
+        margin-top: 4%;
+        
+        
+        height: 80%;
+        width: 30%;
+        background-color: rgb(241, 134, 62);
+        color: white;
+    }
+
+    #homePage-content-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 5%;
+        width: 65%;
+    }
+
+    #content2-image {
+        height: 70%;
+    }
+
+    #content2-description {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+        padding-left: 6%;
+        padding-right: 6%;
+        
+        
+        
+        background-color: rgb(209, 240, 180);
+        height: 54%;
+        width: 75%;
+        
+        position: absolute;
+        /* top: 45%; */
+        top: 55%;
+        left: 20%;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        letter-spacing: 2px;
+    }
+
+    #desc-contact-container2 {
+        width: 100%;
+        height: 12%;
+        display: flex;
+        justify-content: center;
+    }
+    #content2-desc-contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        font-size: 1.1em;
+        margin-top: 10%;
+        
+        height: 5%;
+        height: 100%;
+        width: 45%;
+        /* width: 100%; */
+        background-color: rgb(241, 134, 62);
+        color: white;
+    }
+    
+    
+}
+
 @media (min-width: 1200px) {
 
 #hiddenMobileNav {
@@ -1025,12 +1244,14 @@
     /* height: 80vh; */
 
     height: 90vh;
+    height: 666px;
     width: 100%;
     
     background-image: url("../images/simple_life_11.jpg"), url("../images/simple_life_06.jpg");
 
     
-    background-size: 70%, 40%;
+    /* background-size: 70%, 45%; */
+    background-size: 80%, 40%;
     background-repeat: no-repeat, repeat;
     
     filter: blur(0px), blur(5px);
@@ -1043,7 +1264,7 @@
     
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     letter-spacing: 8px;
-
+    
     
     /* text-align: center;
     font-size: 3em;
@@ -1094,6 +1315,8 @@
     background-color: rgb(255, 243, 229);
     background-color: rgb(227, 238, 209);
     background-color: rgb(103, 139, 92);
+
+    background-color: rebeccapurple;
 
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     
@@ -1152,6 +1375,7 @@
     margin-top: 4%;
     height: 100vh;
     width: 100%;
+    height: 740px;
 
    
     
@@ -1186,7 +1410,7 @@
     justify-content: end;
     
     height: 30%;
-    width: 100%;
+    width: 90%;
     font-size: 2.2rem;
     text-align: center;
 
@@ -1199,6 +1423,7 @@
 #content1-description p {
     font-size: 1.2em;
     margin-top: 5%;
+    width: 90%;
     /* text-align: left; */
     /* font-size: 20px; */
     /* font-style: italic; */
@@ -1224,8 +1449,8 @@
     margin-top: 10%;
     
     height: 5%;
-    height: 100%;
-    width: 45%;
+    height: 95%;
+    width: 55%;
     /* width: 100%; */
     background-color: rgb(241, 134, 62);
     color: white;
@@ -1275,6 +1500,7 @@
     margin-top: 4%;
     height: 100vh;
     width: 100%;
+    height: 740px;
 
     /* width: 85%; */
 
@@ -1295,7 +1521,6 @@
     
    
     /* height: 30%; */
-    
     padding-left: 6%;
     padding-right: 6%;
     width: 65%;
@@ -1336,6 +1561,7 @@
     height: 30%;
     width: 100%;
     font-size: 2.2rem;
+    margin-top: 15%;
     text-align: center;
     /* text-align: left; */
     /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
@@ -1366,7 +1592,7 @@
     
     height: 5%;
     height: 100%;
-    width: 45%;
+    width: 55%;
     /* width: 100%; */
     background-color: rgb(241, 134, 62);
     color: white;
@@ -1488,7 +1714,8 @@
 #services-section {
     background-color: black;
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
+    height: 740px;
     position: relative;
     background-color: #FDFDD5;
     display: flex;
@@ -1629,12 +1856,13 @@
     align-items: center; */
     width: 100%;
     height: 80vh;
+    height: 592px;
 }
 
 #projects-content {
     position: relative;
     width: 100%;
-    height: 80vh;
+    height: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -1702,6 +1930,7 @@
 #contact-section {
     width: 100%;
     height: 130vh;
+    height: 962px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1788,9 +2017,9 @@
 }
 
 #footer {
-    height: 30vh;
+    /* height: 30vh; */
+    height: 230px;
     width: 100%;
-    background-color: white;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -1813,4 +2042,75 @@
     font-size: 1.1em;
 }
     
+}
+
+@media (min-width: 1600px) {
+    #hero-image {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    
+        /* height: 80vh; */
+    
+        height: 90vh;
+        height: 900px;
+        width: 100%;
+        
+        background-image: url("../images/simple_life_11.jpg"), url("../images/simple_life_06.jpg");
+    
+        
+        /* background-size: 70%, 45%; */
+        background-size: 80%, 40%;
+        background-repeat: no-repeat, repeat;
+        
+        filter: blur(0px), blur(5px);
+        
+        
+        background-position-x: center;
+        background-position-y: 20%;
+        background-attachment: fixed;
+        
+        
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        letter-spacing: 8px;
+        
+        
+        /* text-align: center;
+        font-size: 3em;
+        color: white; */
+        
+    }
+
+    #homePage-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* align-items: center; */
+        /* height: 100vh; */
+    
+        margin-top: 5%;
+        margin-top: 2%;
+        width: 70%;
+        /* width: 100%; */
+        /* background-color: white; */
+    }
+    
+    #home-content-container1 {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    
+        gap: 0%;
+        margin-top: 4%;
+        height: 100vh;
+        width: 100%;
+        height: 740px;
+    
+       
+        
+        /* background-color: aquamarine; */
+    }
 }

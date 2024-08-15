@@ -212,6 +212,7 @@
 #nav2 {
     
     height: 15vh;
+    height: 111px;
     
     width: 100%;
     padding: 1%;
@@ -225,7 +226,7 @@
     background-color: rgb(103, 139, 92);
     background-color: rgb(109, 136, 97);
     background-color: rgb(150, 196, 131);
-    
+
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     z-index: 2;
 

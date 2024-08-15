@@ -728,6 +728,7 @@
         align-items: center;
     
         background-color: rgb(253, 253, 213);
+        background-color: purple;
     }
 
     #service-images {
@@ -840,10 +841,11 @@
 
         position: absolute;
         /* top: -275%; */
-        top: -245%;
+        top: -235%;
         
+
         left: 0%;
-        height: 300%;
+        height: 320%;
         width: 50%;
         background-color: rgba(0, 0, 0, 0);
         background-image: url("../images/orange_mower2.png");
@@ -1396,6 +1398,8 @@
     #service-intro {
         height: 75vh;
         height: 85vh;
+        height: 82vh;
+        height: 724px;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -1406,14 +1410,156 @@
     
     }
 
+    #service-images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 20%;
+        width: 100%;
+
+        padding-top: 0%;
+        padding-left: 0%;
+        padding-right: 0%;
+
+        /* margin-bottom: 10%;
+        margin-bottom: 40%; */
+
+        
+    }
+    
+    .service-img {
+        height: 100%;
+        width: 14%;
+        border: 5px solid rgb(228, 195, 171);
+    }
+
+    #littleMower {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        position: absolute;
+        /* top: -275%; */
+        top: -245%;
+        top: -370%;
+        
+        left: 5%;
+        height: 700%;
+        width: 30%;
+        background-color: rgba(0, 0, 0, 0);
+        background-image: url("../images/orange_mower2.png");
+        background-size: cover;
+        animation-duration: 15s;
+        
+    }
+
+    @keyframes mow-lawn {
+        from {
+            left: 0%;
+        }
+    
+        50% {
+            left: 68%;
+            
+            
+        }
+        to {
+            /* transform: rotateY(180deg); */
+            left: -5%;
+            transform: rotateY(180deg)
+        }
+    }
+
+
+    #snowShovel {
+        position: absolute;
+        top: -350%;
+        left: 47.5%;
+        height: 500%;
+        width: 11%;
+        
+        height: 380%;
+        height: 400%;
+        width: 9%;
+        
+        background-image: url("../images/orange_snow_shovel-2.png");
+        background-size: cover;
+        animation-duration: 2s;
+        animation-iteration-count: calc(10);
+        animation-name: shovel;
+    }
+    
+    #snowShovel img {
+        height: 100%;
+        width: 100%;
+    }
+    
+    @keyframes shovel {
+        from {
+            top: -350%;
+            
+        }
+    
+        10% {
+            
+            left: 47.8%;
+        }
+    
+        20% {
+            
+            left: 48%;
+        }
+    
+        30% {
+            
+        }
+    
+        40% {
+            left: 47.3;
+            top: -210%;
+            
+        }
+    
+        50% {
+            left: 46.3%;
+        }
+    
+        60% {
+            left: 46.3%;
+        }
+        70% {
+            left: 46.3%;
+        }
+        80% {
+            left: 46.3%;
+        }
+        90% {
+            left: 46.3%;
+        }
+        100% {
+            left: 46.3%;
+            
+        }
+        
+    
+        to {
+            top: -218%;
+            left: 46.3%;
+        }
+    }
+
     
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1201px) {
 
     #service-intro {
         height: 75vh;
         height: 85vh;
+        height: 558px;
+        /* height: 832px; */
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -1429,11 +1575,8 @@
         /* background-color: rgb(224, 183, 94); */
         background-color: rgb(253, 253, 213);
         
-        /* background-color: rgb(94, 160, 94);
-        background-color: rgb(140, 190, 120);
-        background-color: rgb(141, 140, 139); */
-    
-        /* padding: 3%; */
+        background-color: rgb(192, 123, 33);
+        
     
     }
     
@@ -1450,7 +1593,7 @@
         padding-left: 1%;
         padding-right: 1%;
     
-        margin-top: 2%;
+        margin-top: 0%;
         margin-bottom: 0%;
        
     }
@@ -1497,9 +1640,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 80%;
+        height: 60%;
         /* width: 32%; */
         width: 10%;
+        
         
         background-color: rgb(218, 199, 147);
         background: radial-gradient(rgb(218, 199, 147), rgba(218, 199, 147, 0.411), rgba(218, 199, 147, 0.089));
@@ -1572,7 +1716,8 @@
     #fence-container {
         position: absolute;
         top: -300%;
-        height: 8vh;
+        /* height: 8vh; */
+        height: 59.2px;
         left: 0;
         width: 30.50%;
         width: 32.2%;
@@ -1585,7 +1730,8 @@
     #fence-container-rightside {
         position: absolute;
         top: -300%;
-        height: 8vh;
+        /* height: 8vh; */
+        height: 59.2px;
         right: 0;
         width: 35.5%;
         /* border-left: 3px solid rgb(82, 60, 36); */
@@ -1624,9 +1770,9 @@
     
     #littleMower {
         position: absolute;
-        top: -400%;
+        top: -340%;
         left: 0%;
-        height: 600%;
+        height: 700%;
         width: 20%;
         background-color: rgba(0, 0, 0, 0);
         background-image: url("../images/orange_mower2.png");
@@ -1748,7 +1894,7 @@
         /* border: 3px solid rgb(173, 173, 229); */
     
      
-        border-radius: 15px;
+        border-radius: 0px;
         height: 3%;
     
     
@@ -1992,6 +2138,7 @@
     #services-provided {
         height: 300vh;
         height: 350vh;
+        height: 2590px;
         width: 100%;
         margin-top: 5%;
         display: flex;
@@ -2007,23 +2154,6 @@
         display: flex;
     }
 
-    .service2-content {
-        height: 80vh;
-        width: 100%;
-        display: flex;
-    }
-    
-    .service3-content {
-        height: 80vh;
-        width: 100%;
-        display: flex;
-    }
-    
-    .service-4-content {
-        height: 80vh;
-        width: 100%;
-        display: flex;
-    }
     
     .service1-img {
         margin-left: 5%;
@@ -2123,4 +2253,33 @@
         height: 100%;
     }
     
+}
+
+@media (min-width: 1500px) {
+
+    #service-intro {
+        height: 75vh;
+        height: 85vh;
+        
+        /* height: 832px; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    
+        /* if would like to use services images remove the justify center below*/
+    
+        /* justify-content: center; */
+        align-items: center;
+    
+    
+        /* background-color: rgb(216, 255, 215); */
+        /* background-color: rgb(233, 214, 152); */
+        /* background-color: rgb(224, 183, 94); */
+        background-color: rgb(253, 253, 213);
+        
+    
+    }
+    
+    
+
 }
