@@ -1088,7 +1088,7 @@
 
     #service-intro {
         
-        background-color: rgb(211, 211, 16);
+        background-color: yellow;
         
     
     }
@@ -1100,10 +1100,22 @@
         height: 800px;
     }
 
+    #service-images {
+        /* center images but do not let it effect other media sizes */
+
+        
+        /* background-color: black; */
+        align-items: center;
+    }
+
+    .service-img {
+        height: 80%;
+    }
 
     .service1-img {
-        height: 80%;
+        height: 90%;
         width: 58%;
+        
     }
 
     .service1 {
@@ -1206,6 +1218,7 @@
 
     #service-images {
         display: flex;
+        align-items: start;
         justify-content: center;
         justify-content: space-evenly;
         height: 30%;
@@ -1218,6 +1231,11 @@
         margin-top: 2%;
         margin-bottom: 0%;
        
+    }
+
+
+    .service-img {
+        height: 60%;
     }
 
     #servicePageBreak {

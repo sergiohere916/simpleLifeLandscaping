@@ -2,6 +2,7 @@ import React, {useRef, useState} from "react";
 import "../css/Contact.css"
 import emailjs from "@emailjs/browser"
 import Header from "./Header";
+import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 
 function Contact() {
     const [displayMobileNav, setDisplayMobileNav] = useState(false);
@@ -38,6 +39,18 @@ function Contact() {
 
     return <div id="contact-container">
         <Header showHiddenNav={showHiddenNav}></Header>
+        {displayMobileNav?
+        (<div id='hiddenMobileNav'>
+            <div className="mobileNavLink-Container">
+                <NavLink className="mobileLinks" to="/" onClick={(e) => {setDisplayMobileNav(!displayMobileNav)}}>Home</NavLink>
+                <NavLink className="mobileLinks" to="about" onClick={(e) => {setDisplayMobileNav(!displayMobileNav)}}>About</NavLink>
+                <NavLink className="mobileLinks" to="/services" onClick={(e) => {setDisplayMobileNav(!displayMobileNav)}}>Services</NavLink>
+                <NavLink className="mobileLinks" to="projects" onClick={(e) => {setDisplayMobileNav(!displayMobileNav)}}>Projects</NavLink>
+                <NavLink className="mobileLinks" to="/contact" onClick={(e) => {setDisplayMobileNav(!displayMobileNav)}}>Contact</NavLink>
+                
+            </div>
+        </div>):
+        (<></>) }
         <div id="image-section">
             <span>CONTACT US</span>
         </div>
@@ -45,7 +58,7 @@ function Contact() {
         <div id="contacts-section">
             <div id="contact-information">
                 <span id="contact-info-header">Contact Us</span>
-                <span>Need to get in touch with us? Fill out this form and we'll be sure to get back to you very soon! </span>
+                <span id="contact-info-paragraph">Need to get in touch with us? Fill out this form and we'll be sure to get back to you very soon! </span>
             </div>
             <div id="contact-form-container">
                 <form ref={form} onSubmit={(e) => handleSubmit(e)}>
@@ -71,6 +84,7 @@ function Contact() {
                     <button type="submit">{condition ? "Submit" : "Success"}</button>
                 </form>
             </div>
+            <div id="form-bottom"></div>
         </div>
         
     </div>

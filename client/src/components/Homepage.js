@@ -89,11 +89,16 @@ function Homepage() {
                     <img src = {homeFrontView2} alt="home-frontview2"/>
                 </div>
                 <div id="content2-description">
-                    <div id="content2-description2">Supplying all your landscaping needs.</div>
-                    <p>Simple life provides services to the greater Ohio region</p>
+                    <div id="content2-description2">Simple Life Services</div>
+                    <p>
+                    These services keep your lawn and landscape healthy and attractive. 
+                    We'll do pest management, weed control, fertilization, and debris removal. 
+                    Edging and trimming create clean lines and reach hard-to-access areas for a polished look. ff
+                    Sodding provides an instant, green lawn by laying down pre-grown grass.
+                    </p>
                     <div id='desc-contact-container2'>
 
-                        <div id="content2-desc-contact">Contact Us</div>
+                        <div id="content2-desc-contact">View Services</div>
                     </div>
                 </div>
             </div>
