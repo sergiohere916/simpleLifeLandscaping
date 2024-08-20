@@ -4,6 +4,11 @@ import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 
 import mainImage from "../images/simple_life_04.jpg";
 
+import aboutImage1 from "../images/simple_life_09.jpg";
+import aboutImage2 from "../images/simple_life_11.jpg";
+import aboutImage3 from "../images/simple_life_06.jpg";
+import aboutImage4 from "../images/simple_life_08.jpg";
+
 
 function About() {
 
@@ -28,17 +33,34 @@ function About() {
         </div>):
         (<></>) }
         <div id="aboutPage-Title">
-            ABOUT US
+           GET TO KNOW US
         </div>
         <div id="aboutPage-Body">
             <div id="aboutPage-Content1">
                 <div id="aboutPage-Img-Container">
-                    <img src={mainImage}/>
+                    <img src={aboutImage1}/>
+                </div>
+                <div id="aboutPage-Img-Container">
+                    <img src={aboutImage2}/>
+                </div>
+                <div id="aboutPage-Img-Container">
+                    <img src={aboutImage3}/>
                 </div>
             </div>
             <div id="aboutPage-Content2">
+                <div id="about-Owen">
+                    <span id="about-Owen-Title">Owen LastName</span>
+                    <span id="about-Owen-Title-2">Meet Simple Life's Founder</span>
+                    <p>
+                        Owner and Founder of Simple Life Landscaping. Eager to help the commmunity to meet their
+                        landscaping needs, and work with them to develop their idea of a perfect landscape, for their home
+                        , business, or otherwise. 
+                        Commited to ensuring quality work that will stand out and that others will admire and clients
+                        can be proud of.
+                    </p>
+                </div>
                 <div id="about-Work">
-                    <div id="aboutWork-Text-1">Our Work</div>
+                    <div id="aboutWork-Text-1">Why Choose Us</div>
                     <div  id="aboutWork-Text-2"> 
                         We take pride in our work 
                         by completing each project as if it was our own house. With a multinational crew, 
@@ -46,6 +68,9 @@ function About() {
                         and experience to make your project a reality.
                         </div>
                     
+                </div>
+                <div id="aboutPageBanner">
+                    <button>Send Us An Email</button>
                 </div>
                 <div id="about-Goal">
                     <div id="aboutPage-Text-1">
