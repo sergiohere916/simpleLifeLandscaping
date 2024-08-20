@@ -48,6 +48,7 @@ function About() {
                 </div>
             </div>
             <div id="aboutPage-Content2">
+                <div id="aboutPage-top-row">
                 <div id="about-Owen">
                     <span id="about-Owen-Title">Owen LastName</span>
                     <span id="about-Owen-Title-2">Meet Simple Life's Founder</span>
@@ -68,6 +69,7 @@ function About() {
                         and experience to make your project a reality.
                         </div>
                     
+                </div>
                 </div>
                 <div id="aboutPageBanner">
                     <button>Send Us An Email</button>
