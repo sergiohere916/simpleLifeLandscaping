@@ -737,7 +737,7 @@
 
 
 
-@media (min-width: 1600px) {
+@media (min-width: 600px) {
 
     #hiddenMobileNav {
         
@@ -834,12 +834,20 @@
         display: flex;
         /* text-align: left; */
         text-align: center;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        letter-spacing: 2px;
         font-size: 13pt;
+        font-size: 1.4em;
     }
 
     #content1-description p {
         /* text-align: left; */
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        letter-spacing: 2px;
         margin-top: 2%;
+        padding-left: 7%;
+        padding-right: 7%;
+        font-size: 1.3em;
         text-align: center;
     }
 
@@ -854,6 +862,7 @@
     #desc-contact-container {
         display: flex;
         justify-content: center;
+        
         width: 100%;
         height: 20%;
     }
@@ -993,6 +1002,89 @@
         flex-direction: column;
         
     }
+
+
+    #content2-description {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+        padding-left: 6%;
+        padding-right: 6%;
+        
+        
+        
+        background-color: rgb(209, 240, 180);
+        /* height: 75%; */
+        /* width: 35%; */
+        height: 54%;
+        width: 90%;
+        
+        position: absolute;
+        /* top: 7%; */
+        
+        top: 45%;
+        /* left: 45%;
+        left: 54%; */
+        left: 12%;
+        
+    
+    
+        /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        letter-spacing: 2px;
+    }
+    
+    #content2-description2 {
+        display: flex;
+        flex-direction: column;
+        
+        justify-content: end;
+        
+        
+        height: fit-content;
+        padding-top: 5%;
+        width: 100%;
+        font-size: 1.2em;
+        text-align: center;
+        /* text-align: left; */
+        /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
+        
+    }
+    
+    #content2-description p {
+        /* font-size: 1.2em; */
+        font-size: 1.2em;
+        margin-top: 5%;
+        padding-left: 7%;
+        padding-right: 7%;
+        text-align: center;
+        /* text-align: left; */
+        letter-spacing: 1px;
+    }
+    
+    #desc-contact-container2 {
+        width: 100%;
+        height: 12%;
+        display: flex;
+        justify-content: center;
+    }
+    #content2-desc-contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        font-size: 1.1em;
+        margin-top: 5%;
+        
+        height: 5%;
+        height: 100%;
+        width: 45%;
+        /* width: 100%; */
+        background-color: rgb(241, 134, 62);
+        color: white;
+    }
 }
 
 @media (min-width: 768px) {
@@ -1044,8 +1136,23 @@
         width: 75%;
     }
 
+/* THIS IS CURRENT FIX IT 8/23 */
+    #home-content-container2 {
+        display: flex;
+        justify-content: center;
+        
+        gap: 0%;
+        margin-top: 4%;
+        height: 100vh;
+        width: 100%;
+    
+        height: 900px;
+        
+        position: relative;
+    }
+
     #content2-image {
-        height: 70%;
+        height: 60%;
     }
 
     #content2-description {
@@ -1061,15 +1168,24 @@
         
         background-color: rgb(209, 240, 180);
         height: 54%;
+        
         width: 75%;
+        width: 85%;
         
         position: absolute;
         /* top: 45%; */
         top: 55%;
+        top: 45%;
         left: 20%;
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         letter-spacing: 2px;
+
+        
     }
+
+
+
+    
 
     #desc-contact-container2 {
         width: 100%;
@@ -1092,6 +1208,11 @@
         background-color: rgb(241, 134, 62);
         color: white;
     }
+
+
+
+
+    
 
 
 }
@@ -1556,7 +1677,7 @@
     /* new height and width can use for higher media sizes */
     height: fit-content;
     width: fit-content;
-    font-size: 2.3rem;
+    font-size: 2.0rem;
     margin-top: 0%;
     text-align: center;
     
@@ -2397,8 +2518,8 @@
         
         height: fit-content;
         width: fit-content;
-        font-size: 2.2rem;
-        margin-left: -9%;
+        font-size: 2.0rem;
+        margin-left: 0%;
         margin-top: 0%;
         text-align: center;
         
@@ -2971,5 +3092,21 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    #content2-description2 {
+        display: flex;
+        flex-direction: column;
+        
+        justify-content: end;
+        
+        height: fit-content;
+        width: fit-content;
+        font-size: 2.2rem;
+        margin-left: -10%;
+        margin-top: 0%;
+        text-align: center;
+        
+        
     }
 }
