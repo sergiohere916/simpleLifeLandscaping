@@ -49,27 +49,29 @@ function About() {
             </div>
             <div id="aboutPage-Content2">
                 <div id="aboutPage-top-row">
-                <div id="about-Owen">
-                    <span id="about-Owen-Title">Owen LastName</span>
-                    <span id="about-Owen-Title-2">Meet Simple Life's Founder</span>
-                    <p>
-                        Owner and Founder of Simple Life Landscaping. Eager to help the commmunity to meet their
-                        landscaping needs, and work with them to develop their idea of a perfect landscape, for their home
-                        , business, or otherwise. 
-                        Commited to ensuring quality work that will stand out and that others will admire and clients
-                        can be proud of.
-                    </p>
-                </div>
-                <div id="about-Work">
-                    <div id="aboutWork-Text-1">Why Choose Us</div>
-                    <div  id="aboutWork-Text-2"> 
-                        We take pride in our work 
-                        by completing each project as if it was our own house. With a multinational crew, 
-                        we provide unique quality of work since each member brings his own touch 
-                        and experience to make your project a reality.
-                        </div>
-                    
-                </div>
+                    <div id="about-Owen">
+                        <span id="about-Owen-Title">Owen LastName</span>
+                        <span id="about-Owen-Title-2">Meet Simple Life's Founder</span>
+                        <p>
+                            Owner and Founder of Simple Life Landscaping. Eager to help the commmunity to meet their
+                            landscaping needs, and work with them to develop their idea of a perfect landscape, for their home
+                            , business, or otherwise. 
+                            Commited to ensuring quality work that will stand out and that others will admire and clients
+                            can be proud of.
+                        </p>
+                    </div>
+                    <div id="about-Work">
+                        <div id="aboutWork-Text-1">Why Choose Us</div>
+                        <div  id="aboutWork-Text-2"> 
+                        We approach every project with the same care and attention as if it were our own. 
+                        We brings a wealth of unique skills and experiences, 
+                        ensuring that every detail of your landscaping project is executed with precision and creativity. 
+                        This blend of expertise allows us to deliver exceptional quality and a personalized touch, 
+                        turning your vision into a reality. Choose us for a dedicated, professional service that stands out in 
+                        both craftsmanship and commitment.
+                            </div>
+                        
+                    </div>
                 </div>
                 <div id="aboutPageBanner">
                     <button>Send Us An Email</button>
@@ -79,13 +81,14 @@ function About() {
                         Let's Make Your Dream A Reality
                     </div>
                     <div id="aboutPage-Text-2">
-                        Here at simple life we value you. We value what we can create together and aspire to make your vision a reality. We'll add value to your home and ensure unique and quality work. Entrust us to make your dream come true.
+                        Here at simple life we value you. We value what we can create together and aspire to make your vision a reality.
+                         We'll add value to your home and business and ensure unique and quality work. Entrust us to make your dream come true.
                     </div>
                     <div id="aboutPage-Text-3">
                         Contact us for estimates on the project you'd like to see completed
                     </div>
                     <div id="aboutPage-Text-4">
-                        Call Me at 000-000-0000
+                        Give us a call at 304-494-4471
                     </div>
                     <div id="aboutPage-Text-5">
                         Owen
@@ -101,14 +104,14 @@ function About() {
                 <a>Facebook</a>
             </div>
             <div className="footer-sections">
-                <a>About</a>
-                <a>Services</a>
-                <a>Projects</a>
-                <a>Contact</a>
+                <NavLink  to="/about"><a>About</a></NavLink>
+                <NavLink  to="/services"><a>Services</a></NavLink>
+                <NavLink  to="/projects"><a>Projects</a></NavLink>
+                <NavLink  to="/contact"><a>Contact</a></NavLink>
             </div>
             <div className="footer-sections">
                 <span>testing123@gmail.com</span>
-                <span>123-456-7890</span>
+                <span>Phone: 304-494-4471</span>
             </div>
         </div>
     </div>

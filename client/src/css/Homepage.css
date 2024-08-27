@@ -10,9 +10,6 @@
     height: 100%;
     
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.267);
-    background-color: rgb(183, 221, 161);
-    background-color: rgb(98, 209, 131);
     background-color: rgb(227, 231, 163);
     z-index: 1;
 }
@@ -105,16 +102,8 @@
 
     margin-top: 5%;
     
-    width: 100%;
-
-    /* width previously 80% */
-
-    /* remove the below if no background color all padding */
-    
+    width: 100%;    
     padding-bottom: 3%;
-    
-    background-color: rgb(255, 243, 229);
-    background-color: rgb(227, 238, 209);
     background-color: rgb(103, 139, 92);
 
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -736,6 +725,218 @@
 
 
 
+@media (max-width: 450px) {
+
+    #home-content-container2 {
+        display: flex;
+        justify-content: center;
+        
+        gap: 0%;
+        margin-top: 4%;
+        height: 100vh;
+        width: 100%;
+    
+        height: 750.2px;
+        
+        position: relative;
+        background-color: blue;
+    }
+
+    #content2-description {
+        left: 8%;
+    }
+
+    #content2-description2 {
+        display: flex;
+        flex-direction: column;
+        
+        justify-content: end;
+        
+        
+        height: fit-content;
+        padding-top: 5%;
+        width: 150%;
+        font-size: 1.2em;
+        text-align: center;
+        /* text-align: left; */
+        /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
+        
+    }
+
+    #content2-description p {
+        /* font-size: 1.2em; */
+        font-size: 1.0em;
+        margin-top: 5%;
+        padding-left: 7%;
+        padding-right: 7%;
+        text-align: center;
+        /* text-align: left; */
+        letter-spacing: 1px;
+    }
+    
+    #desc-contact-container2 {
+        width: 100%;
+        height: 12%;
+        display: flex;
+        justify-content: center;
+    }
+    #content2-desc-contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        font-size: 1.1em;
+        margin-top: 5%;
+        
+        height: 5%;
+        height: 100%;
+        width: 45%;
+        /* width: 100%; */
+        background-color: rgb(241, 134, 62);
+        color: white;
+    }
+
+    #content2-description p {
+        /* font-size: 1.2em; */
+        font-size: 1.2em;
+        margin-top: 5%;
+        padding-left: 7%;
+        padding-right: 7%;
+        text-align: center;
+        /* text-align: left; */
+        letter-spacing: 1px;
+    }
+    
+    #desc-contact-container2 {
+        width: 100%;
+        height: 12%;
+        display: flex;
+        justify-content: center;
+    }
+    #content2-desc-contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        font-size: 1.1em;
+        margin-top: 5%;
+        
+        height: 5%;
+        height: 100%;
+        width: 45%;
+        /* width: 100%; */
+        background-color: rgb(241, 134, 62);
+        color: white;
+    }
+
+}
+
+
+@media (min-width: 451px) {
+
+    #home-content-container2 {
+        display: flex;
+        justify-content: center;
+        
+        gap: 0%;
+        margin-top: 4%;
+        height: 100vh;
+        width: 100%;
+    
+        height: 750.2px;
+        
+        position: relative;
+        
+    }
+
+    #content2-description {
+        left: 8%;
+    }
+
+    #content2-description2 {
+        display: flex;
+        flex-direction: column;
+        
+        justify-content: end;
+        
+        
+        height: fit-content;
+        padding-top: 5%;
+        width: 150%;
+        font-size: 1.2em;
+        text-align: center;
+        /* text-align: left; */
+        /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
+        
+    }
+
+    #content2-description p {
+        /* font-size: 1.2em; */
+        font-size: 1.0em;
+        margin-top: 5%;
+        padding-left: 7%;
+        padding-right: 7%;
+        text-align: center;
+        /* text-align: left; */
+        letter-spacing: 1px;
+    }
+    
+    #desc-contact-container2 {
+        width: 100%;
+        height: 12%;
+        display: flex;
+        justify-content: center;
+    }
+    #content2-desc-contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        font-size: 1.1em;
+        margin-top: 5%;
+        
+        height: 5%;
+        height: 100%;
+        width: 45%;
+        /* width: 100%; */
+        background-color: rgb(241, 134, 62);
+        color: white;
+    }
+
+    #content2-description p {
+        /* font-size: 1.2em; */
+        font-size: 1.2em;
+        margin-top: 5%;
+        padding-left: 7%;
+        padding-right: 7%;
+        text-align: center;
+        /* text-align: left; */
+        letter-spacing: 1px;
+    }
+    
+    #desc-contact-container2 {
+        width: 100%;
+        height: 12%;
+        display: flex;
+        justify-content: center;
+    }
+    #content2-desc-contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        font-size: 1.1em;
+        margin-top: 5%;
+        
+        height: 5%;
+        height: 100%;
+        width: 45%;
+        /* width: 100%; */
+        background-color: rgb(241, 134, 62);
+        color: white;
+    }
+
+}
 
 @media (min-width: 600px) {
 
@@ -751,9 +952,7 @@
         height: 100%;
         
         width: 100%;
-        background-color: rgba(0, 0, 0, 0.267);
-        background-color: rgb(183, 221, 161);
-        background-color: rgb(98, 209, 131);
+        
         background-color: rgb(227, 231, 163);
         z-index: 1;
     }
@@ -788,23 +987,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        
-    
-    
-        height: 80vh;
+        /* height: 80vh; */
+        height: 640px;
         width: 100%;
-        background-image: url("../images/simple_life_04.jpg");
-        background-size: cover;
-        /* background-position-y: 20%; */
-        background-position: center;
         background-attachment: fixed;
     
-        
-    
-        
-        /* font-size: 3em;
-
-        color: white; */
         
     }
     
@@ -1076,7 +1263,7 @@
         align-items: center;
         
         font-size: 1.1em;
-        margin-top: 5%;
+        margin-top: 10%;
         
         height: 5%;
         height: 100%;
@@ -1199,9 +1386,9 @@
         align-items: center;
         
         font-size: 1.1em;
-        margin-top: 10%;
+        margin-top: 15%;
         
-        height: 5%;
+       
         height: 100%;
         width: 45%;
         /* width: 100%; */
@@ -1284,6 +1471,7 @@
 
     #content2-image {
         height: 70%;
+        width: 100%;
     }
 
     #content2-description {
@@ -1304,7 +1492,7 @@
         position: absolute;
         /* top: 45%; */
         top: 55%;
-        left: 20%;
+        left: 35%;
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         letter-spacing: 2px;
     }
@@ -1329,6 +1517,10 @@
         /* width: 100%; */
         background-color: rgb(241, 134, 62);
         color: white;
+    }
+
+    #services-desc {
+        width: 65%;
     }
     
     
@@ -1426,19 +1618,10 @@
     margin-top: 2%;
     
     width: 100%;
-
-    /* width previously 80% */
-
-    /* remove the below if no background color all padding */
-    /* padding-left: 5%;
-    padding-right: 5%; */
     padding-bottom: 3%;
-    
-    background-color: rgb(255, 243, 229);
-    background-color: rgb(227, 238, 209);
     background-color: rgb(103, 139, 92);
 
-    background-color: rebeccapurple;
+    /* background-color: rebeccapurple; */
 
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     
@@ -2262,19 +2445,10 @@
         margin-top: 2%;
         
         width: 100%;
-    
-        /* width previously 80% */
-    
-        /* remove the below if no background color all padding */
-        /* padding-left: 5%;
-        padding-right: 5%; */
         padding-bottom: 3%;
-        
-        background-color: rgb(255, 243, 229);
-        background-color: rgb(227, 238, 209);
         background-color: rgb(103, 139, 92);
     
-        background-color: rgb(187, 84, 182);
+        /* background-color: rgb(187, 84, 182); */
     
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         
@@ -3042,7 +3216,7 @@
     }
 
     #homePage-intro {
-        background-color: rgb(89, 98, 218);
+        /* background-color: rgb(89, 98, 218); */
     }
 
     #homePage-content {

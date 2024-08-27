@@ -154,14 +154,14 @@ function Projects() {
                 <a>Facebook</a>
             </div>
             <div className="footer-sections">
-                <a>About</a>
-                <a>Services</a>
-                <a>Projects</a>
-                <a>Contact</a>
+                <NavLink  to="/about"><a>About</a></NavLink>
+                <NavLink  to="/services"><a>Services</a></NavLink>
+                <NavLink  to="/projects"><a>Projects</a></NavLink>
+                <NavLink  to="/contact"><a>Contact</a></NavLink>
             </div>
             <div className="footer-sections">
                 <span>testing123@gmail.com</span>
-                <span>123-456-7890</span>
+                <span>Phone: 304-494-4471</span>
             </div>
         </div>
     </div>

@@ -30,7 +30,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 90vh;
+    /* height: 90vh; */
     width: 100%;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     letter-spacing: 3px;
@@ -84,6 +84,7 @@
     height: 60%;
     
     width: 100%;
+    
     margin-bottom: 35%;
 }
 
@@ -93,8 +94,10 @@
     justify-content: center;
     align-items: center;
     height: 694px;
+    height: 950px;
     gap: 20px;
     width: 93%;
+    
 }
 
 #about-Owen {
@@ -145,6 +148,7 @@
 }
 
 #aboutWork-Text-2 {
+    margin-top: 5%;
     padding-left: 10%;
     padding-right: 10%;
     width: 100%;
@@ -161,8 +165,10 @@
     margin-top: 7%;
     height: 500px;
     width: 100%;
+    
     background-image: url(../images/simple_life_08.jpg);
     background-size: cover;
+    
 }
 
 #aboutPageBanner button {
@@ -205,6 +211,7 @@
 }
 
 #aboutPage-Text-2 {
+    margin-top: 3%;
     text-align: center;
     width: 45%;
     width: 100%;
@@ -216,6 +223,7 @@
 }
 
 #aboutPage-Text-3 {
+    margin-top: 3%;
     text-align: center;
     width: 45%;
     width: 100%;
@@ -228,6 +236,7 @@
 }
 
 #aboutPage-Text-4 {
+    margin-top: 2%;
     text-align: center;
     width: 45%;
     width: 100%;
@@ -262,9 +271,38 @@
         align-items: center;
         
         height: 130px;
+        width: 100%;   
+    }
+
+    #about-Work {
+        
+        height: 550px;
+       
+        
+    }
+    
+}
+
+
+@media (min-width: 451px) {
+    #aboutPage-top-row {
+       
+        gap: 30px;
+        
+    } 
+
+    #aboutPage-Content1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        height: 130px;
         width: 100%;
         
-        
+    }
+
+    #about-Work {
+        height: 550px;
     }
     
 }

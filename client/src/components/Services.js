@@ -120,7 +120,11 @@ function Services() {
                         <li>Plant Installation</li>
                         <li>Transplants</li>
                     </ul>
-                    <p className="service-descriptions">These services keep your lawn and landscape healthy and attractive. We'll do pest management, weed control, fertilization, and debris removal. Edging and trimming create clean lines and reach hard-to-access areas for a polished look. Sodding provides an instant, green lawn by laying down pre-grown grass.</p>
+                    <p className="service-descriptions">Our professional landscaping services ensure your outdoor spaces remain vibrant and well-maintained. 
+                    We offer mulching, landscape redesign, garden bed preparation, and plant installation to enhance your yard’s aesthetics and health.
+                     Additionally, our demolition/restoration services help renew your landscape, 
+                     while transplants allow for the careful relocation of plants. With our expertise, your landscape will flourish, 
+                     providing a beautiful and functional environment.</p>
                     <button>Contact Us</button>
                 </div>   
             </div>
@@ -152,7 +156,7 @@ function Services() {
                     <ul className="service-list">
                         <li>Fall Cleanup</li>
                     </ul>
-                    <p className="service-descriptions">Seasonal landscaping services adapt throughout the year to maintain outdoor spaces. Spring focuses on rejuvenation and growth, summer on regular upkeep and pest control, fall on preparation for winter, and winter on protection and maintenance during cold weather. Each season's tasks ensure the landscape remains healthy and attractive year-round.</p>
+                    <p className="service-descriptions">Seasonal landscaping services adapt throughout the year to maintain outdoor spaces. Spring focuses on rejuvenation and growth, summer on regular upkeep and pest control, fall on winter preparation including leaf blowing and cleanup, and winter on protection and maintenance during cold weather. Each season's tasks ensure the landscape remains healthy and attractive year-round.</p>
                     <button>Contact Us</button>
                 </div>
                 
@@ -164,18 +168,12 @@ function Services() {
                 <div className="service1">
                     <div className="services-title">Extra Services Provided:</div>
                     <ul className="service-list">
-                        <li>Lawn Mowing</li>
-                        <li>Edging</li>
-                        <li>Trimming</li>
-                        <li>Mulching</li>
-                        <li>Landscape re-design</li>
-                        <li>Plant Installation</li>
-                        <li>Transplants</li>
                         <li>Snow removal</li>
-                        <li>Leaf blwoing</li>
-                        <li>Seeding</li>
-                        <li>Sodding</li>
                     </ul>
+                    <p className="service-descriptions">We provide a multitude of different services throughout the year, and will work with you
+                    to establish what may best suit what your vision entails. The overall goal of our extra services remain the same, we aim to have 
+                    satisfied clients that can be proud of their, home, bussiness, landscape. For this and more please give us a call.  
+                    </p>
                     <button>Contact Us</button>
                 </div>
                 
@@ -188,14 +186,14 @@ function Services() {
                 <a>Facebook</a>
             </div>
             <div className="footer-sections">
-                <a>About</a>
-                <a>Services</a>
-                <a>Projects</a>
-                <a>Contact</a>
+                <NavLink  to="/about"><a>About</a></NavLink>
+                <NavLink  to="/services"><a>Services</a></NavLink>
+                <NavLink  to="/projects"><a>Projects</a></NavLink>
+                <NavLink  to="/contact"><a>Contact</a></NavLink>
             </div>
             <div className="footer-sections">
                 <span>testing123@gmail.com</span>
-                <span>123-456-7890</span>
+                <span>Phone: 304-494-4471</span>
             </div>
         </div>
     </div>

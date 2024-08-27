@@ -91,8 +91,7 @@ function Homepage() {
                 <div id="content2-description">
                     <div id="content2-description2">Simple Life Services</div>
                     <p>
-                    These services keep your lawn and landscape healthy and attractive. 
-                    We'll do pest management, weed control, fertilization, and debris removal. 
+                    These services keep your lawn and landscape healthy and attractive.  
                     Edging and trimming create clean lines and reach hard-to-access areas for a polished look. ff
                     Sodding provides an instant, green lawn by laying down pre-grown grass.
                     </p>
@@ -174,14 +173,14 @@ function Homepage() {
                 <a>Facebook</a>
             </div>
             <div className="footer-sections">
-                <a>About</a>
-                <a>Services</a>
-                <a>Projects</a>
-                <a>Contact</a>
+                <NavLink  to="/about"><a>About</a></NavLink>
+                <NavLink  to="/services"><a>Services</a></NavLink>
+                <NavLink  to="/projects"><a>Projects</a></NavLink>
+                <NavLink  to="/contact"><a>Contact</a></NavLink>
             </div>
             <div className="footer-sections">
                 <span>testing123@gmail.com</span>
-                <span>123-456-7890</span>
+                <span>Phone: 304-494-4471</span>
             </div>
         </div>
     </div>)

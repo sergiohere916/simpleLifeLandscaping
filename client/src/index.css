@@ -67,7 +67,7 @@ body {
 
   min-height: 100vh;
   width: 100%;
-  border: 5px solid rgb(255, 10, 10);
+  /* border: 5px solid rgb(255, 10, 10); */
 }
 
 #projectsPage {
@@ -78,7 +78,7 @@ body {
 
   min-height: 100vh;
   width: 100%;
-  border: 5px solid rgb(255, 10, 10);
+  /* border: 5px solid rgb(255, 10, 10); */
 }
 
 #aboutPage {
@@ -90,12 +90,11 @@ body {
 
   min-height: 100vh;
   width: 100%;
-  /* background-color: red; */
-  /* background-color: rgb(253, 253, 213); */
-  border: 5px solid rgb(10, 47, 255);
+  /* border: 5px solid rgb(10, 47, 255); */
 }
 
 #contact-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -106,5 +105,5 @@ body {
   background-color: rgb(140, 190, 120);
   background-color: rgb(103, 139, 92);
   display: block;
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
