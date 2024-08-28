@@ -258,7 +258,7 @@
     letter-spacing: 1.5px;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 451px) {
     #aboutPage-top-row {
        
         gap: 30px;
