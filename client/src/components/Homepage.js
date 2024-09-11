@@ -168,9 +168,8 @@ function Homepage() {
 
         <div id="footer">
             <div className="footer-sections">
-                <a>Instagram</a>
-                <a>LinkedIn</a>
-                <a>Facebook</a>
+                <span>Simple Life Landscaping</span>
+                <span>Providing services in the greater Ohio region</span>
             </div>
             <div className="footer-sections">
                 <NavLink  to="/about"><a>About</a></NavLink>
@@ -179,8 +178,9 @@ function Homepage() {
                 <NavLink  to="/contact"><a>Contact</a></NavLink>
             </div>
             <div className="footer-sections">
-                <span>testing123@gmail.com</span>
-                <span>Phone: 304-494-4471</span>
+                <span>Email: testing123@gmail.com</span>
+                <span>Work Tel: 304-494-4471</span>
+                <span>Personal Tel: 304-494-4471</span>
             </div>
         </div>
     </div>)

@@ -50,26 +50,28 @@ function About() {
             <div id="aboutPage-Content2">
                 <div id="aboutPage-top-row">
                     <div id="about-Owen">
-                        <span id="about-Owen-Title">Owen LastName</span>
-                        <span id="about-Owen-Title-2">Meet Simple Life's Founder</span>
+                        <span id="about-Owen-Title">Meet Owen Linnell</span>
+                        <span id="about-Owen-Title-2"> Passionate Owner and Operator of Simple Life Landscaping.</span>
                         <p>
-                            Owner and Founder of Simple Life Landscaping. Eager to help the commmunity to meet their
-                            landscaping needs, and work with them to develop their idea of a perfect landscape, for their home
-                            , business, or otherwise. 
-                            Commited to ensuring quality work that will stand out and that others will admire and clients
-                            can be proud of.
+                        2024 graduate of Pickerington North, Owen launched Simple Life Landscaping in April of 2024, driven by a deep enthusiasm for
+                        landscaping. His mission is to deliver high-quality landscaping solutions that rival, if not surpass, those of larger companies,
+                        all while offering more personalized service at better prices. 
+
+                        “I thrive on building personal connections with my clients. Landscaping allows me to combine my artistic vision with practical solutions,
+                        ensuring each project reflects the client's dream while providing exceptional service. Unlike big companies that may treat you as just
+                        another job, I'm here to create a meaningful relationship and bring your vision to life with care and dedication.”
                         </p>
                     </div>
                     <div id="about-Work">
                         <div id="aboutWork-Text-1">Why Choose Us</div>
                         <div  id="aboutWork-Text-2"> 
-                        We approach every project with the same care and attention as if it were our own. 
-                        We brings a wealth of unique skills and experiences, 
-                        ensuring that every detail of your landscaping project is executed with precision and creativity. 
-                        This blend of expertise allows us to deliver exceptional quality and a personalized touch, 
-                        turning your vision into a reality. Choose us for a dedicated, professional service that stands out in 
-                        both craftsmanship and commitment.
-                            </div>
+                        At Simple Life Landscaping, we offer more than just landscaping services; we provide a personal touch that big companies
+                        often miss. Founded by Pickerington North 2024 graduate Owen Linnell, our business is dedicated to delivering top-notch 
+                        quality and exceptional service at competitive prices. Simple life's  passion for landscaping and commitment to building 
+                        personal connections ensure that each project reflects your unique vision. Unlike larger firms, we take pride in treating
+                        every client as an individual, making your satisfaction our top priority. Choose Simple Life Landscaping for a truly 
+                        personalized experience and a landscape that truly feels like home.
+                        </div>
                         
                     </div>
                 </div>
@@ -91,7 +93,7 @@ function About() {
                         Give us a call at 304-494-4471
                     </div>
                     <div id="aboutPage-Text-5">
-                        Owen
+                        Owen Linnell
                     </div>
                 </div>
                 
