@@ -72,8 +72,8 @@ function Homepage() {
                     <div id="content1-description1">Supplying all your landscaping needs.</div>
                     <p>Simple life provides services to the greater Ohio region</p>
                     <div id='desc-contact-container'>
-
-                        <div id="content1-desc-contact">Contact Us</div>
+                        {/* <div id="content1-desc-contact">Contact Us</div> */}
+                        <NavLink id="content1-desc-contact" style={{color: "white", textDecoration: "none"}} to="/contact">Contact Us</NavLink>
                     </div>
                 </div>
                 <div id="content1-image">
@@ -96,8 +96,8 @@ function Homepage() {
                     Sodding provides an instant, green lawn by laying down pre-grown grass.
                     </p>
                     <div id='desc-contact-container2'>
-
-                        <div id="content2-desc-contact">View Services</div>
+                        {/* <div id="content2-desc-contact">View Services</div> */}
+                        <NavLink id="content2-desc-contact" style={{color: "white", textDecoration: "none"}} to="/services">View Services</NavLink>
                     </div>
                 </div>
             </div>
@@ -110,7 +110,8 @@ function Homepage() {
                     <span>WE OFFER A VARIETY OF SERVICES </span>
                     <span className='serviceMotto'>We're For a Simple Life</span>
                     <div id="plant-image"></div>
-                    <button>VIEW SERVICES</button>
+                    {/* <button>VIEW SERVICES</button> */}
+                    <NavLink to="/services" id="view-service-button">VIEW SERVICES</NavLink>
                     <div className='littleMower'>
                         <img src={littleMower}/>
                     </div>
@@ -178,7 +179,7 @@ function Homepage() {
                 <NavLink  to="/contact"><a>Contact</a></NavLink>
             </div>
             <div className="footer-sections">
-                <span>Email: testing123@gmail.com</span>
+                <span>simplelifelandscaping116@gmail.com</span>
                 <span>Work Tel: 304-494-4471</span>
                 <span>Personal Tel: 304-494-4471</span>
             </div>

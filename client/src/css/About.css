@@ -307,7 +307,7 @@
 @media (min-width: 451px) {
     #aboutPage-top-row {
         gap: 50px;
-        background-color: blue;
+        /* background-color: blue; */
     } 
 
     #aboutPage-Content1 {
@@ -341,7 +341,7 @@
     }
 
     #aboutPage-top-row {
-        background-color: rgb(106, 106, 192);
+        /* background-color: rgb(106, 106, 192); */
     } 
     
 }
@@ -452,7 +452,7 @@
         height: fit-content;
         gap: 40px;
         width: 93%;
-        background-color: rgb(16, 16, 133);
+        /* background-color: rgb(16, 16, 133); */
     }
 
     #about-Owen {

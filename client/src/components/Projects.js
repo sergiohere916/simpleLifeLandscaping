@@ -9,13 +9,47 @@ import serviceImg4 from "../images/simple_life_03.jpg";
 import serviceImg7 from "../images/simple_life_hero.jpg";
 import serviceImg8 from "../images/simple_life_hero.jpg";
 
-import project0Image from "../images/simple_life_hero.jpg"
+import project0Image from "../images/simple_life_00.jpg"
+import project0_02Image from "../images/simple_life_00_02.JPG"
+import project0_03Image from "../images/simple_life_00_03.JPG"
+import project0_04Image from "../images/simple_life_00_04.JPG"
+
+
 import project1Image from "../images/simple_life_01.jpg"
 import project2Image from "../images/simple_life_02.jpg"
 import project3Image from "../images/simple_life_03.jpg"
 import project4Image from "../images/simple_life_04.jpg"
 import project5Image from "../images/simple_life_05.jpg"
+
 import project6Image from "../images/simple_life_06.jpg"
+import project6_02Image from "../images/simple_life_06_02.jpg"
+import project6_03Image from "../images/simple_life_06_03.JPG"
+
+
+import project7Image from "../images/simple_life_07.jpg"
+import project7_02Image from "../images/simple_life_07_02.jpg"
+import project7_03Image from "../images/simple_life_07_03.jpg"
+
+import project8Image from "../images/simple_life_08.jpg"
+import project8_02Image from "../images/simple_life_08_02.JPG"
+
+import project9Image from "../images/simple_life_09.jpg"
+
+import project12Image from "../images/simple_life_12.jpg"
+import project13Image from "../images/simple_life_13.jpg"
+import project14Image from "../images/simple_life_14.jpg"
+import project15Image from "../images/simple_life_15.jpg"
+import project16Image from "../images/simple_life_16.jpg"
+import project17Image from "../images/simple_life_17.jpg"
+import project18Image from "../images/simple_life_18.jpg"
+import project19Image from "../images/simple_life_19.jpg"
+import project20Image from "../images/simple_life_20.JPG"
+import project21Image from "../images/simple_life_21.JPG"
+
+import project22Image from "../images/simple_life_22.JPG"
+import project22_02Image from "../images/simple_life_22_02.JPG"
+import project22_03Image from "../images/simple_life_22_03.JPG"
+
 
 import leftArrow from "../images/left_arrow.png";
 import rightArrow from "../images/right_arrow.png";
@@ -39,9 +73,19 @@ function Projects() {
     // console.log("in projects...")
     
     const [displayMobileNav, setDisplayMobileNav] = useState(false);
-    const [allProjects, setAllProjects] = useState([{createdAt: "", name:"", image_url: project0Image}, {createdAt: "", name:"", image_url: project1Image}, {createdAt: "", name:"", image_url: project2Image}, {createdAt: "", name:"", image_url: project3Image},
-         {createdAt: "", name:"", image_url: project4Image}, {createdAt: "", name:"", image_url: project5Image},
-         {createdAt: "", name:"", image_url: project6Image}, {createdAt: "", name:"", image_url: "https://i.kym-cdn.com/entries/icons/facebook/000/045/146/son-goku-thumb-up.jpg"}])
+    const [allProjects, setAllProjects] = useState([ {createdAt: "", name:"", image_url: project21Image}, {createdAt: "", name:"", image_url: project20Image}, {createdAt: "", name:"", image_url: project19Image},
+        {createdAt: "", name:"", image_url: project13Image}, {createdAt: "", name:"", image_url: project12Image},
+        {createdAt: "", name:"", image_url: project14Image}, {createdAt: "", name:"", image_url: project15Image},
+        {createdAt: "", name:"", image_url: project16Image}, {createdAt: "", name:"", image_url: project17Image},
+        {createdAt: "", name:"", image_url: project18Image},
+        {createdAt: "", name:"", image_url: project0Image}, {createdAt: "", name:"", image_url: project0_02Image},
+        {createdAt: "", name:"", image_url: project0_03Image}, {createdAt: "", name:"", image_url: project0_04Image}, {createdAt: "", name:"", image_url: project1Image},
+        {createdAt: "", name:"", image_url: project2Image}, {createdAt: "", name:"", image_url: project3Image},
+        {createdAt: "", name:"", image_url: project4Image},
+        {createdAt: "", name:"", image_url: project6_02Image}, {createdAt: "", name:"", image_url: project6Image},
+        {createdAt: "", name:"", image_url: project6_03Image}, {createdAt: "", name:"", image_url: project22Image},
+        {createdAt: "", name:"", image_url: project22_02Image}, {createdAt: "", name:"", image_url: project22_03Image},
+        {createdAt: "", name:"", image_url: "https://i.kym-cdn.com/entries/icons/facebook/000/045/146/son-goku-thumb-up.jpg"}])
     const [projectIndexes, setProjectIndexes] = useState([0, 1, 2, 3]);
     const [mainImage, setMainImage] = useState([allProjects[0].image_url])
     const [selectorImageHighlight, setSelectorImageHighlight] = useState(false);
@@ -149,9 +193,8 @@ function Projects() {
         </div>
         <div id="footer">
             <div className="footer-sections">
-                <a>Instagram</a>
-                <a>LinkedIn</a>
-                <a>Facebook</a>
+                <span>Simple Life Landscaping</span>
+                <span>Providing services in the greater Ohio region</span>
             </div>
             <div className="footer-sections">
                 <NavLink  to="/about"><a>About</a></NavLink>
@@ -160,8 +203,9 @@ function Projects() {
                 <NavLink  to="/contact"><a>Contact</a></NavLink>
             </div>
             <div className="footer-sections">
-                <span>testing123@gmail.com</span>
-                <span>Phone: 304-494-4471</span>
+                <span>simplelifelandscaping116@gmail.com</span>
+                <span>Work Tel: 304-494-4471</span>
+                <span>Personal Tel: 304-494-4471</span>
             </div>
         </div>
     </div>
