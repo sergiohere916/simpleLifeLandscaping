@@ -76,7 +76,8 @@ function About() {
                     </div>
                 </div>
                 <div id="aboutPageBanner">
-                    <button>Send Us An Email</button>
+                    {/* <button>Send Us An Email</button> */}
+                    <NavLink to="/contact" id="aboutPage-banner-button">Send Us An Email</NavLink>
                 </div>
                 <div id="about-Goal">
                     <div id="aboutPage-Text-1">

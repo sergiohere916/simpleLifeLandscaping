@@ -7,6 +7,7 @@ import Projects from "./Projects";
 import Contact from "./Contact";
 import Header from "./Header";
 import Admin from "./Admin"
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
   const [pictures, setPictures] = useState([])
@@ -34,6 +35,7 @@ function App() {
 
   return <div id="simple-life-app">
     {/* <Header></Header> */}
+    <ScrollToTop/>
     <Switch>
       <Route exact path="/">
         <Homepage></Homepage>

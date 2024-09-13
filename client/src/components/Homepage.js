@@ -120,7 +120,8 @@ function Homepage() {
                     <span>LEARN MORE ABOUT US </span>
                     <span className='serviceMotto'>We're For a Simple Life</span>
                     <div id="plant-image"></div>
-                    <button>ABOUT US</button>
+                    {/* <button>ABOUT US</button> */}
+                    <NavLink to="/about" id="view-about-button">ABOUT US</NavLink>
                     <div className='littleMower'>
                         <img src={littleMower}/>
                     </div>
@@ -131,7 +132,8 @@ function Homepage() {
         <div id="projects-section">
             <div id="projects-content">
                 <span>Visit Our Gallery of Completed Landscapes</span>
-                <button>PROJECTS</button>
+                {/* <button>PROJECTS</button> */}
+                <NavLink to="/projects" id="projects-content-button">PROJECTS</NavLink>
             </div>
         </div>
 

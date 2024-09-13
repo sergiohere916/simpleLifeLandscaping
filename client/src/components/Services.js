@@ -125,7 +125,8 @@ function Services() {
                      Additionally, our demolition/restoration services help renew your landscape, 
                      while transplants allow for the careful relocation of plants. With our expertise, your landscape will flourish, 
                      providing a beautiful and functional environment.</p>
-                    <button>Contact Us</button>
+                    {/* <button>Contact Us</button> */}
+                    <NavLink to="/contact" className="service-1-button">Contact Us</NavLink>
                 </div>   
             </div>
             <div id = "service-space-2" className="service1-content">
@@ -143,7 +144,8 @@ function Services() {
                         <li>Sodding</li>
                     </ul>
                     <p className="service-descriptions">These services keep your lawn and landscape healthy and attractive. We'll do pest management, weed control, fertilization, and debris removal. Edging and trimming create clean lines and reach hard-to-access areas for a polished look. Sodding provides an instant, green lawn by laying down pre-grown grass.</p>
-                    <button>Contact Us</button>
+                    {/* <button>Contact Us</button> */}
+                    <NavLink to="/contact" className="service-1-button">Contact Us</NavLink>
                 </div>
                 
             </div>
@@ -157,7 +159,8 @@ function Services() {
                         <li>Fall Cleanup</li>
                     </ul>
                     <p className="service-descriptions">Seasonal landscaping services adapt throughout the year to maintain outdoor spaces. Spring focuses on rejuvenation and growth, summer on regular upkeep and pest control, fall on winter preparation including leaf blowing and cleanup, and winter on protection and maintenance during cold weather. Each season's tasks ensure the landscape remains healthy and attractive year-round.</p>
-                    <button>Contact Us</button>
+                    {/* <button>Contact Us</button> */}
+                    <NavLink to="/contact" className="service-1-button">Contact Us</NavLink>
                 </div>
                 
             </div>
@@ -174,7 +177,8 @@ function Services() {
                     to establish what may best suit what your vision entails. The overall goal of our extra services remain the same, we aim to have 
                     satisfied clients that can be proud of their, home, bussiness, landscape. For this and more please give us a call.  
                     </p>
-                    <button>Contact Us</button>
+                    {/* <button>Contact Us</button> */}
+                    <NavLink to="/contact" className="service-1-button">Contact Us</NavLink>
                 </div>
                 
             </div>

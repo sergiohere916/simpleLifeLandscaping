@@ -89,7 +89,10 @@
 
 #hero-image span {
     text-align: center;
-    font-size: 3em;
+    font-size: 2.3em;
+    font-size: 32px;
+    padding-left: 2%;
+    padding-right: 2%;
     color: white;
     z-index: 0;
     /* font-size: 2em; */
@@ -126,9 +129,8 @@
 }
 
 #homePage-intro p {
-    font-size: 28pt;
     font-size: 22pt;
-    font-size: 2.0em;
+    /* font-size: 2.0em; */
     color: rgb(230, 128, 34);
     color: white;
     letter-spacing: 2px;
@@ -210,7 +212,7 @@
     height: 30%;
     width: 100%;
     /* font-size: 2.2rem; */
-    font-size: 1.4em;
+    font-size: 1.3em;
     
     text-align: center;
     
@@ -230,6 +232,7 @@
     justify-content: center;
     width: 100%;
     height: 20%;
+    font-size: 17.5px;
 }
 
 #content1-desc-contact {
@@ -468,7 +471,7 @@
     font-weight: 20;
 }
 
-#services-desc button {
+#services-desc #view-service-button, #view-about-button {
     background: none;
     text-wrap: nowrap;
     outline: 0;
@@ -479,9 +482,18 @@
     color: white;
     
     border-radius: 50px;
+
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-#services-desc button:hover {
+#services-desc #view-service-button:hover {
+    background-color: white;
+    color: rgb(140, 190, 120);
+}
+
+#services-desc #view-about-button:hover {
     background-color: white;
     color: rgb(140, 190, 120);
 }
@@ -565,7 +577,7 @@
     z-index: -1; /* Ensure the dimming effect is below other content */
 }
 
-#projects-section button {
+#projects-section #projects-content-button {
     
     letter-spacing: 2px;
     background: none;
@@ -582,14 +594,17 @@
     color: white;
 
     font-size: 16pt;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
+    text-decoration: none;
 }
 
-#projects-section button:hover {
+#projects-section #projects-content-button:hover {
     background-color: white;
     color: black;
 }
 
-#projects-section button:active {
+#projects-section #projects-content-button:active {
     margin: 10px;
 }
 
@@ -606,9 +621,9 @@
 #form-section {
     
     background-color: white;
-    height: 80%;
+    height: 70%;
     width: 45%;
-    margin-top: 5%;
+    margin-top: 20%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -770,7 +785,9 @@
         height: 750.2px;
         
         position: relative;
-        background-color: red;
+
+        /*Page Indicator*/
+        /* background-color: red; */
     }
 
     #content2-description {
@@ -877,7 +894,9 @@
         height: 750.2px;
         
         position: relative;
-        background-color: blue;
+
+        /*Page Indicator*/
+        /* background-color: blue; */
         
     }
 
@@ -968,12 +987,20 @@
         color: white;
     }
 
+    #form-section {
+        margin-top: 5%;
+        height: 75%;
+    }
+    
+
 }
 
 @media (min-width: 600px) {
 
     #home-content-container2 {
-        background-color: rgb(34, 135, 194);
+
+        /*Page Indicator*/
+        /* background-color: rgb(34, 135, 194); */
     }
 
     #hiddenMobileNav {
@@ -1172,7 +1199,7 @@
     }
     
     
-    #services-desc button {
+    #services-desc #view-service-button, #view-about-button {
         background: none;
         outline: 0;
         border: 1px solid white;
@@ -1182,13 +1209,21 @@
         color: white;
         
         border-radius: 50px;
+
+        text-decoration: none;
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
     
-    #services-desc button:hover {
+    #services-desc #view-service-button:hover {
         background-color: white;
         color: rgb(140, 190, 120);
     }
 
+    #services-desc #view-about-button:hover {
+        background-color: white;
+        color: rgb(140, 190, 120);
+    }
 
 
 
@@ -1214,7 +1249,7 @@
     }
 
     #form-section {
-        
+        height: 85%;
         width: 95%;
     }
 
@@ -1401,7 +1436,9 @@
         height: 900px;
         
         position: relative;
-        background-color: green;
+
+        /*Page Indicator*/
+        /* background-color: green; */
     }
 
     #content2-image {
@@ -1587,6 +1624,11 @@
 
     #services-desc {
         width: 65%;
+    }
+    
+    #form-section {
+        height: 80%;
+        width: 75%;
     }
     
     
@@ -1880,7 +1922,9 @@
     
     position: relative;
     /* border: 1px solid blue; */
-    background-color: blueviolet;
+
+    /*Page Indicator*/
+    /* background-color: blueviolet; */
     
 }
 
@@ -2148,10 +2192,6 @@
     font-weight: 20;
 }
 
-#services-desc button {
-    cursor: pointer;
-}
-
 .serviceMotto {
     /* font-family: "Pacifico", cursive; */
     letter-spacing: 1px;
@@ -2184,7 +2224,7 @@
 }
 
 
-#services-desc #view-service-button {
+#services-desc #view-service-button, #view-about-button {
     background: none;
     outline: 0;
     border: 1px solid white;
@@ -2194,14 +2234,20 @@
     color: white;
     
     border-radius: 50px;
+    cursor: pointer;
 
-    
     text-decoration: none;
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 
 #services-desc #view-service-button:hover {
+    background-color: white;
+    color: rgb(140, 190, 120);
+}
+
+#services-desc #view-about-button:hover {
     background-color: white;
     color: rgb(140, 190, 120);
 }
@@ -2278,7 +2324,7 @@
     font-weight: 200;
 }
 
-#projects-section button {
+#projects-section #projects-content-button {
     
     letter-spacing: 2px;
     background: none;
@@ -2295,14 +2341,17 @@
     color: white;
 
     font-size: 16pt;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
+    text-decoration: none;
 }
 
-#projects-section button:hover {
+#projects-section #projects-content-button:hover {
     background-color: white;
     color: black;
 }
 
-#projects-section button:active {
+#projects-section #projects-content-button:active {
     margin: 10px;
 }
 
@@ -2327,7 +2376,7 @@
     background-color: white;
     
     height: 80%;
-    width: 45%;
+    width: 50%;
     margin-top: 5%;
     
     box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.2);
@@ -2750,7 +2799,10 @@
         
         position: relative;
         /* border: 1px solid blue; */
-        background-color: aqua;
+
+
+        /*Page Indicator*/
+        /* background-color: aqua; */
         
     }
     
@@ -3140,7 +3192,7 @@
         font-weight: 200;
     }
     
-    #projects-section button {
+    #projects-section #projects-content-button {
         
         letter-spacing: 2px;
         background: none;
@@ -3157,14 +3209,18 @@
         color: white;
     
         font-size: 16pt;
+
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        letter-spacing: 2px;
+        text-decoration: none;
     }
     
-    #projects-section button:hover {
+    #projects-section #projects-content-button:hover {
         background-color: white;
         color: black;
     }
     
-    #projects-section button:active {
+    #projects-section #projects-content-button:active {
         margin: 10px;
     }
     
