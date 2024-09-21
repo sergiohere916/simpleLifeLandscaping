@@ -2,12 +2,12 @@ import React, { useEffect, useState } from "react";
 import Header from "./Header";
 import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 
-import serviceImg1 from "../images/simple_life_06.jpg";
-import serviceImg2 from "../images/simple_life_02.jpg";
-import serviceImg3 from "../images/simple_life_04.jpg";
-import serviceImg4 from "../images/simple_life_03.jpg";
-import serviceImg7 from "../images/simple_life_hero.jpg";
-import serviceImg8 from "../images/simple_life_hero.jpg";
+// import serviceImg1 from "../images/simple_life_06.jpg";
+// import serviceImg2 from "../images/simple_life_02.jpg";
+// import serviceImg3 from "../images/simple_life_04.jpg";
+// import serviceImg4 from "../images/simple_life_03.jpg";
+// import serviceImg7 from "../images/simple_life_hero.jpg";
+// import serviceImg8 from "../images/simple_life_hero.jpg";
 
 import project0Image from "../images/simple_life_00.jpg"
 import project0_02Image from "../images/simple_life_00_02.JPG"
@@ -19,21 +19,21 @@ import project1Image from "../images/simple_life_01.jpg"
 import project2Image from "../images/simple_life_02.jpg"
 import project3Image from "../images/simple_life_03.jpg"
 import project4Image from "../images/simple_life_04.jpg"
-import project5Image from "../images/simple_life_05.jpg"
+// import project5Image from "../images/simple_life_05.jpg"
 
 import project6Image from "../images/simple_life_06.jpg"
 import project6_02Image from "../images/simple_life_06_02.jpg"
 import project6_03Image from "../images/simple_life_06_03.JPG"
 
 
-import project7Image from "../images/simple_life_07.jpg"
-import project7_02Image from "../images/simple_life_07_02.jpg"
-import project7_03Image from "../images/simple_life_07_03.jpg"
+// import project7Image from "../images/simple_life_07.jpg"
+// import project7_02Image from "../images/simple_life_07_02.jpg"
+// import project7_03Image from "../images/simple_life_07_03.jpg"
 
-import project8Image from "../images/simple_life_08.jpg"
-import project8_02Image from "../images/simple_life_08_02.JPG"
+// import project8Image from "../images/simple_life_08.jpg"
+// import project8_02Image from "../images/simple_life_08_02.JPG"
 
-import project9Image from "../images/simple_life_09.jpg"
+// import project9Image from "../images/simple_life_09.jpg"
 
 import project12Image from "../images/simple_life_12.jpg"
 import project13Image from "../images/simple_life_13.jpg"
@@ -71,6 +71,7 @@ function Projects() {
 
 
     // console.log("in projects...")
+    // {createdAt: "", name:"", image_url: "https://i.kym-cdn.com/entries/icons/facebook/000/045/146/son-goku-thumb-up.jpg"}
     
     const [displayMobileNav, setDisplayMobileNav] = useState(false);
     const [allProjects, setAllProjects] = useState([ {createdAt: "", name:"", image_url: project21Image}, {createdAt: "", name:"", image_url: project20Image}, {createdAt: "", name:"", image_url: project19Image},
@@ -81,30 +82,30 @@ function Projects() {
         {createdAt: "", name:"", image_url: project0Image}, {createdAt: "", name:"", image_url: project0_02Image},
         {createdAt: "", name:"", image_url: project0_03Image}, {createdAt: "", name:"", image_url: project0_04Image}, {createdAt: "", name:"", image_url: project1Image},
         {createdAt: "", name:"", image_url: project2Image}, {createdAt: "", name:"", image_url: project3Image},
-        {createdAt: "", name:"", image_url: project4Image},
+        
         {createdAt: "", name:"", image_url: project6_02Image}, {createdAt: "", name:"", image_url: project6Image},
         {createdAt: "", name:"", image_url: project6_03Image}, {createdAt: "", name:"", image_url: project22Image},
         {createdAt: "", name:"", image_url: project22_02Image}, {createdAt: "", name:"", image_url: project22_03Image},
-        {createdAt: "", name:"", image_url: "https://i.kym-cdn.com/entries/icons/facebook/000/045/146/son-goku-thumb-up.jpg"}])
+        ])
     const [projectIndexes, setProjectIndexes] = useState([0, 1, 2, 3]);
     const [mainImage, setMainImage] = useState([allProjects[0].image_url])
-    const [selectorImageHighlight, setSelectorImageHighlight] = useState(false);
+    // const [selectorImageHighlight, setSelectorImageHighlight] = useState(false);
 
     const visibleProjects = [allProjects[projectIndexes[0]], allProjects[projectIndexes[1]], allProjects[projectIndexes[2]], allProjects[projectIndexes[3]]];
 
     
-    const [card3, setCard3] = useState([serviceImg3, serviceImg4]);
+    // const [card3, setCard3] = useState([serviceImg3, serviceImg4]);
 
 
     function showHiddenNav() {
         setDisplayMobileNav(!displayMobileNav);
     }
 
-    function handleCardClick() {
-        //Swap out pics
-        setCard3([card3[1], card3[0]]);
+    // function handleCardClick() {
+    //     //Swap out pics
+    //     setCard3([card3[1], card3[0]]);
 
-    }
+    // }
     
     function scrollLeft() {
         if (projectIndexes[0] > (0) ) {
@@ -150,7 +151,7 @@ function Projects() {
                 
             }} 
             >
-                <img src={project.image_url}/>
+                <img src={project.image_url} alt="project"/>
             </div>
         )
     })
@@ -174,7 +175,8 @@ function Projects() {
         <div id="projectsLine"><div id="projectsLine2"></div></div>
         <div id="projects-container">
             <div id="center-project">
-                <img src={mainImage}/>
+                {/* Can add name to the pictures if requested in future and change alt then */}
+                <img src={mainImage} alt="selected-project"/>
                 {/* <div id="center-image-filter"></div> */}
             </div>
         </div>
@@ -183,10 +185,10 @@ function Projects() {
                 <div id="projects-scroller-inner">
                     {displayAllProjects}
                     <div id="left-scroller" onClick={scrollLeft}>
-                        <img src={leftArrow}/>
+                        <img src={leftArrow} alt="scroll-left-button"/>
                     </div>
                     <div id="right-scroller" onClick={scrollRight}>
-                        <img src={rightArrow}/>
+                        <img src={rightArrow} alt="scroll-right-button"/>
                     </div>
                 </div>
             </div>
