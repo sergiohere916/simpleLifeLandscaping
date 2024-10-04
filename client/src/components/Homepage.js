@@ -14,6 +14,13 @@ function Homepage() {
 
     const form = useRef();
 
+    // const [firstName, setFirstName] = useState("John");
+    // const [lastName, setLastName] = useState("Doee");
+    // const [userEmail, setUserEmail] = useState("JohnDoe@gmail.com");
+    // const [userMessage, setUserMessage] = useState("Message")
+    const [userInput, setUserInput] = useState({firstName: "", lastName: "", userEmail: "", userMessage: "", buttonValue: "Send", buttonValueId: "" });
+
+
     const sendEmail = () => {
     
         emailjs
@@ -33,6 +40,8 @@ function Homepage() {
     function handleSubmit(e) {
         e.preventDefault()
         sendEmail()
+        setUserInput({firstName: "", lastName: "", userEmail: "", userMessage: "", buttonValue: "Sent", buttonValueId: "button-submitted-style" })
+
     }
 
     function showHiddenNav() {
@@ -143,26 +152,24 @@ function Homepage() {
                 <span>Get In Touch</span>
                 <form ref={form} onSubmit={(e) => handleSubmit(e)} id="form-container"> 
                     <div className='first-last'>
-                        
                         <div className="input-container">
                             <label>First Name</label>
-                            <input type="text" name="first-name" placeholder="John" required></input>
+                            <input type="text" name="first-name" placeholder = "John" value={userInput.firstName} required onChange={(e) => {setUserInput({...userInput, firstName: e.target.value, buttonValue: "Send", buttonValueId: ""})}}></input>
                         </div>
                         <div className="input-container">
                             <label>Last Name</label>
-                            <input type="text" name="last-name" placeholder="Doe" required></input>
+                            <input type="text" name="last-name" placeholder= "Doe" value={userInput.lastName} required onChange={(e) => {setUserInput({...userInput, lastName: e.target.value, buttonValue: "Send", buttonValueId: ""})}}></input>
                         </div>
                     </div>
                     <div className="input-container">
                         <label>Email</label>
-                        <input type="email" name="user_email" placeholder="JohnDoe@gmail.com" required></input>
+                        <input type="email" name="user_email" placeholder= "JohnDoe@gmail.com" value={userInput.userEmail} required onChange={(e) => {setUserInput({...userInput, userEmail: e.target.value, buttonValue: "Send", buttonValueId: ""})}}></input>
                     </div>
                     <div className="input-container">
                         <label>Message</label>
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" autoComplete="off" required></textarea>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" value={userInput.userMessage} autoComplete="off" required onChange={(e) => {setUserInput({...userInput, userMessage: e.target.value, buttonValue: "Send", buttonValueId: ""})}}></textarea>
                     </div>
-                    
-                    <button type="submit">Send</button>
+                    <button  id={userInput.buttonValueId} type="submit">{userInput.buttonValue}</button>
                 </form>
                 
             </div>

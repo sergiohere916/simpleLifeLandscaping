@@ -24,6 +24,8 @@ function Contact() {
           );
       };
 
+    const [formInputs, setFormInputs] = useState({firstName: "", lastName: "", userEmail: "", userMessage: ""});
+
     function handleSubmit(e) {
         e.preventDefault()
         sendEmail()
@@ -31,6 +33,7 @@ function Contact() {
         setTimeout(() => {
             setCondition(true)
         }, 2000);
+        setFormInputs({firstName: "", lastName: "", userEmail: "", userMessage: ""})
     }
 
     function showHiddenNav() {
@@ -66,20 +69,20 @@ function Contact() {
                     <div className="first-last">
                         <div className="input-container">
                             <label>First Name</label>
-                            <input type="text" name="first-name" required></input>
+                            <input type="text" name="first-name" value={formInputs.firstName} onChange={(e) => {setFormInputs({...formInputs, firstName: e.target.value})}} required></input>
                         </div>
                         <div className="input-container">
                             <label>Last name</label>
-                            <input type="text" name="last-name" required></input>
+                            <input type="text" name="last-name" value={formInputs.lastName} onChange={(e) => {setFormInputs({...formInputs, lastName: e.target.value})}} required></input>
                         </div>
                     </div>
                     <div className="input-container">
                         <label>Email</label>
-                        <input type="email" name="user_email" required></input>
+                        <input type="email" name="user_email" value={formInputs.userEmail} onChange={(e) => {setFormInputs({...formInputs, userEmail: e.target.value})}} required></input>
                     </div>
                     <div className="input-container">
                         <label>Message</label>
-                        <textarea name="message" id="message" cols="30" rows="10" autoComplete="off" required></textarea>
+                        <textarea name="message" id="message" cols="30" rows="10" autoComplete="off" value={formInputs.userMessage} onChange={(e) => {setFormInputs({...formInputs, userMessage: e.target.value})}} required></textarea>
                     </div>
                     <button type="submit">{condition ? "Submit" : "Success"}</button>
                 </form>

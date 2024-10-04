@@ -667,12 +667,17 @@
     border: none;
     transition: .2s;
     letter-spacing: 2px;
-
     
     
 }
 
+ #button-submitted-style {
+    background-color: rgb(94, 165, 72);
+    color: white;
+}
+
 #form-container button:hover {
+    cursor: pointer;
     background-color: rgb(200, 200, 200);
 }
 
