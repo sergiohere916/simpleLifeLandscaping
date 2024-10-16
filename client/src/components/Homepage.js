@@ -189,7 +189,7 @@ function Homepage() {
             </div>
             <div className="footer-sections">
                 <span>simplelifelandscaping116@gmail.com</span>
-                <span>Work Tel: 304-494-4471</span>
+                <span>Work Tel: 740-830-4471</span>
                 <span>Personal Tel: 304-494-4471</span>
             </div>
         </div>

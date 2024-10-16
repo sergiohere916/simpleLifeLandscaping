@@ -1,7 +1,7 @@
 {
   "name": "client",
   "version": "0.1.0",
-  "homepage": "azure-bear-591661.hostingersite.com",
+  "homepage": "https://azure-bear-591661.hostingersite.com",
   "private": true,
   "proxy": "http://localhost:5555",
   "dependencies": {

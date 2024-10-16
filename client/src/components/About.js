@@ -2,12 +2,11 @@ import React, { useState } from "react";
 import Header from "./Header";
 import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 
-import mainImage from "../images/simple_life_04.jpg";
 
-import aboutImage1 from "../images/simple_life_09.jpg";
-import aboutImage2 from "../images/simple_life_11.jpg";
-import aboutImage3 from "../images/simple_life_06.jpg";
-import aboutImage4 from "../images/simple_life_08.jpg";
+// import aboutImage1 from "../images/simple_life_09.jpg";
+import aboutImage1 from "../images/simple_life_06.jpg";
+import aboutImage2 from "../images/simple_life_21_02.JPG";
+import aboutImage3 from "../images/simple_life_11.jpg";
 
 
 function About() {
@@ -113,7 +112,7 @@ function About() {
             </div>
             <div className="footer-sections">
                 <span>simplelifelandscaping116@gmail.com</span>
-                <span>Work Tel: 304-494-4471</span>
+                <span>Work Tel: 740-830-4471</span>
                 <span>Personal Tel: 304-494-4471</span>
             </div>
         </div>
